@@ -63,8 +63,14 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+      <div className="relative border-b border-gray-200 overflow-hidden">
+        {/* Subtle Paris background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.04]"
+          style={{ backgroundImage: 'url(/paris-bg.png)' }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white" />
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
               Qui a le meilleur programme pour Paris&nbsp;?
