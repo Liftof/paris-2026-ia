@@ -51,7 +51,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-2.5">
             <span className="text-lg font-bold text-slate-900">Paris 2026</span>
-            <span className="kicker">IA</span>
+            <span className="kicker">Labo indépendant</span>
           </Link>
           <Link href="/methodologie" className="text-sm text-slate-500 hover:text-slate-900">
             Méthodologie
@@ -98,7 +98,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <section className={`panel-card p-5 sm:p-6 mb-8 sm:mb-10 ${getGlobalScoreBg(candidate.globalScore)}`}>
-          <div className="text-xs uppercase tracking-[0.12em] text-slate-500 font-semibold mb-2">Verdict</div>
+          <div className="text-xs uppercase tracking-[0.12em] text-slate-500 font-semibold mb-2">Lecture du labo</div>
           <p className="text-sm sm:text-base text-slate-800 leading-relaxed">{candidate.verdict}</p>
         </section>
 
@@ -130,7 +130,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
         <section className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-10">
           <div className="panel-card p-6 sm:p-7">
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-1">Mesures solides</h2>
-            <p className="text-xs text-slate-500 mb-5">Propositions qui paraissent structurees et exploitables.</p>
+            <p className="text-xs text-slate-500 mb-5">Propositions jugées cohérentes et robustes.</p>
             <div className="space-y-3">
               {candidate.bestMeasures.map((measure, index) => (
                 <div key={index} className="playful-dash bg-white/72 p-3.5">
@@ -143,7 +143,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
 
           <div className="panel-card p-6 sm:p-7">
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-1">Points fragiles</h2>
-            <p className="text-xs text-slate-500 mb-5">Mesures jugées irréalistes ou insuffisamment détaillées.</p>
+            <p className="text-xs text-slate-500 mb-5">Mesures jugées irréalistes ou insuffisamment étayées.</p>
             <div className="space-y-3">
               {candidate.worstMeasures.map((measure, index) => (
                 <div key={index} className="playful-dash bg-white/72 p-3.5">

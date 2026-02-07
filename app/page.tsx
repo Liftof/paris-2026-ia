@@ -32,6 +32,7 @@ const criteria = [
 export default function HomePage() {
   const sortedCandidates = [...candidatesData].sort((a, b) => b.globalScore - a.globalScore)
   const maxScore = sortedCandidates[0]?.globalScore ?? 10
+  const averageScore = (sortedCandidates.reduce((total, candidate) => total + candidate.globalScore, 0) / sortedCandidates.length).toFixed(1)
 
   const allBestMeasures = candidatesData
     .flatMap((candidate) =>
@@ -61,7 +62,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-2.5">
             <span className="text-lg font-bold text-slate-900">Paris 2026</span>
-            <span className="kicker">IA</span>
+            <span className="kicker">Labo indépendant</span>
           </Link>
           <div className="flex items-center gap-3 sm:gap-6">
             <a href="#candidats" className="text-sm text-slate-500 hover:text-slate-900 hidden sm:block">
@@ -70,6 +71,9 @@ export default function HomePage() {
             <Link href="/methodologie" className="text-sm text-slate-500 hover:text-slate-900">
               Méthodologie
             </Link>
+            <Link href="/hero" className="text-sm text-slate-500 hover:text-slate-900">
+              Hero
+            </Link>
           </div>
         </div>
       </nav>
@@ -77,51 +81,51 @@ export default function HomePage() {
       <header className="relative overflow-hidden border-b border-slate-200/60">
         <div className="absolute -left-14 top-10 w-40 h-40 rounded-full bg-sky-200/40 blur-2xl" />
         <div className="absolute right-0 top-4 w-44 h-44 rounded-full bg-amber-200/50 blur-2xl" />
+
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
           <div className="hero-panel floating-in p-6 sm:p-10 relative overflow-hidden">
             <div className="absolute -right-12 -top-10 w-32 h-32 rounded-full border border-slate-200/70" />
             <div className="absolute right-16 top-8 w-3 h-3 rounded-full bg-amber-400/80" />
             <div className="absolute right-8 top-16 w-2 h-2 rounded-full bg-sky-500/70" />
 
-            <div className="grid lg:grid-cols-[1fr_280px] gap-8 items-start">
+            <div className="grid lg:grid-cols-[1fr_300px] gap-8 items-start">
               <div>
-                <span className="kicker mb-4">Observatoire citoyen</span>
+                <span className="kicker mb-4">Analyse publique non partisane</span>
                 <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                  Quel programme tient vraiment la route pour Paris ?
+                  Un labo indépendant qui publie l&apos;évaluation IA des programmes 2026.
                 </h1>
                 <p className="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
-                  Nous comparons les 6 candidats avec une grille commune. Le rendu est plus vivant,
-                  mais l&apos;analyse reste stricte, transparente et lisible.
+                  Nous ne vendons rien ici. Nous publions une lecture structurée de robustesse, cohérence et sérieux,
+                  à partir des programmes officiels, avec la même grille pour tous les candidats.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-2.5">
-                  <span className="soft-chip">Non partisan</span>
-                  <span className="soft-chip">Programmes officiels</span>
-                  <span className="soft-chip">5 critères publics</span>
+                  <span className="soft-chip">Corpus: programmes officiels</span>
+                  <span className="soft-chip">Traitement identique pour tous</span>
+                  <span className="soft-chip">Méthodologie publique</span>
                   <span className="soft-chip">Mise à jour février 2026</span>
                 </div>
               </div>
 
-              <div className="playful-dash bg-white/72 p-4 sm:p-5">
-                <div className="text-[11px] uppercase tracking-[0.16em] text-slate-500 font-semibold mb-3">Top 3 actuel</div>
-                <div className="space-y-3">
-                  {sortedCandidates.slice(0, 3).map((candidate, index) => (
-                    <Link key={candidate.slug} href={`/candidats/${candidate.slug}`} className="block group">
-                      <div className="score-pill flex items-center gap-3 group-hover:border-slate-300 transition-colors">
-                        <span className="text-xs font-bold text-slate-400 w-5">#{index + 1}</span>
-                        <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-white">
-                          <Image src={candidate.photo} alt={candidate.name} fill className="object-cover" sizes="36px" />
-                        </div>
-                        <div className="min-w-0 flex-1">
-                          <div className="text-sm font-semibold text-slate-900 truncate">{candidate.name}</div>
-                          <div className="text-xs text-slate-500 truncate">{candidate.party}</div>
-                        </div>
-                        <span className={`text-sm font-bold ${getScoreColor(candidate.globalScore)}`}>
-                          {candidate.globalScore}/10
-                        </span>
-                      </div>
-                    </Link>
-                  ))}
+              <div className="playful-dash bg-white/75 p-4 sm:p-5">
+                <div className="text-[11px] uppercase tracking-[0.16em] text-slate-500 font-semibold mb-3">Indicateurs du labo</div>
+                <div className="space-y-2.5">
+                  <div className="score-pill flex items-center justify-between">
+                    <span className="text-xs text-slate-500">Candidats étudiés</span>
+                    <span className="text-sm font-bold text-slate-900">{sortedCandidates.length}</span>
+                  </div>
+                  <div className="score-pill flex items-center justify-between">
+                    <span className="text-xs text-slate-500">Critères publics</span>
+                    <span className="text-sm font-bold text-slate-900">5</span>
+                  </div>
+                  <div className="score-pill flex items-center justify-between">
+                    <span className="text-xs text-slate-500">Moyenne globale</span>
+                    <span className="text-sm font-bold text-slate-900">{averageScore}/10</span>
+                  </div>
+                  <div className="score-pill flex items-center justify-between">
+                    <span className="text-xs text-slate-500">Affiliation politique</span>
+                    <span className="text-sm font-bold text-slate-900">Aucune</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,7 +158,7 @@ export default function HomePage() {
           <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
             <div>
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Classement général</h2>
-              <p className="text-sm text-slate-500 mt-2">Cliquez sur un profil pour l&apos;analyse complète.</p>
+              <p className="text-sm text-slate-500 mt-2">Résultat de la grille IA appliquée de manière homogène.</p>
             </div>
             <div className="flex flex-wrap gap-2 text-[10px] uppercase tracking-[0.12em] font-semibold">
               <span className="soft-chip text-palette-blue">Solide 7+</span>
@@ -172,7 +176,7 @@ export default function HomePage() {
         <section className="panel-card p-5 sm:p-8 mb-10 sm:mb-14">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Comparatif par critère</h2>
           <p className="text-sm text-slate-500 mt-1 mb-6">
-            Lecture horizontale: voyez rapidement les points forts et les zones fragiles de chaque candidat.
+            Lecture transversale des performances sur cohérence, solidité, robustesse, pragmatisme et détail.
           </p>
 
           <div className="overflow-x-auto -mx-2 px-2">
@@ -236,7 +240,7 @@ export default function HomePage() {
         <section className="panel-card p-5 sm:p-8 mb-10 sm:mb-14">
           <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Scores globaux</h2>
-            <span className="text-xs uppercase tracking-[0.12em] text-slate-500 font-semibold">Vue rapide type podium</span>
+            <span className="text-xs uppercase tracking-[0.12em] text-slate-500 font-semibold">Visualisation normalisée</span>
           </div>
           <div className="space-y-4">
             {sortedCandidates.map((candidate, index) => (
@@ -278,7 +282,7 @@ export default function HomePage() {
               <span className="w-2 h-5 rounded-full bg-palette-blue" />
               <h2 className="text-xl font-bold text-slate-900">Mesures les plus solides</h2>
             </div>
-            <p className="text-xs text-slate-500 mb-5 ml-4">Extraits des propositions les mieux argumentées.</p>
+            <p className="text-xs text-slate-500 mb-5 ml-4">Extraits jugés robustes dans le corpus analysé.</p>
             <div className="space-y-3">
               {allBestMeasures.map((measure, index) => (
                 <Link key={`${measure.slug}-${index}`} href={`/candidats/${measure.slug}`} className="block group">
@@ -303,7 +307,7 @@ export default function HomePage() {
               <span className="w-2 h-5 rounded-full bg-palette-red" />
               <h2 className="text-xl font-bold text-slate-900">Mesures fragiles</h2>
             </div>
-            <p className="text-xs text-slate-500 mb-5 ml-4">Points qui demandent précision, chiffrage ou faisabilité.</p>
+            <p className="text-xs text-slate-500 mb-5 ml-4">Points nécessitant chiffrage, faisabilité ou clarification.</p>
             <div className="space-y-3">
               {allWorstMeasures.map((measure, index) => (
                 <Link key={`${measure.slug}-${index}`} href={`/candidats/${measure.slug}`} className="block group">
@@ -333,7 +337,7 @@ export default function HomePage() {
 
         <section id="candidats" className="mb-10 sm:mb-14 scroll-mt-24">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Les candidats</h2>
-          <p className="text-sm text-slate-500 mt-2 mb-6">Positionnement politique et lien vers le programme officiel.</p>
+          <p className="text-sm text-slate-500 mt-2 mb-6">Positionnement politique et lien vers les programmes originaux.</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {sortedCandidates.map((candidate) => (
@@ -364,7 +368,7 @@ export default function HomePage() {
                       Programme officiel →
                     </a>
                     <Link href={`/candidats/${candidate.slug}`} className="text-xs text-slate-500 hover:text-slate-900">
-                      Analyse IA
+                      Analyse complète
                     </Link>
                   </div>
                 </div>
@@ -383,11 +387,11 @@ export default function HomePage() {
 
           <div className="note-grid">
             {[
-              { name: 'Cohérence', desc: 'Vision sans contradiction', color: '#3B82F6' },
-              { name: 'Solidité', desc: 'Arguments et contraintes', color: '#3B82F6' },
-              { name: 'Robustesse', desc: 'Capacité à tenir dans le temps', color: '#D97706' },
-              { name: 'Pragmatisme', desc: 'Exécution réaliste', color: '#D97706' },
-              { name: 'Détail', desc: 'Précision des mesures', color: '#EA580C' },
+              { name: 'Cohérence', desc: 'Vision sans contradiction interne', color: '#3B82F6' },
+              { name: 'Solidité', desc: 'Arguments et contraintes explicites', color: '#3B82F6' },
+              { name: 'Robustesse', desc: 'Résistance aux aléas', color: '#D97706' },
+              { name: 'Pragmatisme', desc: 'Applicabilité municipale', color: '#D97706' },
+              { name: 'Détail', desc: 'Niveau de précision opérationnelle', color: '#EA580C' },
             ].map((criterion, index) => (
               <div key={criterion.name} className="playful-dash bg-white/74 p-3.5 sm:p-4">
                 <div
@@ -405,8 +409,8 @@ export default function HomePage() {
 
         <footer className="pt-8 pb-2 border-t border-slate-200/70">
           <p className="text-xs text-slate-500 text-center leading-relaxed">
-            Analyse automatisée à partir de documents publics. Pas d&apos;affiliation politique.
-            <br />Projet d&apos;aide à la lecture citoyenne, février 2026.
+            Labo indépendant sans affiliation politique. Analyse IA appliquée à des sources publiques.
+            <br />Objectif: rendre la comparaison des programmes plus transparente et vérifiable.
           </p>
         </footer>
       </main>

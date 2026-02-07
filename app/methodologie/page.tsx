@@ -7,7 +7,7 @@ export default function MethodologiePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5">
             <span className="text-lg font-bold text-slate-900">Paris 2026</span>
-            <span className="kicker">IA</span>
+            <span className="kicker">Labo indépendant</span>
           </Link>
           <Link href="/#classement" className="text-sm text-slate-500 hover:text-slate-900">
             Classement
@@ -22,9 +22,9 @@ export default function MethodologiePage() {
           </Link>
           <div className="hero-panel p-6 sm:p-10">
             <span className="kicker mb-4">Méthodologie publique</span>
-            <h1 className="text-3xl sm:text-5xl font-bold text-slate-900">Comment l&apos;IA évalue les programmes</h1>
+            <h1 className="text-3xl sm:text-5xl font-bold text-slate-900">Comment l&apos;IA juge les programmes</h1>
             <p className="text-base sm:text-lg text-slate-600 mt-4 max-w-3xl leading-relaxed">
-              Même grille, même niveau d&apos;exigence, et une restitution claire pour comparer les projets municipaux.
+              Cette démarche est celle d&apos;un labo indépendant: même protocole, mêmes critères, mêmes exigences pour tous.
             </p>
           </div>
         </div>
@@ -32,15 +32,15 @@ export default function MethodologiePage() {
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Approche generale</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Position du projet</h2>
           <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-            Cette analyse automatisée vise à comparer les programmes avec une logique constante. L&apos;objectif n&apos;est
-            pas de prendre parti, mais d&apos;aider à lire plus vite les points solides, les zones floues et les risques.
+            Le site ne vend pas un service. Il publie une analyse comparative non partisane des programmes municipaux 2026.
+            L&apos;objectif est de rendre le débat plus lisible, pas de recommander un vote.
           </p>
         </section>
 
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Pourquoi utiliser l&apos;IA ici ?</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Pourquoi utiliser l&apos;IA ?</h2>
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {[
               {
@@ -48,16 +48,16 @@ export default function MethodologiePage() {
                 description: 'Tous les candidats passent sur la même grille de lecture, dans le même ordre.',
               },
               {
-                title: 'Régularité des notes',
-                description: 'Les critères sont appliqués de façon homogène, sans effet de fatigue de lecture.',
+                title: 'Régularité d’évaluation',
+                description: 'La méthode évite les variations humaines de fatigue ou d’attention.',
               },
               {
-                title: 'Lecture à grande échelle',
-                description: 'L&apos;outil agrège rapidement des informations longues et hétérogènes.',
+                title: 'Capacité de synthèse',
+                description: 'Le système consolide rapidement des corpus longs et hétérogènes.',
               },
               {
-                title: 'Transparence',
-                description: 'Les notes sont rattachees a des criteres explicites et consultables.',
+                title: 'Traçabilité',
+                description: 'Les scores sont reliés à des critères explicités publiquement.',
               },
             ].map((item) => (
               <div key={item.title} className="playful-dash bg-white/72 p-4 sm:p-5">
@@ -74,32 +74,27 @@ export default function MethodologiePage() {
             {[
               {
                 title: '1. Cohérence',
-                detail:
-                  'Le programme raconte-t-il une vision claire, sans mesures qui se contredisent ? ',
+                detail: 'Le programme présente-t-il une logique d’ensemble sans contradiction interne ?',
                 color: 'bg-palette-blue',
               },
               {
                 title: '2. Solidité',
-                detail:
-                  'Les annonces sont-elles argumentées avec des hypothèses réalistes (budget, compétence, exécution) ? ',
+                detail: 'Les propositions reposent-elles sur des hypothèses crédibles (budget, droit, exécution) ?',
                 color: 'bg-palette-blue',
               },
               {
                 title: '3. Robustesse',
-                detail:
-                  'Le projet tient-il dans des scénarios moins favorables (retards, coûts, arbitrages) ? ',
+                detail: 'Le plan reste-t-il tenable en cas d’aléas ou de contraintes imprévues ?',
                 color: 'bg-palette-yellow',
               },
               {
                 title: '4. Pragmatisme',
-                detail:
-                  'Les mesures peuvent-elles être lancées concrètement par une municipalité ? ',
+                detail: 'Les mesures sont-elles actionnables à l’échelle municipale ?',
                 color: 'bg-palette-yellow',
               },
               {
                 title: '5. Détail',
-                detail:
-                  'Le niveau de précision est-il suffisant pour juger la mise en oeuvre ? ',
+                detail: 'Le niveau de précision permet-il une lecture opérationnelle ?',
                 color: 'bg-palette-red',
               },
             ].map((criterion) => (
@@ -135,17 +130,17 @@ export default function MethodologiePage() {
             <div className="playful-dash bg-blue-50/70 p-4 text-center">
               <div className="text-2xl font-bold text-palette-blue">7+</div>
               <div className="text-xs font-semibold text-palette-blue mt-1">Solide</div>
-              <div className="text-[11px] text-slate-500 mt-1">Programme structuré et crédible</div>
+              <div className="text-[11px] text-slate-500 mt-1">Programme cohérent et crédible</div>
             </div>
             <div className="playful-dash bg-yellow-50/70 p-4 text-center">
               <div className="text-2xl font-bold text-palette-yellow">5-7</div>
               <div className="text-xs font-semibold text-palette-yellow mt-1">Mitigé</div>
-              <div className="text-[11px] text-slate-500 mt-1">Des points forts, mais aussi des manques</div>
+              <div className="text-[11px] text-slate-500 mt-1">Avancées notables mais limites structurelles</div>
             </div>
             <div className="playful-dash bg-red-50/70 p-4 text-center">
               <div className="text-2xl font-bold text-palette-red">{'<'}5</div>
               <div className="text-xs font-semibold text-palette-red mt-1">Fragile</div>
-              <div className="text-[11px] text-slate-500 mt-1">Réalisme ou précision insuffisants</div>
+              <div className="text-[11px] text-slate-500 mt-1">Insuffisances de réalisme ou de précision</div>
             </div>
           </div>
         </section>
@@ -153,8 +148,8 @@ export default function MethodologiePage() {
         <section className="panel-card p-5 sm:p-7">
           <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-3">Transparence</h2>
           <p className="text-sm text-slate-700 leading-relaxed">
-            Les scores ne remplacent pas le débat politique. Ils servent à structurer la lecture, en rendant visibles
-            les assumptions, les incohérences et les zones à clarifier.
+            Les scores ne remplacent pas le débat démocratique. Ils structurent la lecture et rendent explicites les zones
+            de solidité, les contradictions et les points à clarifier.
           </p>
         </section>
       </main>
