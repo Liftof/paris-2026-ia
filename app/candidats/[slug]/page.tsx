@@ -1,5 +1,5 @@
 import { getCandidateBySlug, candidatesData } from '@/lib/data'
-import { getAnalyseBySlug } from '@/lib/analyses'
+import { getAnalyseBySlug } from '@/lib/analysesData'
 import ScoreRadar from '@/components/ScoreRadar'
 import AnalyseComplete from '@/components/AnalyseComplete'
 import Link from 'next/link'
