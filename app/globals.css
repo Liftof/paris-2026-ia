@@ -17,3 +17,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Force Berkeley Mono everywhere */
+* {
+  font-family: 'Berkeley Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}

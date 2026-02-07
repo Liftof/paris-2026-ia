@@ -10,8 +10,8 @@ export default function CandidateCard({ candidate, rank }: CandidateCardProps) {
   return (
     <Link href={`/candidats/${candidate.slug}`}>
       <div className="border border-gray-200 hover:border-gray-400 transition-colors group">
-        <div className="flex items-center justify-between p-6 bg-white">
-          <div className="flex items-baseline gap-6 flex-1">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between p-4 md:p-6 bg-white gap-4">
+          <div className="flex items-baseline gap-4 md:gap-6 flex-1">
             <div className="text-2xl font-light text-gray-400 w-8">
               {rank}
             </div>
@@ -19,7 +19,7 @@ export default function CandidateCard({ candidate, rank }: CandidateCardProps) {
               <h3 className="text-xl font-normal text-gray-900 group-hover:text-black transition-colors">
                 {candidate.name}
               </h3>
-              <div className="flex gap-6 mt-3 text-xs text-gray-500">
+              <div className="flex flex-wrap gap-3 md:gap-6 mt-3 text-xs text-gray-500">
                 <div>
                   <span className="uppercase tracking-wider">Cohérence</span>
                   <span className="ml-2 font-medium text-gray-900">{candidate.scores.coherence.toFixed(1)}</span>

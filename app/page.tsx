@@ -41,7 +41,7 @@ export default function HomePage() {
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-6 py-12">
         {/* Stats Grid */}
-        <div className="grid grid-cols-3 gap-px bg-gray-200 border border-gray-200 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-200 border border-gray-200 mb-16">
           <div className="bg-white p-8">
             <div className="text-xs uppercase tracking-wider text-gray-500 mb-3">Score moyen</div>
             <div className="text-5xl font-light text-gray-900">{avgScore}</div>
@@ -67,7 +67,7 @@ export default function HomePage() {
             cohérence interne, solidité argumentative, robustesse face aux contraintes, pragmatisme 
             des propositions et niveau de détail opérationnel.
           </p>
-          <div className="grid grid-cols-5 gap-4 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-center">
             <div className="border border-gray-200 p-4">
               <div className="text-xs text-gray-500 mb-2">Cohérence</div>
               <div className="text-2xl font-light text-gray-900">{criteriaMeans.coherence}</div>
