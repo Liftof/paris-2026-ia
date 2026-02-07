@@ -1,5 +1,6 @@
-import CandidateCard from '@/components/CandidateCard'
 import { candidatesData } from '@/lib/data'
+import ThemeFilter from '@/components/ThemeFilter'
+import DarkModeToggle from '@/components/DarkModeToggle'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -58,22 +59,26 @@ export default function HomePage() {
 
   return (
     <div className="site-shell min-h-screen">
-      <nav className="site-nav sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-lg font-bold text-slate-900">Paris 2026</span>
-            <span className="kicker">Labo indépendant</span>
+      <nav className="site-nav">
+        <div className="site-nav-pill">
+          <Link href="/" className="flex items-center gap-2">
+            <span className="text-sm font-bold text-slate-900">Paris 2026</span>
+            <span className="kicker !text-[9px] !py-0.5 !px-2">Labo</span>
           </Link>
-          <div className="flex items-center gap-3 sm:gap-6">
-            <a href="#candidats" className="text-sm text-slate-500 hover:text-slate-900 hidden sm:block">
-              Candidats
+          <div className="flex items-center gap-3 sm:gap-4">
+            <a href="#classement" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors">
+              Classement
             </a>
-            <Link href="/methodologie" className="text-sm text-slate-500 hover:text-slate-900">
-              Méthodologie
+            <Link href="/comparateur" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors hidden sm:block">
+              Comparer
             </Link>
-            <Link href="/hero" className="text-sm text-slate-500 hover:text-slate-900">
-              Hero
+            <Link href="/quiz" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors hidden sm:block">
+              Quiz
             </Link>
+            <Link href="/methodologie" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors">
+              Methodo
+            </Link>
+            <DarkModeToggle />
           </div>
         </div>
       </nav>
@@ -166,11 +171,7 @@ export default function HomePage() {
               <span className="soft-chip text-palette-red">Fragile {'<'}5</span>
             </div>
           </div>
-          <div className="space-y-3">
-            {sortedCandidates.map((candidate, index) => (
-              <CandidateCard key={candidate.slug} candidate={candidate} rank={index + 1} />
-            ))}
-          </div>
+          <ThemeFilter />
         </section>
 
         <section className="panel-card p-5 sm:p-8 mb-10 sm:mb-14">
@@ -407,10 +408,39 @@ export default function HomePage() {
           </div>
         </section>
 
-        <footer className="pt-8 pb-2 border-t border-slate-200/70">
+        {/* CTA nouvelles features */}
+        <section className="panel-card p-5 sm:p-8 mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-2">Allez plus loin</h2>
+          <p className="text-sm text-slate-500 text-center mb-6">Explorez les outils du labo.</p>
+          <div className="grid sm:grid-cols-3 gap-3 sm:gap-4">
+            <Link href="/comparateur" className="group playful-dash bg-white/72 p-5 text-center hover:bg-white/90 transition-colors">
+              <div className="text-2xl mb-2">&#9878;</div>
+              <div className="text-sm font-bold text-slate-900 group-hover:text-palette-blue">Comparateur</div>
+              <div className="text-[11px] text-slate-500 mt-1">2 candidats face-a-face</div>
+            </Link>
+            <Link href="/quiz" className="group playful-dash bg-white/72 p-5 text-center hover:bg-white/90 transition-colors">
+              <div className="text-2xl mb-2">&#127919;</div>
+              <div className="text-sm font-bold text-slate-900 group-hover:text-palette-blue">Quiz citoyen</div>
+              <div className="text-[11px] text-slate-500 mt-1">Classement selon vos priorites</div>
+            </Link>
+            <Link href="/faq" className="group playful-dash bg-white/72 p-5 text-center hover:bg-white/90 transition-colors">
+              <div className="text-2xl mb-2">&#10067;</div>
+              <div className="text-sm font-bold text-slate-900 group-hover:text-palette-blue">FAQ</div>
+              <div className="text-[11px] text-slate-500 mt-1">Questions sur le projet</div>
+            </Link>
+          </div>
+        </section>
+
+        <footer className="pt-8 pb-6 border-t border-slate-200/70">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-4">
+            <Link href="/methodologie" className="text-xs text-slate-500 hover:text-slate-900">Methodologie</Link>
+            <Link href="/comparateur" className="text-xs text-slate-500 hover:text-slate-900">Comparateur</Link>
+            <Link href="/quiz" className="text-xs text-slate-500 hover:text-slate-900">Quiz citoyen</Link>
+            <Link href="/faq" className="text-xs text-slate-500 hover:text-slate-900">FAQ</Link>
+          </div>
           <p className="text-xs text-slate-500 text-center leading-relaxed">
-            Labo indépendant sans affiliation politique. Analyse IA appliquée à des sources publiques.
-            <br />Objectif: rendre la comparaison des programmes plus transparente et vérifiable.
+            Labo ind&eacute;pendant sans affiliation politique. Analyse IA appliqu&eacute;e &agrave; des sources publiques.
+            <br />Objectif: rendre la comparaison des programmes plus transparente et v&eacute;rifiable.
           </p>
         </footer>
       </main>

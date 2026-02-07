@@ -2,14 +2,37 @@ import { getCandidateBySlug, candidatesData } from '@/lib/data'
 import { getAnalyseBySlug } from '@/lib/analysesData'
 import ScoreRadar from '@/components/ScoreRadar'
 import AnalyseComplete from '@/components/AnalyseComplete'
+import ShareButtons from '@/components/ShareButtons'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+
+import type { Metadata } from 'next'
 
 export function generateStaticParams() {
   return candidatesData.map((candidate) => ({
     slug: candidate.slug,
   }))
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const candidate = getCandidateBySlug(slug)
+  if (!candidate) return {}
+  return {
+    title: `${candidate.name} - ${candidate.globalScore}/10 | Paris 2026 IA`,
+    description: candidate.verdict.slice(0, 160),
+    openGraph: {
+      title: `${candidate.name} : ${candidate.globalScore}/10 - Analyse IA Paris 2026`,
+      description: candidate.verdict.slice(0, 160),
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${candidate.name} : ${candidate.globalScore}/10`,
+      description: candidate.verdict.slice(0, 160),
+    },
+  }
 }
 
 function getScoreColor(score: number): string {
@@ -47,23 +70,34 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
 
   return (
     <div className="site-shell min-h-screen">
-      <nav className="site-nav sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-lg font-bold text-slate-900">Paris 2026</span>
-            <span className="kicker">Labo indépendant</span>
+      <nav className="site-nav">
+        <div className="site-nav-pill">
+          <Link href="/" className="flex items-center gap-2">
+            <span className="text-sm font-bold text-slate-900">Paris 2026</span>
+            <span className="kicker !text-[9px] !py-0.5 !px-2">Labo</span>
           </Link>
-          <Link href="/methodologie" className="text-sm text-slate-500 hover:text-slate-900">
-            Méthodologie
-          </Link>
+          <div className="flex items-center gap-4 sm:gap-5">
+            <Link href="/#classement" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors">
+              Classement
+            </Link>
+            <Link href="/#candidats" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors hidden sm:block">
+              Candidats
+            </Link>
+            <Link href="/methodologie" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors">
+              Méthodologie
+            </Link>
+          </div>
         </div>
       </nav>
 
       <header className="border-b border-slate-200/70">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
-          <Link href="/#classement" className="text-sm text-slate-500 hover:text-slate-900 inline-block mb-6">
-            ← Retour au classement
-          </Link>
+          <div className="flex items-center justify-between mb-6">
+            <Link href="/#classement" className="text-sm text-slate-500 hover:text-slate-900">
+              &larr; Retour au classement
+            </Link>
+            <ShareButtons candidateName={candidate.name} score={candidate.globalScore} slug={candidate.slug} />
+          </div>
 
           <div className="hero-panel p-6 sm:p-8">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
@@ -85,11 +119,23 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
                 <p className="text-sm sm:text-base text-slate-600 mt-2 max-w-2xl">{candidate.politicalLine}</p>
               </div>
 
-              <div className={`border rounded-xl px-5 py-4 ${getGlobalScoreBg(candidate.globalScore)} self-start sm:self-center`}>
-                <div className={`text-4xl sm:text-5xl font-bold text-center ${getScoreColor(candidate.globalScore)}`}>
-                  {candidate.globalScore}
+              <div className="flex flex-col items-center gap-3 self-start sm:self-center">
+                <div className={`border rounded-xl px-5 py-4 ${getGlobalScoreBg(candidate.globalScore)}`}>
+                  <div className={`text-4xl sm:text-5xl font-bold text-center ${getScoreColor(candidate.globalScore)}`}>
+                    {candidate.globalScore}
+                  </div>
+                  <div className="text-xs text-slate-500 mt-0.5 text-center">/10 global</div>
                 </div>
-                <div className="text-xs text-slate-500 mt-0.5 text-center">/10 global</div>
+                <a
+                  href={`/rapports/${candidate.slug}-analyse.pdf`}
+                  download
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold bg-slate-900 text-white hover:bg-slate-700 transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Rapport PDF
+                </a>
               </div>
             </div>
           </div>

@@ -13,12 +13,13 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Paris 2026 - Les programmes jugés par l'IA",
-  description: "Analyse non-partisane et objective des programmes des candidats à la mairie de Paris 2026 par intelligence artificielle",
-  keywords: ["Paris 2026", "élections municipales", "programmes", "analyse IA", "candidats", "mairie de Paris"],
+  metadataBase: new URL("https://paris2026.fr"),
+  title: "Paris 2026 - Les programmes jug\u00e9s par l'IA",
+  description: "Analyse non-partisane et objective des programmes des candidats \u00e0 la mairie de Paris 2026 par intelligence artificielle",
+  keywords: ["Paris 2026", "\u00e9lections municipales", "programmes", "analyse IA", "candidats", "mairie de Paris"],
   authors: [{ name: "Analyse IA" }],
   openGraph: {
-    title: "Paris 2026 - Les programmes jugés par l'IA",
+    title: "Paris 2026 - Les programmes jug\u00e9s par l'IA",
     description: "Qui a le meilleur programme pour Paris ? L'IA analyse les 6 candidats.",
     type: "website",
   },
