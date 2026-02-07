@@ -1,6 +1,16 @@
 import Link from 'next/link'
 import { candidatesData } from '@/lib/data'
 import SiteNav from '@/components/SiteNav'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Méthodologie',
+  description: 'Comment l\'IA analyse les programmes des candidats à la mairie de Paris 2026. 5 critères, protocole identique, rapports PDF téléchargeables.',
+  openGraph: {
+    title: 'Méthodologie — Paris 2026 Labo IA',
+    description: 'Comment l\'IA analyse les programmes des candidats à la mairie de Paris 2026. 5 critères, protocole identique.',
+  },
+}
 
 export default function MethodologiePage() {
   const sortedCandidates = [...candidatesData].sort((a, b) => b.globalScore - a.globalScore)

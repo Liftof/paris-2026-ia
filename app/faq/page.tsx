@@ -1,5 +1,15 @@
 import Link from 'next/link'
 import SiteNav from '@/components/SiteNav'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'FAQ',
+  description: 'Questions fréquentes sur l\'analyse IA des programmes des candidats à la mairie de Paris 2026. Méthode, limites et transparence.',
+  openGraph: {
+    title: 'FAQ — Paris 2026 Labo IA',
+    description: 'Questions fréquentes sur l\'analyse IA des programmes des candidats à la mairie de Paris 2026.',
+  },
+}
 
 const faqs = [
   {
