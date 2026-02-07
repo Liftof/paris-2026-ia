@@ -9,23 +9,29 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1E40AF',
-        palette: {
-          red: '#EF4444',
-          blue: '#3B82F6',
-          yellow: '#EAB308',
+        ink: {
+          DEFAULT: '#171717',
+          2: '#404040',
+          3: '#737373',
+          4: '#a3a3a3',
+        },
+        surface: {
+          DEFAULT: '#fafafa',
+          alt: '#f5f5f5',
         },
         accent: {
-          green: '#10B981',
-          orange: '#F59E0B',
+          DEFAULT: '#e63946',
+          soft: '#fef2f2',
         },
-        gray: {
-          dark: '#1F2937',
-          light: '#F9FAFB',
+        score: {
+          solid: '#16a34a',
+          mixed: '#d97706',
+          fragile: '#dc2626',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        body: ['var(--font-body)', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Georgia', 'Times New Roman', 'serif'],
         mono: ['Berkeley Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
       },
     },

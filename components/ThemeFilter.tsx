@@ -30,28 +30,28 @@ export default function ThemeFilter() {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-1.5 mb-5">
+      <div className="flex flex-wrap gap-2 mb-6">
         {themeFilters.map((filter) => (
           <button
             key={filter.key}
             onClick={() => setActiveFilter(filter.key)}
-            className={`px-3 py-1.5 rounded-full text-[11px] font-semibold transition-all ${
+            className={`px-4 py-2 text-xs font-semibold transition-all rounded-lg ${
               activeFilter === filter.key
-                ? 'bg-slate-900 text-white shadow-sm'
-                : 'bg-white/70 text-slate-500 border border-slate-200/60 hover:border-slate-300 hover:text-slate-700'
+                ? 'bg-ink text-white'
+                : 'bg-white text-ink-3 border border-[var(--border)] hover:border-ink-4 hover:text-ink'
             }`}
           >
             {filter.label}
           </button>
         ))}
       </div>
-      <div className="space-y-3">
+      <div className="space-y-3 stagger-in">
         {sortedCandidates.map((candidate, index) => (
           <CandidateCard key={candidate.slug} candidate={candidate} rank={index + 1} />
         ))}
       </div>
       {activeFilter !== 'global' && (
-        <p className="text-[11px] text-slate-400 mt-3 text-center">
+        <p className="label-mono mt-4 text-center">
           Classement par score thematique &laquo;{themeFilters.find((f) => f.key === activeFilter)?.label}&raquo;
         </p>
       )}

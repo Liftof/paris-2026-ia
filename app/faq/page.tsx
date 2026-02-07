@@ -34,7 +34,7 @@ const faqs = [
   {
     question: 'Mes donnees sont-elles collectees ?',
     answer:
-      'Non. Le site ne collecte aucune donnee personnelle. Le quiz citoyen fonctionne entierement dans votre navigateur, sans envoi au serveur. Aucun cookie de tracking n\'est utilise.',
+      'Non. Le site ne collecte aucune donnee personnelle. Aucun cookie de tracking n\'est utilise.',
   },
   {
     question: 'Puis-je telecharger les rapports ?',
@@ -58,70 +58,68 @@ export default function FAQPage() {
     <div className="site-shell min-h-screen">
       <nav className="site-nav">
         <div className="site-nav-pill">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-sm font-bold text-slate-900">Paris 2026</span>
-            <span className="kicker !text-[9px] !py-0.5 !px-2">Labo</span>
+          <Link href="/" className="flex items-center gap-2.5">
+            <span className="text-sm font-bold text-ink">Paris 2026</span>
+            <span className="kicker">Labo IA</span>
           </Link>
           <div className="flex items-center gap-4 sm:gap-5">
-            <Link href="/#classement" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors">
+            <Link href="/#classement" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
               Classement
             </Link>
-            <Link href="/methodologie" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors">
+            <Link href="/methodologie" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
               Methodo
             </Link>
-            <Link href="/faq" className="text-xs font-semibold text-palette-blue transition-colors">
+            <Link href="/faq" className="text-xs font-medium text-accent transition-colors">
               FAQ
             </Link>
           </div>
         </div>
       </nav>
 
-      <header className="border-b border-slate-200/70">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
-          <Link href="/" className="text-sm text-slate-500 hover:text-slate-900 inline-block mb-6">
+      <header className="border-b border-[var(--border)]">
+        <div className="max-w-4xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
+          <Link href="/" className="text-sm text-ink-3 hover:text-ink inline-block mb-6">
             &larr; Retour
           </Link>
-          <div className="hero-panel p-6 sm:p-8">
-            <span className="kicker mb-3">FAQ</span>
-            <h1 className="text-2xl sm:text-4xl font-bold text-slate-900">Questions frequentes</h1>
-            <p className="text-sm sm:text-base text-slate-600 mt-2">
-              Tout ce que vous devez savoir sur le projet, la methode et les limites.
-            </p>
-          </div>
+          <span className="kicker mb-3">FAQ</span>
+          <h1 className="text-2xl sm:text-4xl font-bold text-ink mt-1">Questions frequentes</h1>
+          <p className="text-sm sm:text-base text-ink-3 mt-2">
+            Tout ce que vous devez savoir sur le projet, la methode et les limites.
+          </p>
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <main className="max-w-4xl mx-auto px-5 sm:px-8 py-8 sm:py-12">
         <div className="space-y-3">
           {faqs.map((faq, index) => (
             <details key={index} className="group panel-card overflow-hidden">
-              <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-white/40 transition-colors">
-                <span className="text-palette-blue font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">
+              <summary className="p-5 sm:p-6 cursor-pointer list-none flex items-start gap-3 hover:bg-surface-alt/50 transition-colors">
+                <span className="text-accent font-bold mt-0.5 shrink-0 text-sm group-open:rotate-90 transition-transform">
                   &#9654;
                 </span>
-                <span className="text-sm sm:text-base font-semibold text-slate-900">{faq.question}</span>
+                <span className="text-sm sm:text-base font-semibold text-ink">{faq.question}</span>
               </summary>
               <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{faq.answer}</p>
+                <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">{faq.answer}</p>
               </div>
             </details>
           ))}
         </div>
 
         <div className="panel-card p-5 sm:p-6 mt-8 text-center">
-          <p className="text-xs text-slate-500 mb-3">Vous ne trouvez pas votre reponse ?</p>
+          <p className="text-xs text-ink-3 mb-3">Vous ne trouvez pas votre reponse ?</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href="/methodologie"
-              className="px-5 py-2 rounded-full border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-white/80 transition-colors"
+              className="px-5 py-2.5 rounded-lg border border-[var(--border)] text-xs font-semibold text-ink hover:shadow-sm transition-shadow"
             >
               Voir la methodologie
             </Link>
             <Link
-              href="/quiz"
-              className="px-5 py-2 rounded-full bg-slate-900 text-white text-xs font-semibold hover:bg-slate-700 transition-colors"
+              href="/a-propos"
+              className="px-5 py-2.5 rounded-lg bg-ink text-white text-xs font-semibold hover:bg-ink-2 transition-colors"
             >
-              Faire le quiz citoyen
+              Nous contacter
             </Link>
           </div>
         </div>

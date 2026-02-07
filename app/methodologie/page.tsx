@@ -8,33 +8,33 @@ export default function MethodologiePage() {
     <div className="site-shell min-h-screen">
       <nav className="site-nav">
         <div className="site-nav-pill">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-sm font-bold text-slate-900">Paris 2026</span>
-            <span className="kicker !text-[9px] !py-0.5 !px-2">Labo</span>
+          <Link href="/" className="flex items-center gap-2.5">
+            <span className="text-sm font-bold text-ink">Paris 2026</span>
+            <span className="kicker">Labo IA</span>
           </Link>
           <div className="flex items-center gap-4 sm:gap-5">
-            <Link href="/#classement" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors">
+            <Link href="/#classement" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
               Classement
             </Link>
-            <Link href="/#candidats" className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors hidden sm:block">
+            <Link href="/#candidats" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors hidden sm:block">
               Candidats
             </Link>
-            <Link href="/methodologie" className="text-xs font-semibold text-palette-blue transition-colors">
-              Méthodologie
+            <Link href="/methodologie" className="text-xs font-medium text-accent transition-colors">
+              Methodologie
             </Link>
           </div>
         </div>
       </nav>
 
-      <header className="border-b border-slate-200/70">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
-          <Link href="/" className="text-sm text-slate-500 hover:text-slate-900 inline-block mb-6">
+      <header className="border-b border-[var(--border)]">
+        <div className="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
+          <Link href="/" className="text-sm text-ink-3 hover:text-ink inline-block mb-6">
             &larr; Retour &agrave; l&apos;accueil
           </Link>
           <div className="hero-panel p-6 sm:p-10">
             <span className="kicker mb-4">M&eacute;thodologie publique</span>
-            <h1 className="text-3xl sm:text-5xl font-bold text-slate-900">Comment l&apos;IA juge les programmes</h1>
-            <p className="text-base sm:text-lg text-slate-600 mt-4 max-w-3xl leading-relaxed">
+            <h1 className="text-3xl sm:text-5xl font-bold text-ink">Comment l&apos;IA juge les programmes</h1>
+            <p className="text-base sm:text-lg text-ink-3 mt-4 max-w-3xl leading-relaxed">
               Cette d&eacute;marche est celle d&apos;un labo ind&eacute;pendant: m&ecirc;me protocole, m&ecirc;mes crit&egrave;res, m&ecirc;mes exigences pour tous.
               Chaque rapport suit une structure identique pour garantir l&apos;&eacute;quit&eacute; du traitement.
             </p>
@@ -48,37 +48,37 @@ export default function MethodologiePage() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <main className="max-w-5xl mx-auto px-5 sm:px-8 py-8 sm:py-12">
 
         {/* Position du projet */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Position du projet</h2>
-          <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-3">Position du projet</h2>
+          <p className="text-sm sm:text-base text-ink-2 leading-relaxed mb-4">
             Le site ne vend pas un service. Il publie une analyse comparative non partisane des programmes municipaux 2026.
             L&apos;objectif est de rendre le d&eacute;bat plus lisible, pas de recommander un vote.
           </p>
           <div className="grid sm:grid-cols-3 gap-3">
-            <div className="playful-dash bg-white/72 p-3 text-center">
+            <div className="playful-dash bg-white p-3 text-center">
               <div className="text-2xl mb-1">&#9878;</div>
-              <div className="text-xs font-semibold text-slate-900">Non partisan</div>
-              <div className="text-[11px] text-slate-500 mt-0.5">Aucune affiliation politique</div>
+              <div className="text-xs font-semibold text-ink">Non partisan</div>
+              <div className="text-[11px] text-ink-3 mt-0.5">Aucune affiliation politique</div>
             </div>
-            <div className="playful-dash bg-white/72 p-3 text-center">
+            <div className="playful-dash bg-white p-3 text-center">
               <div className="text-2xl mb-1">&#128270;</div>
-              <div className="text-xs font-semibold text-slate-900">Transparent</div>
-              <div className="text-[11px] text-slate-500 mt-0.5">Crit&egrave;res et rapports publics</div>
+              <div className="text-xs font-semibold text-ink">Transparent</div>
+              <div className="text-[11px] text-ink-3 mt-0.5">Crit&egrave;res et rapports publics</div>
             </div>
-            <div className="playful-dash bg-white/72 p-3 text-center">
+            <div className="playful-dash bg-white p-3 text-center">
               <div className="text-2xl mb-1">&#128200;</div>
-              <div className="text-xs font-semibold text-slate-900">Reproductible</div>
-              <div className="text-[11px] text-slate-500 mt-0.5">M&ecirc;me grille pour tous</div>
+              <div className="text-xs font-semibold text-ink">Reproductible</div>
+              <div className="text-[11px] text-ink-3 mt-0.5">M&ecirc;me grille pour tous</div>
             </div>
           </div>
         </section>
 
         {/* Pourquoi l'IA */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Pourquoi utiliser l&apos;IA ?</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Pourquoi utiliser l&apos;IA ?</h2>
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {[
               {
@@ -98,9 +98,9 @@ export default function MethodologiePage() {
                 description: 'Chaque score est reli\u00e9 \u00e0 des crit\u00e8res explicites. Le rapport d\u00e9taill\u00e9 (PDF) permet de v\u00e9rifier le raisonnement derri\u00e8re chaque note.',
               },
             ].map((item) => (
-              <div key={item.title} className="playful-dash bg-white/72 p-4 sm:p-5">
-                <h3 className="text-sm sm:text-base font-semibold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{item.description}</p>
+              <div key={item.title} className="playful-dash bg-white p-4 sm:p-5">
+                <h3 className="text-sm sm:text-base font-semibold text-ink mb-2">{item.title}</h3>
+                <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
@@ -108,8 +108,8 @@ export default function MethodologiePage() {
 
         {/* Corpus analysé */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Corpus analys&eacute;</h2>
-          <p className="text-sm text-slate-600 mb-5 leading-relaxed">
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-3">Corpus analys&eacute;</h2>
+          <p className="text-sm text-ink-3 mb-5 leading-relaxed">
             L&apos;analyse repose exclusivement sur des sources publiques. Aucune information privil&eacute;gi&eacute;e ni d&eacute;claration off-the-record n&apos;est utilis&eacute;e.
           </p>
           <div className="space-y-2.5">
@@ -118,11 +118,11 @@ export default function MethodologiePage() {
               { label: 'Propositions d\u00e9taill\u00e9es', detail: 'Mesures chiffr\u00e9es, calendriers, dispositifs concrets annonc\u00e9s publiquement' },
               { label: 'Engagements th\u00e9matiques', detail: 'Prises de position sur logement, transport, s\u00e9curit\u00e9, \u00e9cologie, budget' },
             ].map((item) => (
-              <div key={item.label} className="playful-dash bg-white/72 p-3.5 flex items-start gap-3">
-                <span className="w-2 h-2 rounded-full bg-palette-blue mt-1.5 shrink-0" />
+              <div key={item.label} className="playful-dash bg-white p-3.5 flex items-start gap-3">
+                <span className="w-2 h-2 rounded-sm bg-score-solid mt-1.5 shrink-0" />
                 <div>
-                  <div className="text-sm font-semibold text-slate-900">{item.label}</div>
-                  <div className="text-xs text-slate-500 mt-0.5">{item.detail}</div>
+                  <div className="text-sm font-semibold text-ink">{item.label}</div>
+                  <div className="text-xs text-ink-3 mt-0.5">{item.detail}</div>
                 </div>
               </div>
             ))}
@@ -131,8 +131,8 @@ export default function MethodologiePage() {
 
         {/* Processus d'analyse */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Processus d&apos;analyse</h2>
-          <p className="text-sm text-slate-600 mb-5 leading-relaxed">
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Processus d&apos;analyse</h2>
+          <p className="text-sm text-ink-3 mb-5 leading-relaxed">
             Chaque candidat passe par exactement les m&ecirc;mes &eacute;tapes, dans le m&ecirc;me ordre, avec le m&ecirc;me prompt d&apos;analyse.
           </p>
           <div className="space-y-3">
@@ -174,17 +174,17 @@ export default function MethodologiePage() {
                 color: '#EA580C',
               },
             ].map((item) => (
-              <div key={item.step} className="playful-dash bg-white/72 p-4 sm:p-5">
+              <div key={item.step} className="playful-dash bg-white p-4 sm:p-5">
                 <div className="flex items-start gap-3">
                   <div
-                    className="w-8 h-8 rounded-full text-white text-xs font-bold flex items-center justify-center shrink-0"
+                    className="w-8 h-8 rounded-lg text-white text-xs font-bold flex items-center justify-center shrink-0"
                     style={{ backgroundColor: item.color }}
                   >
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-sm sm:text-base font-semibold text-slate-900">{item.title}</h3>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">{item.detail}</p>
+                    <h3 className="text-sm sm:text-base font-semibold text-ink">{item.title}</h3>
+                    <p className="text-xs sm:text-sm text-ink-3 leading-relaxed mt-1">{item.detail}</p>
                   </div>
                 </div>
               </div>
@@ -194,47 +194,47 @@ export default function MethodologiePage() {
 
         {/* Les 5 critères */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Les 5 crit&egrave;res d&apos;&eacute;valuation</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Les 5 crit&egrave;res d&apos;&eacute;valuation</h2>
           <div className="space-y-3">
             {[
               {
                 title: '1. Coh\u00e9rence interne',
                 detail: 'Le programme pr\u00e9sente-t-il une logique d\u2019ensemble sans contradiction interne ?',
                 example: 'Exemple: un candidat qui promet densification massive et 300 ha de jardins cr\u00e9e une tension de coh\u00e9rence.',
-                color: 'bg-palette-blue',
+                color: 'bg-score-solid',
               },
               {
                 title: '2. Solidit\u00e9 technique',
                 detail: 'Les propositions reposent-elles sur des hypoth\u00e8ses cr\u00e9dibles (budget, droit, ex\u00e9cution) ?',
                 example: 'Exemple: des chiffrages pr\u00e9cis (900M\u20ac r\u00e9novation logements) vs. des promesses sans budget.',
-                color: 'bg-palette-blue',
+                color: 'bg-score-solid',
               },
               {
                 title: '3. Robustesse budg\u00e9taire',
                 detail: 'Le plan reste-t-il tenable en cas d\u2019al\u00e9as, de hausse des taux ou de contraintes impr\u00e9vues ?',
                 example: 'Exemple: un plan d\u2019\u00e9conomies de 4Mds\u20ac document\u00e9 vs. aucun chiffrage global du programme.',
-                color: 'bg-palette-yellow',
+                color: 'bg-score-mixed',
               },
               {
                 title: '4. Pragmatisme',
                 detail: 'Les mesures sont-elles actionnables \u00e0 l\u2019\u00e9chelle municipale, dans les comp\u00e9tences de la mairie ?',
                 example: 'Exemple: \u00abm\u00e9tro 24h/24\u00bb rel\u00e8ve de la R\u00e9gion, pas de la mairie = hors comp\u00e9tence.',
-                color: 'bg-palette-yellow',
+                color: 'bg-score-mixed',
               },
               {
                 title: '5. D\u00e9tail et pr\u00e9cision',
                 detail: 'Le niveau de pr\u00e9cision permet-il une lecture op\u00e9rationnelle (calendriers, co\u00fbts, modalit\u00e9s) ?',
                 example: 'Exemple: \u00ab300 capteurs acoustiques M\u00e9duses\u00bb = pr\u00e9cis vs. \u00abun grand plan de mise \u00e0 l\u2019abri\u00bb = flou.',
-                color: 'bg-palette-red',
+                color: 'bg-score-fragile',
               },
             ].map((criterion) => (
-              <div key={criterion.title} className="playful-dash bg-white/72 p-4 sm:p-5">
+              <div key={criterion.title} className="playful-dash bg-white p-4 sm:p-5">
                 <div className="flex items-start gap-3">
-                  <span className={`w-2 h-7 rounded-full shrink-0 mt-0.5 ${criterion.color}`} />
+                  <span className={`w-1 h-6 rounded-sm shrink-0 mt-0.5 ${criterion.color}`} />
                   <div>
-                    <h3 className="text-sm sm:text-base font-semibold text-slate-900">{criterion.title}</h3>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1">{criterion.detail}</p>
-                    <p className="text-[11px] text-slate-400 italic mt-2">{criterion.example}</p>
+                    <h3 className="text-sm sm:text-base font-semibold text-ink">{criterion.title}</h3>
+                    <p className="text-xs sm:text-sm text-ink-3 leading-relaxed mt-1">{criterion.detail}</p>
+                    <p className="text-[11px] text-ink-4 italic mt-2">{criterion.example}</p>
                   </div>
                 </div>
               </div>
@@ -244,8 +244,8 @@ export default function MethodologiePage() {
 
         {/* Les 5 domaines thématiques */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Les 5 domaines th&eacute;matiques</h2>
-          <p className="text-sm text-slate-600 mb-5 leading-relaxed">
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-3">Les 5 domaines th&eacute;matiques</h2>
+          <p className="text-sm text-ink-3 mb-5 leading-relaxed">
             Au-del&agrave; des 5 crit&egrave;res transversaux, chaque programme est analys&eacute; sur 5 domaines cl&eacute;s de la politique municipale parisienne.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -276,13 +276,13 @@ export default function MethodologiePage() {
                 points: ['Plan de financement', 'Endettement', 'Fiscalit\u00e9 locale', 'Subventions \u00c9tat/R\u00e9gion'],
               },
             ].map((domain) => (
-              <div key={domain.theme} className="playful-dash bg-white/72 p-4">
+              <div key={domain.theme} className="playful-dash bg-white p-4">
                 <div className="text-2xl mb-2">{domain.icon}</div>
-                <h3 className="text-sm font-bold text-slate-900 mb-2">{domain.theme}</h3>
+                <h3 className="text-sm font-bold text-ink mb-2">{domain.theme}</h3>
                 <ul className="space-y-1">
                   {domain.points.map((point) => (
-                    <li key={point} className="text-[11px] text-slate-500 flex items-start gap-1.5">
-                      <span className="text-slate-300 mt-0.5">&bull;</span>
+                    <li key={point} className="text-[11px] text-ink-3 flex items-start gap-1.5">
+                      <span className="text-ink-4 mt-0.5">&bull;</span>
                       {point}
                     </li>
                   ))}
@@ -294,8 +294,8 @@ export default function MethodologiePage() {
 
         {/* Structure du rapport */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Structure de chaque rapport</h2>
-          <p className="text-sm text-slate-600 mb-5 leading-relaxed">
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-3">Structure de chaque rapport</h2>
+          <p className="text-sm text-ink-3 mb-5 leading-relaxed">
             Chaque candidat re&ccedil;oit un rapport d&apos;analyse complet (PDF t&eacute;l&eacute;chargeable) qui suit toujours la m&ecirc;me structure.
           </p>
           <div className="space-y-2.5">
@@ -308,11 +308,11 @@ export default function MethodologiePage() {
               { section: 'Conclusion', detail: 'Justification de la note, cr\u00e9dibilit\u00e9 et applicabilit\u00e9 globale du programme.' },
               { section: 'Annexes', detail: 'Inventaire d\u00e9taill\u00e9 de toutes les propositions class\u00e9es par domaine, analyse de faisabilit\u00e9.' },
             ].map((item, index) => (
-              <div key={item.section} className="playful-dash bg-white/72 p-3.5 flex items-start gap-3">
-                <span className="text-[11px] font-bold text-slate-400 w-4 mt-0.5 shrink-0">{index + 1}.</span>
+              <div key={item.section} className="playful-dash bg-white p-3.5 flex items-start gap-3">
+                <span className="text-[11px] font-bold text-ink-4 w-4 mt-0.5 shrink-0">{index + 1}.</span>
                 <div>
-                  <div className="text-sm font-semibold text-slate-900">{item.section}</div>
-                  <div className="text-xs text-slate-500 mt-0.5 leading-relaxed">{item.detail}</div>
+                  <div className="text-sm font-semibold text-ink">{item.section}</div>
+                  <div className="text-xs text-ink-3 mt-0.5 leading-relaxed">{item.detail}</div>
                 </div>
               </div>
             ))}
@@ -321,18 +321,18 @@ export default function MethodologiePage() {
 
         {/* Pondération */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Pond&eacute;ration des notes</h2>
-          <p className="text-sm text-slate-600 mb-4">Chaque crit&egrave;re compte pour 20% de la note globale. Pas de surpond&eacute;ration, pas de biais.</p>
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Pond&eacute;ration des notes</h2>
+          <p className="text-sm text-ink-3 mb-4">Chaque crit&egrave;re compte pour 20% de la note globale. Pas de surpond&eacute;ration, pas de biais.</p>
           <div className="note-grid">
             {['Coh\u00e9rence', 'Solidit\u00e9', 'Robustesse', 'Pragmatisme', 'D\u00e9tail'].map((criterion) => (
-              <div key={criterion} className="playful-dash bg-white/72 p-3 text-center">
-                <div className="text-xs text-slate-500">{criterion}</div>
-                <div className="text-lg font-bold text-slate-900 mt-1">20%</div>
+              <div key={criterion} className="playful-dash bg-white p-3 text-center">
+                <div className="text-xs text-ink-3">{criterion}</div>
+                <div className="text-lg font-bold text-ink mt-1">20%</div>
               </div>
             ))}
           </div>
-          <div className="mt-4 playful-dash bg-blue-50/50 p-3.5">
-            <p className="text-xs text-slate-600 leading-relaxed">
+          <div className="mt-4 playful-dash bg-surface-alt p-3.5">
+            <p className="text-xs text-ink-3 leading-relaxed">
               <span className="font-semibold">Note globale</span> = (Coh&eacute;rence + Solidit&eacute; + Robustesse + Pragmatisme + D&eacute;tail) &divide; 5.
               L&apos;&eacute;quipond&eacute;ration &eacute;vite de privil&eacute;gier un angle (ex: technique vs. politique).
             </p>
@@ -341,30 +341,30 @@ export default function MethodologiePage() {
 
         {/* Lecture des scores */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Lecture des scores</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Lecture des scores</h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-            <div className="playful-dash bg-blue-50/70 p-4 text-center">
-              <div className="text-2xl font-bold text-palette-blue">7+</div>
-              <div className="text-xs font-semibold text-palette-blue mt-1">Solide</div>
-              <div className="text-[11px] text-slate-500 mt-1">Programme coh&eacute;rent, cr&eacute;dible, document&eacute;</div>
+            <div className="playful-dash bg-surface-alt p-4 text-center">
+              <div className="text-2xl font-bold text-score-solid">7+</div>
+              <div className="text-xs font-semibold text-score-solid mt-1">Solide</div>
+              <div className="text-[11px] text-ink-3 mt-1">Programme coh&eacute;rent, cr&eacute;dible, document&eacute;</div>
             </div>
-            <div className="playful-dash bg-yellow-50/70 p-4 text-center">
-              <div className="text-2xl font-bold text-palette-yellow">5-7</div>
-              <div className="text-xs font-semibold text-palette-yellow mt-1">Mitig&eacute;</div>
-              <div className="text-[11px] text-slate-500 mt-1">Avanc&eacute;es notables mais limites structurelles</div>
+            <div className="playful-dash bg-surface-alt p-4 text-center">
+              <div className="text-2xl font-bold text-score-mixed">5-7</div>
+              <div className="text-xs font-semibold text-score-mixed mt-1">Mitig&eacute;</div>
+              <div className="text-[11px] text-ink-3 mt-1">Avanc&eacute;es notables mais limites structurelles</div>
             </div>
-            <div className="playful-dash bg-red-50/70 p-4 text-center">
-              <div className="text-2xl font-bold text-palette-red">{'<'}5</div>
-              <div className="text-xs font-semibold text-palette-red mt-1">Fragile</div>
-              <div className="text-[11px] text-slate-500 mt-1">Insuffisances de r&eacute;alisme ou de pr&eacute;cision</div>
+            <div className="playful-dash bg-surface-alt p-4 text-center">
+              <div className="text-2xl font-bold text-score-fragile">{'<'}5</div>
+              <div className="text-xs font-semibold text-score-fragile mt-1">Fragile</div>
+              <div className="text-[11px] text-ink-3 mt-1">Insuffisances de r&eacute;alisme ou de pr&eacute;cision</div>
             </div>
           </div>
         </section>
 
         {/* Rapports téléchargeables */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Rapports t&eacute;l&eacute;chargeables</h2>
-          <p className="text-sm text-slate-600 mb-5 leading-relaxed">
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-3">Rapports t&eacute;l&eacute;chargeables</h2>
+          <p className="text-sm text-ink-3 mb-5 leading-relaxed">
             L&apos;int&eacute;gralit&eacute; de l&apos;analyse de chaque candidat est disponible en PDF. Consultez-les pour v&eacute;rifier le raisonnement derri&egrave;re chaque note.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -372,12 +372,12 @@ export default function MethodologiePage() {
               <Link
                 key={candidate.slug}
                 href={`/candidats/${candidate.slug}`}
-                className="group playful-dash bg-white/72 p-3.5 flex items-center gap-3 hover:bg-white/90 transition-colors"
+                className="group playful-dash bg-white p-3.5 flex items-center gap-3 hover:shadow-sm transition-colors"
               >
                 <div className="w-2 h-8 rounded-full shrink-0" style={{ backgroundColor: candidate.politicalColor }} />
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-semibold text-slate-900 group-hover:text-palette-blue truncate">{candidate.name}</div>
-                  <div className="text-[11px] text-slate-500">{candidate.party}</div>
+                  <div className="text-sm font-semibold text-ink group-hover:text-score-solid truncate">{candidate.name}</div>
+                  <div className="text-[11px] text-ink-3">{candidate.party}</div>
                 </div>
                 <span className="text-xs font-bold" style={{ color: candidate.globalScore >= 7 ? '#3B82F6' : candidate.globalScore >= 5 ? '#D97706' : '#EA580C' }}>
                   {candidate.globalScore}/10
@@ -389,7 +389,7 @@ export default function MethodologiePage() {
 
         {/* Limites */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Limites de l&apos;analyse</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-3">Limites de l&apos;analyse</h2>
           <div className="space-y-2.5">
             {[
               'L\u2019IA \u00e9value les programmes tels que publi\u00e9s, pas les intentions r\u00e9elles ni le bilan pass\u00e9 des candidats.',
@@ -398,9 +398,9 @@ export default function MethodologiePage() {
               'Les scores ne mesurent pas l\u2019adh\u00e9sion populaire ni l\u2019opinion des \u00e9lecteurs.',
               'Certaines propositions peuvent \u00eatre strat\u00e9giquement floues par choix politique \u2014 cela impacte la note mais ne pr\u00e9juge pas de la sinc\u00e9rit\u00e9.',
             ].map((limit, index) => (
-              <div key={index} className="playful-dash bg-white/72 p-3.5 flex items-start gap-3">
-                <span className="text-palette-yellow mt-0.5 font-bold">!</span>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{limit}</p>
+              <div key={index} className="playful-dash bg-white p-3.5 flex items-start gap-3">
+                <span className="text-score-mixed mt-0.5 font-bold">!</span>
+                <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">{limit}</p>
               </div>
             ))}
           </div>
@@ -408,8 +408,8 @@ export default function MethodologiePage() {
 
         {/* Transparence */}
         <section className="panel-card p-5 sm:p-7">
-          <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-3">Transparence</h2>
-          <p className="text-sm text-slate-700 leading-relaxed">
+          <h2 className="text-lg sm:text-xl font-bold text-ink mb-3">Transparence</h2>
+          <p className="text-sm text-ink-2 leading-relaxed">
             Les scores ne remplacent pas le d&eacute;bat d&eacute;mocratique. Ils structurent la lecture et rendent explicites les zones
             de solidit&eacute;, les contradictions et les points &agrave; clarifier. Chaque citoyen est invit&eacute; &agrave; t&eacute;l&eacute;charger
             les rapports complets et &agrave; se forger sa propre opinion.
