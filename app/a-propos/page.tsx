@@ -1,40 +1,20 @@
 import Link from 'next/link'
+import SiteNav from '@/components/SiteNav'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'A propos | Paris 2026 - Analyse IA',
-  description: 'Qui se cache derriere Paris 2026 IA ? Demarche, motivations et contact.',
+  title: 'À propos | Paris 2026 - Analyse IA',
+  description: 'Qui se cache derrière Paris 2026 IA ? Démarche, motivations et contact.',
 }
 
 export default function AProposPage() {
   return (
     <div className="site-shell min-h-screen">
-      <nav className="site-nav">
-        <div className="site-nav-pill">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-sm font-bold text-ink">Paris 2026</span>
-            <span className="kicker">Labo IA</span>
-          </Link>
-          <div className="flex items-center gap-4 sm:gap-5">
-            <Link href="/#classement" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Classement
-            </Link>
-            <Link href="/methodologie" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Methodo
-            </Link>
-            <Link href="/a-propos" className="text-xs font-medium text-accent transition-colors">
-              A propos
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       <header className="border-b border-[var(--border)]">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
-          <Link href="/" className="text-sm text-ink-3 hover:text-ink inline-block mb-6">
-            &larr; Retour
-          </Link>
-          <span className="kicker mb-3">A propos</span>
+          <span className="kicker mb-3">À propos</span>
           <h1 className="text-3xl sm:text-5xl font-bold text-ink mt-1">
             Qui est derri&egrave;re ce projet ?
           </h1>

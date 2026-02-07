@@ -1,7 +1,6 @@
 import { getCandidateBySlug, candidatesData } from '@/lib/data'
-import { getAnalyseBySlug } from '@/lib/analysesData'
 import ScoreRadar from '@/components/ScoreRadar'
-import AnalyseComplete from '@/components/AnalyseComplete'
+import SiteNav from '@/components/SiteNav'
 import ShareButtons from '@/components/ShareButtons'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -56,7 +55,6 @@ function getGlobalScoreBg(score: number): string {
 export default async function CandidatePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const candidate = getCandidateBySlug(slug)
-  const analyseContent = getAnalyseBySlug(slug)
 
   if (!candidate) {
     notFound()
@@ -70,32 +68,11 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
 
   return (
     <div className="site-shell min-h-screen">
-      <nav className="site-nav">
-        <div className="site-nav-pill">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-sm font-bold text-ink">Paris 2026</span>
-            <span className="kicker">Labo IA</span>
-          </Link>
-          <div className="flex items-center gap-4 sm:gap-5">
-            <Link href="/#classement" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Classement
-            </Link>
-            <Link href="/#candidats" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors hidden sm:block">
-              Candidats
-            </Link>
-            <Link href="/methodologie" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Methodologie
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       <header className="border-b border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-5 sm:px-8 py-8 sm:py-12">
-          <div className="flex items-center justify-between mb-6">
-            <Link href="/#classement" className="text-sm text-ink-3 hover:text-ink">
-              &larr; Retour au classement
-            </Link>
+          <div className="flex items-center justify-end mb-6">
             <ShareButtons candidateName={candidate.name} score={candidate.globalScore} slug={candidate.slug} />
           </div>
 
@@ -278,8 +255,6 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <span className={`font-bold ${getScoreColor(candidate.globalScore)}`}>{candidate.globalScore}/10</span>. {candidate.verdict}
           </p>
         </section>
-
-        {analyseContent && <AnalyseComplete content={analyseContent} />}
 
         <section className="mt-10 sm:mt-14 pt-8 border-t border-[var(--border)] flex flex-col sm:flex-row justify-between gap-4">
           {prevCandidate ? (

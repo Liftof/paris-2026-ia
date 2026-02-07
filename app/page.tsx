@@ -1,6 +1,8 @@
 import { candidatesData } from '@/lib/data'
 import ThemeFilter from '@/components/ThemeFilter'
 import HeroFaces from '@/components/HeroFaces'
+import HeroCandidates from '@/components/HeroCandidates'
+import SiteNav from '@/components/SiteNav'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -33,7 +35,6 @@ const criteria = [
 export default function HomePage() {
   const sortedCandidates = [...candidatesData].sort((a, b) => b.globalScore - a.globalScore)
   const maxScore = sortedCandidates[0]?.globalScore ?? 10
-  const averageScore = (sortedCandidates.reduce((total, candidate) => total + candidate.globalScore, 0) / sortedCandidates.length).toFixed(1)
 
   const allBestMeasures = candidatesData
     .flatMap((candidate) =>
@@ -59,34 +60,13 @@ export default function HomePage() {
 
   return (
     <div className="site-shell min-h-screen">
-      <nav className="site-nav">
-        <div className="site-nav-pill">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-sm font-bold text-ink">Paris 2026</span>
-            <span className="kicker">Labo IA</span>
-          </Link>
-          <div className="flex items-center gap-4 sm:gap-5">
-            <a href="#classement" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Classement
-            </a>
-            <Link href="/comparateur" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors hidden sm:block">
-              Comparer
-            </Link>
-            <Link href="/methodologie" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Méthodo
-            </Link>
-            <Link href="/a-propos" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors hidden sm:block">
-              À propos
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       <header className="border-b border-[var(--border)] relative overflow-hidden">
         <HeroFaces />
         <div className="max-w-5xl mx-auto px-5 sm:px-8 py-16 sm:py-24 relative z-10">
           <div className="floating-in max-w-3xl">
-            <span className="kicker mb-5">Analyse non partisane</span>
+            <span className="kicker mb-5">Municipales Paris 2026</span>
             <h1 className="headline-xl mt-3">
               Les programmes passés au crible de l&apos;IA.
             </h1>
@@ -103,18 +83,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {[
-              { label: 'Candidats', value: String(sortedCandidates.length) },
-              { label: 'Critères publics', value: '5' },
-              { label: 'Moyenne globale', value: `${averageScore}/10` },
-              { label: 'Affiliation', value: 'Aucune' },
-            ].map((stat) => (
-              <div key={stat.label} className="panel-card p-4">
-                <div className="label-mono mb-1">{stat.label}</div>
-                <div className="text-xl sm:text-2xl font-bold text-ink">{stat.value}</div>
-              </div>
-            ))}
+          <div className="mt-12">
+            <HeroCandidates candidates={sortedCandidates.map(c => ({
+              slug: c.slug,
+              name: c.name,
+              photo: c.photo,
+              politicalColor: c.politicalColor,
+              globalScore: c.globalScore,
+            }))} />
           </div>
         </div>
       </header>

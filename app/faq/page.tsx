@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import SiteNav from '@/components/SiteNav'
 
 const faqs = [
   {
@@ -56,31 +57,10 @@ const faqs = [
 export default function FAQPage() {
   return (
     <div className="site-shell min-h-screen">
-      <nav className="site-nav">
-        <div className="site-nav-pill">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-sm font-bold text-ink">Paris 2026</span>
-            <span className="kicker">Labo IA</span>
-          </Link>
-          <div className="flex items-center gap-4 sm:gap-5">
-            <Link href="/#classement" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Classement
-            </Link>
-            <Link href="/methodologie" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Méthodo
-            </Link>
-            <Link href="/faq" className="text-xs font-medium text-accent transition-colors">
-              FAQ
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       <header className="border-b border-[var(--border)]">
         <div className="max-w-4xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
-          <Link href="/" className="text-sm text-ink-3 hover:text-ink inline-block mb-6">
-            &larr; Retour
-          </Link>
           <span className="kicker mb-3">FAQ</span>
           <h1 className="text-2xl sm:text-4xl font-bold text-ink mt-1">Questions fréquentes</h1>
           <p className="text-sm sm:text-base text-ink-3 mt-2">

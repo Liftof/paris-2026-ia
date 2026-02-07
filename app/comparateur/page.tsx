@@ -5,13 +5,14 @@ import { candidatesData } from '@/lib/data'
 import type { Candidate } from '@/types/candidate'
 import Image from 'next/image'
 import Link from 'next/link'
+import SiteNav from '@/components/SiteNav'
 
 const criteriaLabels: { key: keyof Candidate['scores']; label: string }[] = [
-  { key: 'coherence', label: 'Coherence' },
-  { key: 'solidite', label: 'Solidite' },
+  { key: 'coherence', label: 'Cohérence' },
+  { key: 'solidite', label: 'Solidité' },
   { key: 'robustesse', label: 'Robustesse' },
   { key: 'pragmatisme', label: 'Pragmatisme' },
-  { key: 'detail', label: 'Detail' },
+  { key: 'detail', label: 'Détail' },
 ]
 
 function getScoreHex(score: number): string {
@@ -22,7 +23,7 @@ function getScoreHex(score: number): string {
 
 function getScoreLabel(score: number): string {
   if (score >= 7) return 'Solide'
-  if (score >= 5) return 'Mitigue'
+  if (score >= 5) return 'Mitigé'
   return 'Fragile'
 }
 
@@ -91,35 +92,14 @@ export default function ComparateurPage() {
 
   return (
     <div className="site-shell min-h-screen">
-      <nav className="site-nav">
-        <div className="site-nav-pill">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="text-sm font-bold text-ink">Paris 2026</span>
-            <span className="kicker">Labo IA</span>
-          </Link>
-          <div className="flex items-center gap-4 sm:gap-5">
-            <Link href="/#classement" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Classement
-            </Link>
-            <Link href="/comparateur" className="text-xs font-medium text-accent transition-colors">
-              Comparer
-            </Link>
-            <Link href="/methodologie" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Methodo
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteNav />
 
       <header className="border-b border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
-          <Link href="/" className="text-sm text-ink-3 hover:text-ink inline-block mb-6">
-            &larr; Retour
-          </Link>
           <span className="kicker mb-3">Comparateur</span>
-          <h1 className="text-2xl sm:text-4xl font-bold text-ink mt-1">Face-a-face</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold text-ink mt-1">Face-à-face</h1>
           <p className="text-sm sm:text-base text-ink-3 mt-2">
-            Comparez deux candidats critere par critere, theme par theme.
+            Comparez deux candidats critère par critère, thème par thème.
           </p>
         </div>
       </header>
@@ -191,7 +171,7 @@ export default function ComparateurPage() {
                     {winsA}
                   </div>
                   <div className="text-[11px] text-ink-3">
-                    {winsA > 1 ? 'criteres gagnes' : 'critere gagne'}
+                    {winsA > 1 ? 'critères gagnés' : 'critère gagné'}
                   </div>
                 </div>
                 <div className="text-ink-4 text-lg font-bold">VS</div>
@@ -200,15 +180,15 @@ export default function ComparateurPage() {
                     {winsB}
                   </div>
                   <div className="text-[11px] text-ink-3">
-                    {winsB > 1 ? 'criteres gagnes' : 'critere gagne'}
+                    {winsB > 1 ? 'critères gagnés' : 'critère gagné'}
                   </div>
                 </div>
               </div>
             </div>
 
             <section className="panel-card p-5 sm:p-7 mb-8">
-              <h2 className="text-lg sm:text-xl font-bold text-ink mb-1">Comparaison par critere</h2>
-              <p className="text-xs text-ink-3 mb-4">Chaque barre represente la note sur 10.</p>
+              <h2 className="text-lg sm:text-xl font-bold text-ink mb-1">Comparaison par critère</h2>
+              <p className="text-xs text-ink-3 mb-4">Chaque barre représente la note sur 10.</p>
 
               <div className="flex items-center justify-between mb-3 px-2">
                 <span className="text-xs font-semibold text-ink">{candidateA.name.split(' ').pop()}</span>
@@ -231,7 +211,7 @@ export default function ComparateurPage() {
 
             {candidateA.thematicScores.length > 0 && candidateB.thematicScores.length > 0 && (
               <section className="panel-card p-5 sm:p-7 mb-8">
-                <h2 className="text-lg sm:text-xl font-bold text-ink mb-4">Scores thematiques</h2>
+                <h2 className="text-lg sm:text-xl font-bold text-ink mb-4">Scores thématiques</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
                   {candidateA.thematicScores.map((themeA, i) => {
                     const themeB = candidateB.thematicScores[i]
