@@ -7,15 +7,15 @@ interface ScoreRadarProps {
 }
 
 function getScoreColor(value: number): string {
-  if (value >= 7) return '#3B82F6'    // palette blue
-  if (value >= 5) return '#EAB308'    // palette yellow
-  return '#EF4444'                     // palette red
+  if (value >= 7) return '#3B82F6'
+  if (value >= 5) return '#D97706'
+  return '#EA580C'
 }
 
 function getScoreBg(value: number): string {
-  if (value >= 7) return 'bg-palette-blue/10'
-  if (value >= 5) return 'bg-palette-yellow/10'
-  return 'bg-palette-red/10'
+  if (value >= 7) return 'bg-blue-50/70'
+  if (value >= 5) return 'bg-yellow-50/70'
+  return 'bg-red-50/70'
 }
 
 export default function ScoreRadar({ scores }: ScoreRadarProps) {
@@ -24,29 +24,25 @@ export default function ScoreRadar({ scores }: ScoreRadarProps) {
     { key: 'solidite', label: 'Solidité', value: scores.solidite },
     { key: 'robustesse', label: 'Robustesse', value: scores.robustesse },
     { key: 'pragmatisme', label: 'Pragmatisme', value: scores.pragmatisme },
-    { key: 'detail', label: 'Détail', value: scores.detail }
+    { key: 'detail', label: 'Détail', value: scores.detail },
   ]
 
   return (
-    <div className="space-y-5">
-      {criteria.map(criterion => (
-        <div key={criterion.key} className={`p-4 rounded-sm ${getScoreBg(criterion.value)}`}>
-          <div className="flex justify-between items-baseline mb-2">
-            <span className="text-sm uppercase tracking-wider text-gray-600 font-medium">{criterion.label}</span>
-            <span className="text-2xl font-light" style={{ color: getScoreColor(criterion.value) }}>
-              {criterion.value.toFixed(1)}<span className="text-sm text-gray-400">/10</span>
+    <div className="space-y-4">
+      {criteria.map((criterion) => (
+        <div key={criterion.key} className={`playful-dash p-4 ${getScoreBg(criterion.value)}`}>
+          <div className="flex justify-between items-end mb-2">
+            <span className="text-xs sm:text-sm uppercase tracking-[0.12em] text-slate-600 font-semibold">{criterion.label}</span>
+            <span className="text-2xl font-semibold" style={{ color: getScoreColor(criterion.value) }}>
+              {criterion.value.toFixed(1)}
+              <span className="text-sm text-slate-500">/10</span>
             </span>
           </div>
-          <div className="relative">
-            <div className="w-full bg-gray-200/50 h-2 rounded-full">
-              <div
-                className="h-2 rounded-full transition-all duration-700"
-                style={{
-                  width: `${(criterion.value / 10) * 100}%`,
-                  backgroundColor: getScoreColor(criterion.value)
-                }}
-              />
-            </div>
+          <div className="w-full h-2 rounded-full bg-slate-200/70">
+            <div
+              className="h-2 rounded-full transition-all duration-700"
+              style={{ width: `${(criterion.value / 10) * 100}%`, backgroundColor: getScoreColor(criterion.value) }}
+            />
           </div>
         </div>
       ))}

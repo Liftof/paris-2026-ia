@@ -11,190 +11,205 @@ function getScoreColor(score: number): string {
 
 function getScoreHex(score: number): string {
   if (score >= 7) return '#3B82F6'
-  if (score >= 5) return '#EAB308'
-  return '#EF4444'
+  if (score >= 5) return '#D97706'
+  return '#EA580C'
 }
 
 function getScoreLabel(score: number): string {
   if (score >= 7) return 'Solide'
   if (score >= 5) return 'Mitigé'
-  return 'Insuffisant'
+  return 'Fragile'
 }
+
+const criteria = [
+  { key: 'coherence', label: 'Cohérence' },
+  { key: 'solidite', label: 'Solidité' },
+  { key: 'robustesse', label: 'Robustesse' },
+  { key: 'pragmatisme', label: 'Pragmatisme' },
+  { key: 'detail', label: 'Détail' },
+] as const
 
 export default function HomePage() {
   const sortedCandidates = [...candidatesData].sort((a, b) => b.globalScore - a.globalScore)
-  const maxScore = sortedCandidates[0].globalScore
+  const maxScore = sortedCandidates[0]?.globalScore ?? 10
 
-  const allBestMeasures = candidatesData.flatMap(c =>
-    c.bestMeasures.map(m => ({ ...m, candidate: c.name, slug: c.slug, photo: c.photo }))
-  ).slice(0, 6)
+  const allBestMeasures = candidatesData
+    .flatMap((candidate) =>
+      candidate.bestMeasures.map((measure) => ({
+        ...measure,
+        candidate: candidate.name,
+        slug: candidate.slug,
+        photo: candidate.photo,
+      })),
+    )
+    .slice(0, 6)
 
-  const allWorstMeasures = candidatesData.flatMap(c =>
-    c.worstMeasures.map(m => ({ ...m, candidate: c.name, slug: c.slug, photo: c.photo }))
-  ).slice(0, 6)
-
-  const criteria = ['coherence', 'solidite', 'robustesse', 'pragmatisme', 'detail'] as const
-  const criteriaLabels: Record<string, string> = {
-    coherence: 'Cohérence',
-    solidite: 'Solidité',
-    robustesse: 'Robustesse',
-    pragmatisme: 'Pragmatisme',
-    detail: 'Détail',
-  }
+  const allWorstMeasures = candidatesData
+    .flatMap((candidate) =>
+      candidate.worstMeasures.map((measure) => ({
+        ...measure,
+        candidate: candidate.name,
+        slug: candidate.slug,
+        photo: candidate.photo,
+      })),
+    )
+    .slice(0, 6)
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Nav */}
-      <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-lg font-bold text-gray-900">Paris 2026</span>
-            <span className="text-xs bg-palette-blue/10 text-palette-blue px-2 py-0.5 rounded-full font-medium">IA</span>
+    <div className="site-shell min-h-screen">
+      <nav className="site-nav sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+          <Link href="/" className="flex items-center gap-2.5">
+            <span className="text-lg font-bold text-slate-900">Paris 2026</span>
+            <span className="kicker">IA</span>
           </Link>
-          <div className="flex items-center gap-4 sm:gap-6">
-            <a href="#candidats" className="text-sm text-gray-500 hover:text-gray-900 transition-colors hidden sm:block">
+          <div className="flex items-center gap-3 sm:gap-6">
+            <a href="#candidats" className="text-sm text-slate-500 hover:text-slate-900 hidden sm:block">
               Candidats
             </a>
-            <Link href="/methodologie" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">
+            <Link href="/methodologie" className="text-sm text-slate-500 hover:text-slate-900">
               Méthodologie
             </Link>
           </div>
         </div>
       </nav>
 
-      {/* Hero */}
-      <div className="relative border-b border-gray-200 overflow-hidden">
-        {/* Subtle Paris background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.04]"
-          style={{ backgroundImage: 'url(/paris-bg.png)' }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/95 to-white" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
-              Qui a le meilleur programme pour Paris&nbsp;?
-            </h1>
-            <p className="text-base sm:text-lg text-gray-500 leading-relaxed mb-10">
-              L&apos;IA analyse les programmes des 6 candidats aux municipales 2026.
-              Évaluation objective, transparente et non-partisane.
-            </p>
-          </div>
+      <header className="relative overflow-hidden border-b border-slate-200/60">
+        <div className="absolute -left-14 top-10 w-40 h-40 rounded-full bg-sky-200/40 blur-2xl" />
+        <div className="absolute right-0 top-4 w-44 h-44 rounded-full bg-amber-200/50 blur-2xl" />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
+          <div className="hero-panel floating-in p-6 sm:p-10 relative overflow-hidden">
+            <div className="absolute -right-12 -top-10 w-32 h-32 rounded-full border border-slate-200/70" />
+            <div className="absolute right-16 top-8 w-3 h-3 rounded-full bg-amber-400/80" />
+            <div className="absolute right-8 top-16 w-2 h-2 rounded-full bg-sky-500/70" />
 
-          {/* Candidate faces with political color rings */}
-          <div className="flex items-end justify-center gap-4 sm:gap-6 mt-2 mb-2">
-            {sortedCandidates.map((candidate) => (
-              <Link key={candidate.slug} href={`/candidats/${candidate.slug}`} className="group flex flex-col items-center gap-2">
-                <div
-                  className="relative w-14 h-14 sm:w-[72px] sm:h-[72px] rounded-full p-[3px] transition-transform group-hover:scale-110"
-                  style={{ background: `linear-gradient(135deg, ${candidate.politicalColor}, ${candidate.politicalColor}88)` }}
-                >
-                  <div className="w-full h-full rounded-full overflow-hidden bg-white">
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={candidate.photo}
-                        alt={candidate.name}
-                        fill
-                        className="object-cover rounded-full"
-                        sizes="72px"
-                      />
+            <div className="grid lg:grid-cols-[1fr_280px] gap-8 items-start">
+              <div>
+                <span className="kicker mb-4">Observatoire citoyen</span>
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                  Quel programme tient vraiment la route pour Paris ?
+                </h1>
+                <p className="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+                  Nous comparons les 6 candidats avec une grille commune. Le rendu est plus vivant,
+                  mais l&apos;analyse reste stricte, transparente et lisible.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-2.5">
+                  <span className="soft-chip">Non partisan</span>
+                  <span className="soft-chip">Programmes officiels</span>
+                  <span className="soft-chip">5 critères publics</span>
+                  <span className="soft-chip">Mise à jour février 2026</span>
+                </div>
+              </div>
+
+              <div className="playful-dash bg-white/72 p-4 sm:p-5">
+                <div className="text-[11px] uppercase tracking-[0.16em] text-slate-500 font-semibold mb-3">Top 3 actuel</div>
+                <div className="space-y-3">
+                  {sortedCandidates.slice(0, 3).map((candidate, index) => (
+                    <Link key={candidate.slug} href={`/candidats/${candidate.slug}`} className="block group">
+                      <div className="score-pill flex items-center gap-3 group-hover:border-slate-300 transition-colors">
+                        <span className="text-xs font-bold text-slate-400 w-5">#{index + 1}</span>
+                        <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-white">
+                          <Image src={candidate.photo} alt={candidate.name} fill className="object-cover" sizes="36px" />
+                        </div>
+                        <div className="min-w-0 flex-1">
+                          <div className="text-sm font-semibold text-slate-900 truncate">{candidate.name}</div>
+                          <div className="text-xs text-slate-500 truncate">{candidate.party}</div>
+                        </div>
+                        <span className={`text-sm font-bold ${getScoreColor(candidate.globalScore)}`}>
+                          {candidate.globalScore}/10
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="playful-dash bg-white/60 mt-7 sm:mt-8 p-3 sm:p-4">
+              <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+                {sortedCandidates.map((candidate) => (
+                  <Link key={candidate.slug} href={`/candidats/${candidate.slug}`} className="group flex flex-col items-center gap-1.5">
+                    <div
+                      className="relative w-14 h-14 sm:w-[70px] sm:h-[70px] rounded-full p-[3px] transition-transform group-hover:scale-105"
+                      style={{ background: `linear-gradient(140deg, ${candidate.politicalColor}, ${candidate.politicalColor}77)` }}
+                    >
+                      <div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-white">
+                        <Image src={candidate.photo} alt={candidate.name} fill className="object-cover" sizes="70px" />
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <div className="text-[10px] sm:text-xs font-medium text-gray-700 group-hover:text-gray-900">
-                    {candidate.name.split(' ').pop()}
-                  </div>
-                  <div className={`text-[10px] sm:text-xs font-bold ${getScoreColor(candidate.globalScore)}`}>
-                    {candidate.globalScore}/10
-                  </div>
-                </div>
-              </Link>
-            ))}
+                    <span className="text-[11px] sm:text-xs font-semibold text-slate-700 group-hover:text-slate-900">
+                      {candidate.name.split(' ').pop()}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </header>
 
       <main className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
-
-        {/* ===== SECTION 1: CLASSEMENT ===== */}
-        <div id="classement" className="mb-10 sm:mb-14 scroll-mt-20">
-          <div className="flex items-end justify-between mb-6">
+        <section id="classement" className="mb-10 sm:mb-14 scroll-mt-24">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
             <div>
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Classement général</h2>
-              <p className="text-sm text-gray-500 mt-1">Note globale sur 10 — cliquez pour l&apos;analyse détaillée</p>
+              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Classement général</h2>
+              <p className="text-sm text-slate-500 mt-2">Cliquez sur un profil pour l&apos;analyse complète.</p>
             </div>
-            <div className="hidden sm:flex items-center gap-4 text-[10px] uppercase tracking-wider">
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-palette-blue" /> Solide (&ge;7)</span>
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-palette-yellow" /> Mitigé (5-7)</span>
-              <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-palette-red" /> Insuffisant (&lt;5)</span>
+            <div className="flex flex-wrap gap-2 text-[10px] uppercase tracking-[0.12em] font-semibold">
+              <span className="soft-chip text-palette-blue">Solide 7+</span>
+              <span className="soft-chip text-palette-yellow">Mitigé 5-7</span>
+              <span className="soft-chip text-palette-red">Fragile {'<'}5</span>
             </div>
           </div>
           <div className="space-y-3">
             {sortedCandidates.map((candidate, index) => (
-              <CandidateCard
-                key={candidate.slug}
-                candidate={candidate}
-                rank={index + 1}
-              />
+              <CandidateCard key={candidate.slug} candidate={candidate} rank={index + 1} />
             ))}
           </div>
-        </div>
+        </section>
 
-        {/* ===== SECTION 2: COMPARATIF VISUEL ===== */}
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 mb-10 sm:mb-14">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">Comparatif par critère</h2>
-          <p className="text-sm text-gray-500 mb-8">Comment chaque candidat performe sur les 5 critères d&apos;évaluation</p>
+        <section className="panel-card p-5 sm:p-8 mb-10 sm:mb-14">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Comparatif par critère</h2>
+          <p className="text-sm text-slate-500 mt-1 mb-6">
+            Lecture horizontale: voyez rapidement les points forts et les zones fragiles de chaque candidat.
+          </p>
 
-          {/* Visual comparison grid */}
           <div className="overflow-x-auto -mx-2 px-2">
-            <table className="w-full min-w-[600px]">
+            <table className="w-full min-w-[640px]">
               <thead>
                 <tr>
-                  <th className="text-left text-xs font-medium text-gray-400 pb-4 w-28" />
-                  {sortedCandidates.map(c => (
-                    <th key={c.slug} className="text-center pb-4 px-1">
-                      <Link href={`/candidats/${c.slug}`} className="group">
-                        <div
-                          className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full mx-auto mb-1.5 p-[2px]"
-                          style={{ background: c.politicalColor }}
-                        >
-                          <div className="w-full h-full rounded-full overflow-hidden">
-                            <div className="relative w-full h-full">
-                              <Image src={c.photo} alt={c.name} fill className="object-cover rounded-full" sizes="40px" />
-                            </div>
-                          </div>
+                  <th className="text-left text-xs text-slate-500 pb-4 w-32">Critères</th>
+                  {sortedCandidates.map((candidate) => (
+                    <th key={candidate.slug} className="pb-4 text-center px-1">
+                      <Link href={`/candidats/${candidate.slug}`} className="group inline-flex flex-col items-center gap-1">
+                        <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-white shadow-sm">
+                          <Image src={candidate.photo} alt={candidate.name} fill className="object-cover" sizes="40px" />
                         </div>
-                        <div className="text-[10px] sm:text-[11px] font-medium text-gray-600 group-hover:text-gray-900 truncate max-w-[80px] mx-auto">
-                          {c.name.split(' ').pop()}
-                        </div>
+                        <span className="text-[11px] text-slate-600 font-medium group-hover:text-slate-900 truncate max-w-[88px]">
+                          {candidate.name.split(' ').pop()}
+                        </span>
                       </Link>
                     </th>
                   ))}
                 </tr>
               </thead>
               <tbody>
-                {criteria.map(criterion => (
-                  <tr key={criterion} className="border-t border-gray-100">
-                    <td className="text-xs font-medium text-gray-600 py-3 pr-4">{criteriaLabels[criterion]}</td>
-                    {sortedCandidates.map(c => {
-                      const score = c.scores[criterion]
+                {criteria.map((criterion) => (
+                  <tr key={criterion.key} className="border-t border-slate-200/70">
+                    <td className="text-xs sm:text-sm font-semibold text-slate-700 py-3 pr-3">{criterion.label}</td>
+                    {sortedCandidates.map((candidate) => {
+                      const score = candidate.scores[criterion.key]
                       return (
-                        <td key={c.slug} className="text-center py-3 px-1">
-                          <div className="flex flex-col items-center gap-1">
-                            <span
-                              className="text-sm sm:text-base font-bold"
-                              style={{ color: getScoreHex(score) }}
-                            >
+                        <td key={candidate.slug} className="py-3 px-1 text-center">
+                          <div className="flex flex-col items-center gap-1.5">
+                            <span className="text-sm sm:text-base font-bold" style={{ color: getScoreHex(score) }}>
                               {score.toFixed(1)}
                             </span>
-                            <div className="w-full max-w-[60px] bg-gray-100 h-1.5 rounded-full mx-auto">
+                            <div className="w-full max-w-[62px] h-1.5 rounded-full bg-slate-200/60">
                               <div
                                 className="h-1.5 rounded-full"
-                                style={{
-                                  width: `${(score / 10) * 100}%`,
-                                  backgroundColor: getScoreHex(score)
-                                }}
+                                style={{ width: `${(score / 10) * 100}%`, backgroundColor: getScoreHex(score) }}
                               />
                             </div>
                           </div>
@@ -203,16 +218,12 @@ export default function HomePage() {
                     })}
                   </tr>
                 ))}
-                {/* Global score row */}
-                <tr className="border-t-2 border-gray-200">
-                  <td className="text-xs font-bold text-gray-900 py-3 pr-4 uppercase tracking-wider">Global</td>
-                  {sortedCandidates.map(c => (
-                    <td key={c.slug} className="text-center py-3 px-1">
-                      <span
-                        className="text-lg sm:text-xl font-bold"
-                        style={{ color: getScoreHex(c.globalScore) }}
-                      >
-                        {c.globalScore}
+                <tr className="border-t-2 border-slate-300/70">
+                  <td className="text-xs sm:text-sm font-bold text-slate-900 py-3 pr-3 uppercase tracking-[0.12em]">Global</td>
+                  {sortedCandidates.map((candidate) => (
+                    <td key={candidate.slug} className="text-center py-3 px-1">
+                      <span className="text-lg sm:text-xl font-bold" style={{ color: getScoreHex(candidate.globalScore) }}>
+                        {candidate.globalScore}
                       </span>
                     </td>
                   ))}
@@ -220,70 +231,66 @@ export default function HomePage() {
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
 
-        {/* ===== SECTION 3: PODIUM VISUEL (score bars) ===== */}
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 mb-10 sm:mb-14">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Scores globaux</h2>
+        <section className="panel-card p-5 sm:p-8 mb-10 sm:mb-14">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Scores globaux</h2>
+            <span className="text-xs uppercase tracking-[0.12em] text-slate-500 font-semibold">Vue rapide type podium</span>
+          </div>
           <div className="space-y-4">
-            {sortedCandidates.map((candidate, i) => (
-              <div key={candidate.slug} className="flex items-center gap-3 sm:gap-4">
-                <div className="flex items-center gap-2.5 w-36 sm:w-44 shrink-0">
-                  <span className="text-xs font-bold text-gray-400 w-4">{i + 1}</span>
-                  <div
-                    className="relative w-8 h-8 rounded-full p-[2px] shrink-0"
-                    style={{ background: candidate.politicalColor }}
-                  >
-                    <div className="w-full h-full rounded-full overflow-hidden">
-                      <div className="relative w-full h-full">
-                        <Image src={candidate.photo} alt={candidate.name} fill className="object-cover rounded-full" sizes="32px" />
+            {sortedCandidates.map((candidate, index) => (
+              <div key={candidate.slug} className="playful-dash bg-white/72 p-3 sm:p-4">
+                <div className="flex items-center gap-3 sm:gap-4">
+                  <span className="text-xs font-bold text-slate-400 w-5">#{index + 1}</span>
+                  <div className="relative w-9 h-9 rounded-full overflow-hidden ring-2 ring-white">
+                    <Image src={candidate.photo} alt={candidate.name} fill className="object-cover" sizes="36px" />
+                  </div>
+                  <span className="text-sm sm:text-base font-semibold text-slate-900 w-28 sm:w-36 truncate">
+                    {candidate.name.split(' ').pop()}
+                  </span>
+
+                  <div className="flex-1 flex items-center gap-3">
+                    <div className="flex-1 h-6 rounded-full bg-slate-200/60 overflow-hidden">
+                      <div
+                        className="h-full rounded-full flex items-center"
+                        style={{
+                          width: `${(candidate.globalScore / maxScore) * 100}%`,
+                          backgroundColor: getScoreHex(candidate.globalScore),
+                        }}
+                      >
+                        <span className="text-[11px] font-semibold text-white ml-3">{candidate.globalScore}/10</span>
                       </div>
                     </div>
+                    <span className={`text-[11px] font-bold uppercase tracking-[0.12em] hidden sm:inline ${getScoreColor(candidate.globalScore)}`}>
+                      {getScoreLabel(candidate.globalScore)}
+                    </span>
                   </div>
-                  <span className="text-sm font-medium text-gray-900 truncate">{candidate.name.split(' ').pop()}</span>
-                </div>
-                <div className="flex-1 flex items-center gap-3">
-                  <div className="flex-1 bg-gray-100 h-6 sm:h-7 rounded-full overflow-hidden relative">
-                    <div
-                      className="h-full rounded-full flex items-center transition-all"
-                      style={{
-                        width: `${(candidate.globalScore / maxScore) * 100}%`,
-                        backgroundColor: getScoreHex(candidate.globalScore),
-                      }}
-                    >
-                      <span className="text-white text-xs font-bold ml-3 drop-shadow-sm">
-                        {candidate.globalScore}/10
-                      </span>
-                    </div>
-                  </div>
-                  <span className={`text-[10px] font-semibold uppercase tracking-wider w-16 text-right hidden sm:block ${getScoreColor(candidate.globalScore)}`}>
-                    {getScoreLabel(candidate.globalScore)}
-                  </span>
                 </div>
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        {/* ===== SECTION 4: MEILLEURES & PIRES MESURES ===== */}
-        <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-10 sm:mb-14">
-          {/* Best */}
-          <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100">
+        <section className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-10 sm:mb-14">
+          <div className="panel-card p-5 sm:p-7">
             <div className="flex items-center gap-2 mb-1">
               <span className="w-2 h-5 rounded-full bg-palette-blue" />
-              <h2 className="text-lg sm:text-xl font-bold text-gray-900">Meilleures mesures</h2>
+              <h2 className="text-xl font-bold text-slate-900">Mesures les plus solides</h2>
             </div>
-            <p className="text-xs text-gray-500 mb-5 ml-4">Les propositions les plus solides, tous candidats confondus</p>
+            <p className="text-xs text-slate-500 mb-5 ml-4">Extraits des propositions les mieux argumentées.</p>
             <div className="space-y-3">
-              {allBestMeasures.map((measure, i) => (
-                <Link key={i} href={`/candidats/${measure.slug}`} className="block group">
-                  <div className="flex items-start gap-3 py-2 px-3 rounded-lg hover:bg-blue-50/50 transition-colors">
-                    <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 mt-0.5 border border-gray-200">
-                      <Image src={measure.photo} alt={measure.candidate} fill className="object-cover" sizes="28px" />
-                    </div>
-                    <div className="min-w-0">
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-palette-blue transition-colors">{measure.title}</div>
-                      <div className="text-xs text-gray-500 mt-0.5 line-clamp-1">{measure.detail}</div>
+              {allBestMeasures.map((measure, index) => (
+                <Link key={`${measure.slug}-${index}`} href={`/candidats/${measure.slug}`} className="block group">
+                  <div className="playful-dash bg-white/70 p-3 sm:p-3.5">
+                    <div className="flex items-start gap-3">
+                      <div className="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-white shrink-0">
+                        <Image src={measure.photo} alt={measure.candidate} fill className="object-cover" sizes="32px" />
+                      </div>
+                      <div>
+                        <div className="text-sm font-semibold text-slate-900 group-hover:text-palette-blue">{measure.title}</div>
+                        <div className="text-xs text-slate-500 mt-1 line-clamp-2">{measure.detail}</div>
+                      </div>
                     </div>
                   </div>
                 </Link>
@@ -291,79 +298,72 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Worst */}
-          <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100">
+          <div className="panel-card p-5 sm:p-7">
             <div className="flex items-center gap-2 mb-1">
               <span className="w-2 h-5 rounded-full bg-palette-red" />
-              <h2 className="text-lg sm:text-xl font-bold text-gray-900">Mesures problématiques</h2>
+              <h2 className="text-xl font-bold text-slate-900">Mesures fragiles</h2>
             </div>
-            <p className="text-xs text-gray-500 mb-5 ml-4">Les propositions jugées irréalistes ou insuffisantes</p>
+            <p className="text-xs text-slate-500 mb-5 ml-4">Points qui demandent précision, chiffrage ou faisabilité.</p>
             <div className="space-y-3">
-              {allWorstMeasures.map((measure, i) => (
-                <Link key={i} href={`/candidats/${measure.slug}`} className="block group">
-                  <div className="flex items-start gap-3 py-2 px-3 rounded-lg hover:bg-red-50/50 transition-colors">
-                    <div className="relative w-7 h-7 rounded-full overflow-hidden shrink-0 mt-0.5 border border-gray-200">
-                      <Image src={measure.photo} alt={measure.candidate} fill className="object-cover" sizes="28px" />
-                    </div>
-                    <div className="min-w-0">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-sm font-semibold text-gray-900 group-hover:text-palette-red transition-colors">{measure.title}</span>
-                        {measure.type === 'unrealistic' && (
-                          <span className="text-[9px] uppercase tracking-wider px-1.5 py-0.5 bg-palette-red/10 text-palette-red rounded font-bold">irréaliste</span>
-                        )}
+              {allWorstMeasures.map((measure, index) => (
+                <Link key={`${measure.slug}-${index}`} href={`/candidats/${measure.slug}`} className="block group">
+                  <div className="playful-dash bg-white/70 p-3 sm:p-3.5">
+                    <div className="flex items-start gap-3">
+                      <div className="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-white shrink-0">
+                        <Image src={measure.photo} alt={measure.candidate} fill className="object-cover" sizes="32px" />
                       </div>
-                      <div className="text-xs text-gray-500 mt-0.5 line-clamp-1">{measure.detail}</div>
+                      <div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-sm font-semibold text-slate-900 group-hover:text-palette-red">{measure.title}</span>
+                          {measure.type === 'unrealistic' && (
+                            <span className="text-[9px] uppercase tracking-[0.12em] px-1.5 py-0.5 rounded bg-palette-red/10 text-palette-red font-bold">
+                              irréaliste
+                            </span>
+                          )}
+                        </div>
+                        <div className="text-xs text-slate-500 mt-1 line-clamp-2">{measure.detail}</div>
+                      </div>
                     </div>
                   </div>
                 </Link>
               ))}
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* ===== SECTION 5: LES CANDIDATS (profils politiques) ===== */}
-        <div id="candidats" className="scroll-mt-20 mb-10 sm:mb-14">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">Les candidats</h2>
-          <p className="text-sm text-gray-500 mb-6">Positionnement politique et accès aux programmes officiels</p>
+        <section id="candidats" className="mb-10 sm:mb-14 scroll-mt-24">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Les candidats</h2>
+          <p className="text-sm text-slate-500 mt-2 mb-6">Positionnement politique et lien vers le programme officiel.</p>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {sortedCandidates.map((candidate) => (
-              <div key={candidate.slug} className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-all group">
-                <div className="h-1" style={{ backgroundColor: candidate.politicalColor }} />
+              <div key={candidate.slug} className="panel-card overflow-hidden">
+                <div className="h-1.5" style={{ backgroundColor: candidate.politicalColor }} />
                 <div className="p-5">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div
-                      className="relative w-11 h-11 rounded-full p-[2px] shrink-0"
-                      style={{ background: candidate.politicalColor }}
-                    >
-                      <div className="w-full h-full rounded-full overflow-hidden">
-                        <div className="relative w-full h-full">
-                          <Image src={candidate.photo} alt={candidate.name} fill className="object-cover rounded-full" sizes="44px" />
-                        </div>
-                      </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="relative w-11 h-11 rounded-full overflow-hidden ring-2 ring-white shrink-0">
+                      <Image src={candidate.photo} alt={candidate.name} fill className="object-cover" sizes="44px" />
                     </div>
                     <div className="min-w-0">
-                      <h3 className="text-sm font-bold text-gray-900">{candidate.name}</h3>
-                      <div className="flex items-center gap-1.5 mt-0.5">
-                        <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: candidate.politicalColor }} />
-                        <span className="text-xs text-gray-500 truncate">{candidate.party}</span>
-                      </div>
+                      <h3 className="text-sm font-bold text-slate-900 truncate">{candidate.name}</h3>
+                      <div className="text-xs text-slate-500 truncate">{candidate.party}</div>
                     </div>
-                    <div className={`ml-auto text-lg font-bold shrink-0 ${getScoreColor(candidate.globalScore)}`}>
-                      {candidate.globalScore}
-                    </div>
+                    <span className={`ml-auto text-lg font-bold ${getScoreColor(candidate.globalScore)}`}>{candidate.globalScore}</span>
                   </div>
-                  <p className="text-xs text-gray-600 leading-relaxed mb-4">{candidate.politicalLine}</p>
+
+                  <p className="text-xs text-slate-600 leading-relaxed mb-4">{candidate.politicalLine}</p>
+
                   <div className="flex items-center justify-between">
                     <a
                       href={candidate.campaignUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs font-semibold hover:underline transition-colors"
+                      className="text-xs font-semibold"
                       style={{ color: candidate.politicalColor }}
                     >
-                      Programme officiel &rarr;
+                      Programme officiel →
                     </a>
-                    <Link href={`/candidats/${candidate.slug}`} className="text-xs text-gray-400 hover:text-gray-900 transition-colors">
+                    <Link href={`/candidats/${candidate.slug}`} className="text-xs text-slate-500 hover:text-slate-900">
                       Analyse IA
                     </Link>
                   </div>
@@ -371,46 +371,42 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
+        </section>
 
-        {/* ===== SECTION 6: COMMENT ÇA MARCHE ===== */}
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-sm border border-gray-100 mb-10 sm:mb-14">
+        <section className="panel-card p-5 sm:p-8 mb-10 sm:mb-14">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Comment ça marche ?</h2>
-            <Link href="/methodologie" className="text-sm text-palette-blue font-medium hover:underline">
-              Méthodologie complète &rarr;
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Comment lire les résultats</h2>
+            <Link href="/methodologie" className="text-sm text-palette-blue font-semibold hover:underline">
+              Voir la méthodologie complète →
             </Link>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+
+          <div className="note-grid">
             {[
-              { name: 'Cohérence', desc: 'Logique interne du programme', color: '#3B82F6' },
-              { name: 'Solidité', desc: 'Justifications et robustesse technique', color: '#3B82F6' },
-              { name: 'Robustesse', desc: 'Réalisme financier et budgétaire', color: '#EAB308' },
-              { name: 'Pragmatisme', desc: 'Faisabilité et calendrier', color: '#EAB308' },
-              { name: 'Détail', desc: 'Précision des mesures', color: '#EF4444' },
-            ].map((c, i) => (
-              <div key={c.name} className="bg-gray-50 rounded-lg p-3 sm:p-4 text-center">
-                <div className="w-8 h-8 rounded-full mx-auto mb-2 flex items-center justify-center text-white text-xs font-bold" style={{ backgroundColor: c.color }}>
-                  {i + 1}
+              { name: 'Cohérence', desc: 'Vision sans contradiction', color: '#3B82F6' },
+              { name: 'Solidité', desc: 'Arguments et contraintes', color: '#3B82F6' },
+              { name: 'Robustesse', desc: 'Capacité à tenir dans le temps', color: '#D97706' },
+              { name: 'Pragmatisme', desc: 'Exécution réaliste', color: '#D97706' },
+              { name: 'Détail', desc: 'Précision des mesures', color: '#EA580C' },
+            ].map((criterion, index) => (
+              <div key={criterion.name} className="playful-dash bg-white/74 p-3.5 sm:p-4">
+                <div
+                  className="w-8 h-8 rounded-full text-white text-xs font-bold flex items-center justify-center mb-2"
+                  style={{ backgroundColor: criterion.color }}
+                >
+                  {index + 1}
                 </div>
-                <div className="text-xs font-semibold text-gray-900">{c.name}</div>
-                <div className="text-[10px] text-gray-500 mt-0.5 leading-snug hidden sm:block">{c.desc}</div>
+                <div className="text-sm font-semibold text-slate-900">{criterion.name}</div>
+                <div className="text-xs text-slate-500 mt-1 leading-relaxed">{criterion.desc}</div>
               </div>
             ))}
           </div>
-          <div className="mt-6 flex flex-wrap gap-6 text-xs text-gray-500">
-            <span>Non-partisan</span>
-            <span>Open source</span>
-            <span>Basé sur les programmes officiels</span>
-            <span>Février 2026</span>
-          </div>
-        </div>
+        </section>
 
-        {/* Footer */}
-        <footer className="pt-8 sm:pt-10 border-t border-gray-200">
-          <p className="text-xs text-gray-400 text-center leading-relaxed">
-            Analyse réalisée par intelligence artificielle sur la base des programmes officiels publiés.
-            <br />Aucune affiliation politique. Février 2026.
+        <footer className="pt-8 pb-2 border-t border-slate-200/70">
+          <p className="text-xs text-slate-500 text-center leading-relaxed">
+            Analyse automatisée à partir de documents publics. Pas d&apos;affiliation politique.
+            <br />Projet d&apos;aide à la lecture citoyenne, février 2026.
           </p>
         </footer>
       </main>
