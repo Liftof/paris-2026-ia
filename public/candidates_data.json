@@ -1,0 +1,236 @@
+{
+  "candidates": [
+    {
+      "slug": "bournazel",
+      "name": "Pierre-Yves Bournazel",
+      "party": "Horizons + Renaissance",
+      "score": 7.8,
+      "scores": {
+        "coherence": 7.5,
+        "solidite": 8.0,
+        "robustesse": 7.5,
+        "pragmatisme": 8.0,
+        "detail": 8.5
+      },
+      "strengths": [
+        "Programme très structuré avec chiffrages et calendriers",
+        "Vision cohérente d'une ville mieux gérée",
+        "S'inspire de métropoles européennes (Londres, Stockholm)"
+      ],
+      "weaknesses": [
+        "Défis opérationnels majeurs (6000 policiers)",
+        "Nombreuses propositions nécessitent des lois nationales",
+        "Hypothèses budgétaires optimistes"
+      ],
+      "unrealistic_measures": [
+        {
+          "title": "6000 policiers municipaux en 6 ans",
+          "detail": "Recrutement de 800-1000 agents/an avec capacités de formation insuffisantes"
+        },
+        {
+          "title": "Division de la dette par deux",
+          "detail": "Nécessite 800M€/an et dépend de cessions d'actifs aléatoires"
+        },
+        {
+          "title": "Vente de 20 000 logements sociaux",
+          "detail": "Opposition politique prévisible, valorisation optimiste à 150k€/unité"
+        }
+      ]
+    },
+    {
+      "slug": "chikirou",
+      "name": "Sophia Chikirou",
+      "party": "La France Insoumise",
+      "score": 7.2,
+      "scores": {
+        "coherence": 8.5,
+        "solidite": 6.5,
+        "robustesse": 5.5,
+        "pragmatisme": 6.0,
+        "detail": 7.5
+      },
+      "strengths": [
+        "Vision systémique articulant social et écologique",
+        "Ambition sociale remarquable (80 000 logements)",
+        "Démocratie participative approfondie"
+      ],
+      "weaknesses": [
+        "Financement insuffisamment détaillé",
+        "Nombreuses mesures hors compétences municipales",
+        "Calendrier de mise en œuvre irréaliste"
+      ],
+      "unrealistic_measures": [
+        {
+          "title": "100 000 logements sociaux en 10 ans",
+          "detail": "Nécessite de doubler le rythme actuel, coût de plusieurs milliards non sourcé"
+        },
+        {
+          "title": "Gratuité des transports -25 ans",
+          "detail": "Coût non chiffré (100-200M€/an) et dépend de la Région"
+        },
+        {
+          "title": "40% de désimperméabilisation en 6 ans",
+          "detail": "Délai impossible vu l'ampleur des travaux urbains nécessaires"
+        }
+      ]
+    },
+    {
+      "slug": "gregoire",
+      "name": "Emmanuel Grégoire",
+      "party": "PS + gauche unie",
+      "score": 6.8,
+      "scores": {
+        "coherence": 8.0,
+        "solidite": 6.0,
+        "robustesse": 4.0,
+        "pragmatisme": 5.0,
+        "detail": 7.0
+      },
+      "strengths": [
+        "Programme ambitieux sur le logement social (60 000)",
+        "Vision claire de Paris ville inclusive et écologique",
+        "Continuité avec bilan Hidalgo tout en s'émancipant"
+      ],
+      "weaknesses": [
+        "Manque de chiffrages budgétaires précis",
+        "Dépendances fortes à l'État et la Région",
+        "Propositions parfois hors compétences municipales"
+      ],
+      "unrealistic_measures": [
+        {
+          "title": "60 000 nouveaux logements sociaux",
+          "detail": "Objectif très ambitieux sans plan de financement détaillé"
+        },
+        {
+          "title": "Paris 100% cyclable",
+          "detail": "Transformation radicale de la voirie en 6 ans peu réaliste"
+        },
+        {
+          "title": "Neutralité carbone 2030",
+          "detail": "Délai trop court pour une transformation si profonde"
+        }
+      ]
+    },
+    {
+      "slug": "dati",
+      "name": "Rachida Dati",
+      "party": "Les Républicains + MoDem",
+      "score": 5.5,
+      "scores": {
+        "coherence": 5.0,
+        "solidite": 6.0,
+        "robustesse": 4.5,
+        "pragmatisme": 6.5,
+        "detail": 5.5
+      },
+      "strengths": [
+        "Propositions concrètes sur la sécurité (5000 policiers)",
+        "Volet famille détaillé (crèches, écoles, handicap)",
+        "Expérience de gestion (maire du 7e)"
+      ],
+      "weaknesses": [
+        "Absence totale de chiffrage budgétaire",
+        "Angles morts majeurs (culture, économie, environnement)",
+        "Contradictions avec son bilan d'élue"
+      ],
+      "unrealistic_measures": [
+        {
+          "title": "5000 policiers municipaux",
+          "detail": "Aucun plan de recrutement ni de financement présenté"
+        },
+        {
+          "title": "Retour des voitures sur les quais",
+          "detail": "Contradiction avec objectif de ville 'respirable' et tendances actuelles"
+        },
+        {
+          "title": "Baisse des impôts + investissements massifs",
+          "detail": "Équation budgétaire impossible sans détails sur les économies"
+        }
+      ]
+    },
+    {
+      "slug": "knafo",
+      "name": "Sarah Knafo",
+      "party": "Reconquête !",
+      "score": 5.4,
+      "scores": {
+        "coherence": 5.5,
+        "solidite": 5.0,
+        "robustesse": 5.0,
+        "pragmatisme": 6.0,
+        "detail": 5.5
+      },
+      "strengths": [
+        "Chiffrages détaillés (économies de 9,4 milliards)",
+        "Solutions technologiques concrètes (IA pour feux)",
+        "Vision claire de Paris 'carte postale'"
+      ],
+      "weaknesses": [
+        "Propositions hors compétences municipales (immigration)",
+        "Contradictions budgétaires majeures",
+        "Vision passéiste de Paris peu adaptée aux défis actuels"
+      ],
+      "unrealistic_measures": [
+        {
+          "title": "Expulsion massive des sans-papiers",
+          "detail": "Totalement hors compétences du maire, relève de l'État"
+        },
+        {
+          "title": "Économies de 9,4 milliards",
+          "detail": "Chiffre irréaliste vu le budget total de Paris (10 milliards)"
+        },
+        {
+          "title": "Suppression totale des pistes cyclables",
+          "detail": "Retour en arrière impossible et contraire aux tendances urbaines"
+        }
+      ]
+    },
+    {
+      "slug": "mariani",
+      "name": "Thierry Mariani",
+      "party": "Rassemblement National",
+      "score": 4.2,
+      "scores": {
+        "coherence": 4.0,
+        "solidite": 4.0,
+        "robustesse": 3.5,
+        "pragmatisme": 5.0,
+        "detail": 4.5
+      },
+      "strengths": [
+        "Focus sur la sécurité et l'ordre public",
+        "Propositions simples et compréhensibles",
+        "Critique du bilan Hidalgo"
+      ],
+      "weaknesses": [
+        "Programme très lacunaire sur de nombreux sujets",
+        "Aucune expérience de gestion locale",
+        "Propositions souvent hors compétences municipales"
+      ],
+      "unrealistic_measures": [
+        {
+          "title": "Préférence nationale pour le logement social",
+          "detail": "Illégal et contraire à la Constitution française"
+        },
+        {
+          "title": "Suppression de toutes les subventions aux associations",
+          "detail": "Détruirait le tissu social et associatif parisien"
+        },
+        {
+          "title": "Interdiction totale de manifestations",
+          "detail": "Contraire aux droits constitutionnels et impossible à appliquer"
+        }
+      ]
+    }
+  ],
+  "methodology": {
+    "criteria": {
+      "coherence": "Cohérence interne du programme",
+      "solidite": "Solidité technique des propositions",
+      "robustesse": "Robustesse budgétaire et financement",
+      "pragmatisme": "Pragmatisme et faisabilité opérationnelle",
+      "detail": "Détail et précision des mesures"
+    },
+    "description": "Analyse non-partisane basée sur 5 critères objectifs par une IA neutre"
+  }
+}
