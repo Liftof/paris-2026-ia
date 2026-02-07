@@ -1,5 +1,6 @@
 import { candidatesData } from '@/lib/data'
 import ThemeFilter from '@/components/ThemeFilter'
+import HeroFaces from '@/components/HeroFaces'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -17,16 +18,16 @@ function getScoreColor(score: number): string {
 
 function getScoreLabel(score: number): string {
   if (score >= 7) return 'Solide'
-  if (score >= 5) return 'Mitigue'
+  if (score >= 5) return 'Mitigé'
   return 'Fragile'
 }
 
 const criteria = [
-  { key: 'coherence', label: 'Coherence' },
-  { key: 'solidite', label: 'Solidite' },
+  { key: 'coherence', label: 'Cohérence' },
+  { key: 'solidite', label: 'Solidité' },
   { key: 'robustesse', label: 'Robustesse' },
   { key: 'pragmatisme', label: 'Pragmatisme' },
-  { key: 'detail', label: 'Detail' },
+  { key: 'detail', label: 'Détail' },
 ] as const
 
 export default function HomePage() {
@@ -72,39 +73,40 @@ export default function HomePage() {
               Comparer
             </Link>
             <Link href="/methodologie" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors">
-              Methodo
+              Méthodo
             </Link>
             <Link href="/a-propos" className="text-xs font-medium text-ink-3 hover:text-ink transition-colors hidden sm:block">
-              A propos
+              À propos
             </Link>
           </div>
         </div>
       </nav>
 
-      <header className="border-b border-[var(--border)]">
-        <div className="max-w-5xl mx-auto px-5 sm:px-8 py-16 sm:py-24">
+      <header className="border-b border-[var(--border)] relative overflow-hidden">
+        <HeroFaces />
+        <div className="max-w-5xl mx-auto px-5 sm:px-8 py-16 sm:py-24 relative z-10">
           <div className="floating-in max-w-3xl">
             <span className="kicker mb-5">Analyse non partisane</span>
             <h1 className="headline-xl mt-3">
-              Les programmes passes au crible de l&apos;IA.
+              Les programmes passés au crible de l&apos;IA.
             </h1>
             <p className="mt-6 text-base sm:text-lg text-ink-3 max-w-2xl leading-relaxed">
-              6 candidats. 5 criteres. Une grille identique.
-              On ne recommande personne &mdash; on publie une lecture structuree
-              de chaque programme, avec la meme rigueur pour tous.
+              6 candidats. 5 critères. Une grille identique.
+              On ne recommande personne &mdash; on publie une lecture structurée
+              de chaque programme, avec la même rigueur pour tous.
             </p>
             <div className="mt-8 flex flex-wrap gap-2">
               <span className="soft-chip">Programmes officiels</span>
               <span className="soft-chip">Traitement identique</span>
-              <span className="soft-chip">Methodologie publique</span>
-              <span className="soft-chip">Fevrier 2026</span>
+              <span className="soft-chip">Méthodologie publique</span>
+              <span className="soft-chip">Février 2026</span>
             </div>
           </div>
 
           <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
               { label: 'Candidats', value: String(sortedCandidates.length) },
-              { label: 'Criteres publics', value: '5' },
+              { label: 'Critères publics', value: '5' },
               { label: 'Moyenne globale', value: `${averageScore}/10` },
               { label: 'Affiliation', value: 'Aucune' },
             ].map((stat) => (
@@ -121,13 +123,13 @@ export default function HomePage() {
         <section id="classement" className="mb-14 sm:mb-20 scroll-mt-24">
           <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
             <div>
-              <span className="kicker mb-2">Resultats</span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-ink mt-1">Classement general</h2>
-              <p className="text-sm text-ink-3 mt-2">Grille IA appliquee de maniere homogene a tous les candidats.</p>
+              <span className="kicker mb-2">Résultats</span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-ink mt-1">Classement général</h2>
+              <p className="text-sm text-ink-3 mt-2">Grille IA appliquée de manière homogène à tous les candidats.</p>
             </div>
             <div className="flex flex-wrap gap-2 text-[10px] font-medium">
               <span className="soft-chip"><span className="w-2 h-2 rounded-full bg-score-solid mr-1.5 inline-block" />Solide 7+</span>
-              <span className="soft-chip"><span className="w-2 h-2 rounded-full bg-score-mixed mr-1.5 inline-block" />Mitigue 5-7</span>
+              <span className="soft-chip"><span className="w-2 h-2 rounded-full bg-score-mixed mr-1.5 inline-block" />Mitigé 5-7</span>
               <span className="soft-chip"><span className="w-2 h-2 rounded-full bg-score-fragile mr-1.5 inline-block" />Fragile {'<'}5</span>
             </div>
           </div>
@@ -135,17 +137,17 @@ export default function HomePage() {
         </section>
 
         <section className="panel-card p-6 sm:p-8 mb-14 sm:mb-20">
-          <span className="kicker mb-2">Analyse croisee</span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-ink mt-1">Comparatif par critere</h2>
+          <span className="kicker mb-2">Analyse croisée</span>
+          <h2 className="text-2xl sm:text-3xl font-bold text-ink mt-1">Comparatif par critère</h2>
           <p className="text-sm text-ink-3 mt-2 mb-8">
-            Lecture transversale des performances sur les 5 criteres d&apos;evaluation.
+            Lecture transversale des performances sur les 5 critères d&apos;évaluation.
           </p>
 
           <div className="overflow-x-auto -mx-2 px-2">
             <table className="w-full min-w-[640px] data-table">
               <thead>
                 <tr>
-                  <th className="w-32">Criteres</th>
+                  <th className="w-32">Critères</th>
                   {sortedCandidates.map((candidate) => (
                     <th key={candidate.slug} className="text-center">
                       <Link href={`/candidats/${candidate.slug}`} className="group inline-flex flex-col items-center gap-1.5">
@@ -205,7 +207,7 @@ export default function HomePage() {
               <span className="kicker mb-2">Vue d&apos;ensemble</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-ink mt-1">Scores globaux</h2>
             </div>
-            <span className="label-mono">Normalise sur 10</span>
+            <span className="label-mono">Normalisé sur 10</span>
           </div>
           <div className="space-y-3">
             {sortedCandidates.map((candidate, index) => (
@@ -248,7 +250,7 @@ export default function HomePage() {
               <span className="kicker !text-score-solid">Mesures solides</span>
             </div>
             <h2 className="text-xl font-bold text-ink mt-1">Les plus robustes</h2>
-            <p className="text-xs text-ink-3 mb-5 mt-1">Extraits juges coherents et documentes.</p>
+            <p className="text-xs text-ink-3 mb-5 mt-1">Extraits jugés cohérents et documentés.</p>
             <div className="space-y-3">
               {allBestMeasures.map((measure, index) => (
                 <Link key={`${measure.slug}-${index}`} href={`/candidats/${measure.slug}`} className="block group">
@@ -274,7 +276,7 @@ export default function HomePage() {
               <span className="kicker !text-score-fragile">Points faibles</span>
             </div>
             <h2 className="text-xl font-bold text-ink mt-1">Mesures fragiles</h2>
-            <p className="text-xs text-ink-3 mb-5 mt-1">Chiffrage absent, faisabilite douteuse ou hors competence.</p>
+            <p className="text-xs text-ink-3 mb-5 mt-1">Chiffrage absent, faisabilité douteuse ou hors compétence.</p>
             <div className="space-y-3">
               {allWorstMeasures.map((measure, index) => (
                 <Link key={`${measure.slug}-${index}`} href={`/candidats/${measure.slug}`} className="block group">
@@ -288,7 +290,7 @@ export default function HomePage() {
                           <span className="text-sm font-semibold text-ink group-hover:text-accent transition-colors">{measure.title}</span>
                           {measure.type === 'unrealistic' && (
                             <span className="text-[9px] uppercase tracking-[0.1em] px-1.5 py-0.5 rounded bg-score-fragile/10 text-score-fragile font-bold">
-                              irrealiste
+                              irréaliste
                             </span>
                           )}
                         </div>
@@ -347,21 +349,21 @@ export default function HomePage() {
         <section className="panel-card p-6 sm:p-8 mb-14 sm:mb-20">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
             <div>
-              <span className="kicker mb-2">Methode</span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-ink mt-1">Comment ca marche</h2>
+              <span className="kicker mb-2">Méthode</span>
+              <h2 className="text-2xl sm:text-3xl font-bold text-ink mt-1">Comment ça marche</h2>
             </div>
             <Link href="/methodologie" className="text-sm text-accent font-medium hover:underline">
-              Methodologie complete &rarr;
+              Méthodologie complète &rarr;
             </Link>
           </div>
 
           <div className="note-grid">
             {[
-              { name: 'Coherence', desc: 'Vision sans contradiction interne' },
-              { name: 'Solidite', desc: 'Arguments et contraintes explicites' },
-              { name: 'Robustesse', desc: 'Resistance aux aleas budgetaires' },
-              { name: 'Pragmatisme', desc: 'Applicabilite a l\'echelle municipale' },
-              { name: 'Detail', desc: 'Precision operationnelle des mesures' },
+              { name: 'Cohérence', desc: 'Vision sans contradiction interne' },
+              { name: 'Solidité', desc: 'Arguments et contraintes explicites' },
+              { name: 'Robustesse', desc: 'Résistance aux aléas budgétaires' },
+              { name: 'Pragmatisme', desc: 'Applicabilité à l\'échelle municipale' },
+              { name: 'Détail', desc: 'Précision opérationnelle des mesures' },
             ].map((criterion, index) => (
               <div key={criterion.name} className="playful-dash p-4">
                 <div className="score-display text-2xl text-ink-4 mb-2">
@@ -381,7 +383,7 @@ export default function HomePage() {
             <Link href="/comparateur" className="group playful-dash p-6 text-center hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3">&#9878;</div>
               <div className="text-sm font-bold text-ink group-hover:text-accent transition-colors">Comparateur</div>
-              <div className="text-xs text-ink-3 mt-1">2 candidats face-a-face</div>
+              <div className="text-xs text-ink-3 mt-1">2 candidats face-à-face</div>
             </Link>
             <Link href="/faq" className="group playful-dash p-6 text-center hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3">&#10067;</div>
@@ -390,18 +392,18 @@ export default function HomePage() {
             </Link>
             <Link href="/methodologie" className="group playful-dash p-6 text-center hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3">&#128269;</div>
-              <div className="text-sm font-bold text-ink group-hover:text-accent transition-colors">Methodologie</div>
-              <div className="text-xs text-ink-3 mt-1">Notre protocole detaille</div>
+              <div className="text-sm font-bold text-ink group-hover:text-accent transition-colors">Méthodologie</div>
+              <div className="text-xs text-ink-3 mt-1">Notre protocole détaillé</div>
             </Link>
           </div>
         </section>
 
         <footer className="pt-10 pb-8 border-t border-[var(--border)]">
           <div className="flex flex-wrap justify-center gap-5 mb-5">
-            <Link href="/methodologie" className="text-xs text-ink-3 hover:text-ink transition-colors">Methodologie</Link>
+            <Link href="/methodologie" className="text-xs text-ink-3 hover:text-ink transition-colors">Méthodologie</Link>
             <Link href="/comparateur" className="text-xs text-ink-3 hover:text-ink transition-colors">Comparateur</Link>
             <Link href="/faq" className="text-xs text-ink-3 hover:text-ink transition-colors">FAQ</Link>
-            <Link href="/a-propos" className="text-xs text-ink-3 hover:text-ink transition-colors">A propos</Link>
+            <Link href="/a-propos" className="text-xs text-ink-3 hover:text-ink transition-colors">À propos</Link>
           </div>
           <p className="text-xs text-ink-3 text-center leading-relaxed">
             Un projet de{' '}
