@@ -1,49 +1,55 @@
-import Link from 'next/link';
-import ScoreBadge from './ScoreBadge';
-import { Candidate } from '@/types';
+import Link from 'next/link'
+import { Candidate } from '@/types/candidate'
 
 interface CandidateCardProps {
-  candidate: Candidate;
-  rank: number;
+  candidate: Candidate
+  rank: number
 }
 
 export default function CandidateCard({ candidate, rank }: CandidateCardProps) {
-  const getRankStyle = (rank: number) => {
-    if (rank === 1) return 'border-accent-green border-2';
-    if (rank === 2) return 'border-blue-500 border-2';
-    if (rank === 3) return 'border-accent-orange border-2';
-    return '';
-  };
+  const getScoreColor = (score: number) => {
+    if (score >= 7) return 'bg-green-100 text-green-800'
+    if (score >= 5.5) return 'bg-yellow-100 text-yellow-800'
+    return 'bg-red-100 text-red-800'
+  }
+
+  const getRankEmoji = (rank: number) => {
+    const emojis = ['🥇', '🥈', '🥉']
+    return emojis[rank - 1] || `#${rank}`
+  }
 
   return (
     <Link href={`/candidats/${candidate.slug}`}>
-      <div className={`card hover:scale-105 transition-transform ${getRankStyle(rank)}`}>
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <h3 className="text-xl font-bold text-gray-900">{candidate.name}</h3>
-            <p className="text-sm text-gray-600">{candidate.party}</p>
+      <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow p-6 cursor-pointer">
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex items-center gap-3">
+            <span className="text-2xl font-bold text-gray-400">{getRankEmoji(rank)}</span>
+            <h3 className="text-xl font-semibold text-gray-800">{candidate.name}</h3>
           </div>
-          <ScoreBadge score={candidate.score} size="lg" />
+          <div className={`px-3 py-1 rounded-full font-bold ${getScoreColor(candidate.globalScore)}`}>
+            {candidate.globalScore}/10
+          </div>
         </div>
         
-        <div className="mb-4">
-          <h4 className="font-semibold text-sm text-gray-700 mb-2">
-            Mesures irréalistes ou incohérentes :
-          </h4>
-          <div className="space-y-2">
-            {candidate.unrealistic_measures.slice(0, 2).map((measure, index) => (
-              <div key={index} className="bg-red-50 rounded-lg p-3">
-                <p className="font-medium text-sm text-red-900">⚠️ {measure.title}</p>
-                <p className="text-xs text-red-700 mt-1">{measure.detail}</p>
-              </div>
-            ))}
+        <div className="space-y-3">
+          <div>
+            <p className="text-sm font-medium text-gray-600 mb-2">Exemples de mesures problématiques :</p>
+            <div className="flex flex-wrap gap-2">
+              {candidate.problematicMeasures.slice(0, 2).map((measure, index) => (
+                <span key={index} className="inline-block bg-orange-50 text-orange-700 text-xs px-3 py-1 rounded-full">
+                  {measure.length > 50 ? measure.substring(0, 50) + '...' : measure}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className="text-xs text-gray-500 mt-4">
-          Cliquez pour voir l'analyse complète →
+          
+          <div className="flex items-center justify-end">
+            <span className="text-blue-600 text-sm font-medium hover:text-blue-800">
+              Voir l'analyse complète →
+            </span>
+          </div>
         </div>
       </div>
     </Link>
-  );
+  )
 }

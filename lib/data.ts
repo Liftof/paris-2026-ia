@@ -1,7 +1,8 @@
-import { CandidatesData } from '@/types';
+import candidatesDataJson from './candidatesData.json'
+import { Candidate } from '@/types/candidate'
 
-export async function getCandidatesData(): Promise<CandidatesData> {
-  const response = await fetch('/candidates_data.json');
-  const data = await response.json();
-  return data;
+export const candidatesData: Candidate[] = candidatesDataJson
+
+export function getCandidateBySlug(slug: string): Candidate | undefined {
+  return candidatesData.find(candidate => candidate.slug === slug)
 }

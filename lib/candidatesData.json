@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "bournazel",
+    "name": "Pierre-Yves Bournazel",
+    "globalScore": 7.8,
+    "scores": {
+      "coherence": 8.0,
+      "solidite": 7.8,
+      "robustesse": 7.5,
+      "pragmatisme": 7.7,
+      "detail": 8.0
+    },
+    "strengths": [
+      "Programme structuré et détaillé avec des mesures précises",
+      "Vision équilibrée entre développement économique et inclusion sociale", 
+      "Propositions réalistes et chiffrées pour la transition écologique"
+    ],
+    "weaknesses": [
+      "Manque de clarté sur le financement de certains grands projets",
+      "Propositions parfois trop technocratiques et peu accessibles",
+      "Sous-estimation des défis liés à la gouvernance métropolitaine"
+    ],
+    "problematicMeasures": [
+      "Création de 100 000 emplois en 3 ans sans détailler les mécanismes précis",
+      "Gratuité partielle des transports sans impact budgétaire clair",
+      "Plan logement ambitieux sans adresser la pénurie foncière"
+    ]
+  },
+  {
+    "slug": "chikirou", 
+    "name": "Sophia Chikirou",
+    "globalScore": 7.2,
+    "scores": {
+      "coherence": 7.5,
+      "solidite": 7.0,
+      "robustesse": 7.0,
+      "pragmatisme": 7.2,
+      "detail": 7.3
+    },
+    "strengths": [
+      "Vision sociale forte avec des mesures concrètes pour les plus démunis",
+      "Programme écologique ambitieux et cohérent",
+      "Propositions innovantes en matière de démocratie participative"
+    ],
+    "weaknesses": [
+      "Financement reposant trop sur l'hypothèse d'augmentation des recettes",
+      "Certaines mesures pourraient créer des effets pervers économiques",
+      "Manque de détails sur l'implementation opérationnelle"
+    ],
+    "problematicMeasures": [
+      "Encadrement des loyers à 10€/m² sans étude d'impact sur l'offre",
+      "Municipalisation de services sans plan de transition détaillé",
+      "Augmentation massive des effectifs municipaux sans cadrage budgétaire"
+    ]
+  },
+  {
+    "slug": "gregoire",
+    "name": "Laurent Saint-Martin", 
+    "globalScore": 6.8,
+    "scores": {
+      "coherence": 6.9,
+      "solidite": 6.7,
+      "robustesse": 6.8,
+      "pragmatisme": 6.9,
+      "detail": 6.7
+    },
+    "strengths": [
+      "Approche pragmatique et réaliste des enjeux parisiens",
+      "Bon équilibre entre attractivité économique et qualité de vie",
+      "Mesures concrètes pour améliorer la sécurité et la propreté"
+    ],
+    "weaknesses": [
+      "Programme parfois trop conservateur et manquant d'ambition",
+      "Peu d'innovation sur les questions écologiques urgentes",
+      "Vision limitée sur les enjeux métropolitains"
+    ],
+    "problematicMeasures": [
+      "Réduction de 10% des effectifs administratifs sans plan d'accompagnement",
+      "Privatisation partielle de services publics sans garanties sociales",
+      "Plan propreté basé sur la répression sans volet préventif"
+    ]
+  },
+  {
+    "slug": "dati",
+    "name": "Rachida Dati",
+    "globalScore": 5.5,
+    "scores": {
+      "coherence": 5.4,
+      "solidite": 5.3,
+      "robustesse": 5.5,
+      "pragmatisme": 5.8,
+      "detail": 5.5
+    },
+    "strengths": [
+      "Focus marqué sur la sécurité avec des propositions concrètes",
+      "Volonté de moderniser l'administration parisienne",
+      "Attention portée aux familles et à l'éducation"
+    ],
+    "weaknesses": [
+      "Programme peu détaillé sur de nombreux aspects cruciaux",
+      "Contradictions entre objectifs écologiques et économiques",
+      "Approche parfois simpliste des problèmes complexes"
+    ],
+    "problematicMeasures": [
+      "Suppression de pistes cyclables sans alternative de mobilité",
+      "Police municipale armée sans formation ni cadre juridique clair",
+      "Baisse des impôts locaux tout en augmentant les investissements"
+    ]
+  },
+  {
+    "slug": "knafo",
+    "name": "Sarah Knafo",
+    "globalScore": 5.4,
+    "scores": {
+      "coherence": 5.2,
+      "solidite": 5.3,
+      "robustesse": 5.4,
+      "pragmatisme": 5.6,
+      "detail": 5.5
+    },
+    "strengths": [
+      "Vision libérale cohérente avec des mesures pro-business",
+      "Propositions innovantes sur la digitalisation des services",
+      "Approche entrepreneuriale de la gestion municipale"
+    ],
+    "weaknesses": [
+      "Manque de considération pour les enjeux sociaux",
+      "Vision trop idéologique et déconnectée des réalités parisiennes",
+      "Peu de mesures concrètes sur l'environnement"
+    ],
+    "problematicMeasures": [
+      "Privatisation massive sans garde-fous sociaux",
+      "Suppression de 30% des règlementations sans étude d'impact",
+      "Flat tax locale incompatible avec le droit fiscal français"
+    ]
+  },
+  {
+    "slug": "mariani",
+    "name": "Thierry Mariani",
+    "globalScore": 4.2,
+    "scores": {
+      "coherence": 4.0,
+      "solidite": 4.1,
+      "robustesse": 4.2,
+      "pragmatisme": 4.3,
+      "detail": 4.4
+    },
+    "strengths": [
+      "Positionnement clair sur les questions de sécurité",
+      "Quelques propositions pertinentes sur le stationnement",
+      "Volonté de réduire les dépenses publiques"
+    ],
+    "weaknesses": [
+      "Programme très lacunaire et peu développé",
+      "Méconnaissance évidente des compétences municipales",
+      "Propositions souvent hors du cadre légal"
+    ],
+    "problematicMeasures": [
+      "Interdiction de manifestations sans base juridique",
+      "Expulsion immédiate de populations sans procédure légale",
+      "Remise en cause d'acquis sociaux hors compétence municipale"
+    ]
+  }
+]

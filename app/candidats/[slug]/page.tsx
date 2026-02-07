@@ -1,194 +1,105 @@
-'use client';
+import { getCandidateBySlug, candidatesData } from '@/lib/data'
+import ScoreRadar from '@/components/ScoreRadar'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
 
-import { useEffect, useState } from 'react';
-import { useParams } from 'next/navigation';
-import Link from 'next/link';
-import Header from '@/components/Header';
-import ScoreBadge from '@/components/ScoreBadge';
-import RadarChart from '@/components/RadarChart';
-import { Candidate, CandidatesData } from '@/types';
+export function generateStaticParams() {
+  return candidatesData.map((candidate) => ({
+    slug: candidate.slug,
+  }))
+}
 
-export default function CandidatePage() {
-  const params = useParams();
-  const slug = params.slug as string;
-  
-  const [candidate, setCandidate] = useState<Candidate | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch('/candidates_data.json')
-      .then(res => res.json())
-      .then((data: CandidatesData) => {
-        const foundCandidate = data.candidates.find(c => c.slug === slug);
-        setCandidate(foundCandidate || null);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Error loading data:', err);
-        setLoading(false);
-      });
-  }, [slug]);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-lg text-gray-600">Chargement...</div>
-      </div>
-    );
-  }
+export default function CandidatePage({ params }: { params: { slug: string } }) {
+  const candidate = getCandidateBySlug(params.slug)
 
   if (!candidate) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-lg text-red-600">Candidat non trouvé</div>
-      </div>
-    );
+    notFound()
+  }
+
+  const getScoreColor = (score: number) => {
+    if (score >= 7) return 'bg-green-100 text-green-800'
+    if (score >= 5.5) return 'bg-yellow-100 text-yellow-800'
+    return 'bg-red-100 text-red-800'
   }
 
   return (
-    <div>
-      <Header />
-      
-      <main className="container mx-auto px-4 py-8 max-w-6xl">
-        {/* Breadcrumb */}
-        <nav className="mb-6">
-          <Link href="/" className="text-primary hover:underline">
-            ← Retour au classement
-          </Link>
-        </nav>
-
-        {/* Candidate Header */}
-        <section className="bg-white rounded-lg shadow-lg p-8 mb-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-4xl mx-auto px-4 py-6">
+          <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                {candidate.name}
-              </h1>
-              <p className="text-lg text-gray-600">{candidate.party}</p>
+              <Link href="/" className="text-blue-600 hover:text-blue-800 text-sm mb-2 inline-block">
+                ← Retour au classement
+              </Link>
+              <h1 className="text-3xl font-bold text-gray-900">{candidate.name}</h1>
             </div>
-            <ScoreBadge score={candidate.score} size="lg" />
+            <div className={`px-4 py-2 rounded-full font-bold text-lg ${getScoreColor(candidate.globalScore)}`}>
+              {candidate.globalScore}/10
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-4 py-12">
+        <div className="grid gap-8 md:grid-cols-2">
+          {/* Score Details */}
+          <div className="bg-white rounded-lg shadow-sm p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-6">Détail des critères</h2>
+            <ScoreRadar scores={candidate.scores} />
           </div>
 
-          {/* Summary Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-6">
-            {Object.entries(candidate.scores).map(([key, value]) => (
-              <div key={key} className="text-center">
-                <div className="text-2xl font-bold text-primary">{value}/10</div>
-                <div className="text-sm text-gray-600 capitalize">
-                  {key === 'solidite' ? 'Solidité' : key}
+          {/* Strengths */}
+          <div className="bg-white rounded-lg shadow-sm p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">Points forts</h2>
+            <ul className="space-y-3">
+              {candidate.strengths.map((strength, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-green-500 mr-2 mt-0.5">✓</span>
+                  <span className="text-gray-700">{strength}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Weaknesses */}
+          <div className="bg-white rounded-lg shadow-sm p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">Points faibles</h2>
+            <ul className="space-y-3">
+              {candidate.weaknesses.map((weakness, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-red-500 mr-2 mt-0.5">✗</span>
+                  <span className="text-gray-700">{weakness}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Problematic Measures */}
+          <div className="bg-white rounded-lg shadow-sm p-6">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">Mesures problématiques</h2>
+            <div className="space-y-3">
+              {candidate.problematicMeasures.map((measure, index) => (
+                <div key={index} className="bg-orange-50 border-l-4 border-orange-400 p-4 rounded">
+                  <p className="text-gray-700">{measure}</p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Left Column */}
-          <div className="space-y-8">
-            {/* Radar Chart */}
-            <section className="bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">
-                Analyse par Critères
-              </h2>
-              <RadarChart scores={candidate.scores} size={350} />
-            </section>
-
-            {/* Strengths */}
-            <section className="bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <span className="text-2xl mr-2">💪</span>
-                Forces du Programme
-              </h2>
-              <ul className="space-y-3">
-                {candidate.strengths.map((strength, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-accent-green mr-2">✓</span>
-                    <span className="text-gray-700">{strength}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          </div>
-
-          {/* Right Column */}
-          <div className="space-y-8">
-            {/* Weaknesses */}
-            <section className="bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <span className="text-2xl mr-2">⚠️</span>
-                Faiblesses du Programme
-              </h2>
-              <ul className="space-y-3">
-                {candidate.weaknesses.map((weakness, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="text-accent-orange mr-2">•</span>
-                    <span className="text-gray-700">{weakness}</span>
-                  </li>
-                ))}
-              </ul>
-            </section>
-
-            {/* Unrealistic Measures */}
-            <section className="bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                <span className="text-2xl mr-2">🚫</span>
-                Mesures Irréalistes ou Incohérentes
-              </h2>
-              <div className="space-y-4">
-                {candidate.unrealistic_measures.map((measure, index) => (
-                  <div key={index} className="bg-red-50 rounded-lg p-4 border border-red-100">
-                    <h3 className="font-semibold text-red-900 mb-2">
-                      {measure.title}
-                    </h3>
-                    <p className="text-sm text-red-700">
-                      {measure.detail}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </section>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <section className="mt-12 bg-gray-100 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Comment lire cette analyse ?
-          </h2>
-          <p className="text-gray-700 mb-4">
-            Cette analyse évalue uniquement la <strong>qualité technique</strong> du programme, 
-            pas son orientation politique. Un programme peut être techniquement solide mais 
-            ne pas correspondre à vos valeurs, et inversement.
+        {/* Analysis Summary */}
+        <div className="mt-8 bg-blue-50 rounded-lg p-6">
+          <h2 className="text-xl font-semibold text-blue-900 mb-3">Synthèse de l'analyse</h2>
+          <p className="text-blue-800 leading-relaxed">
+            Le programme de {candidate.name} obtient une note globale de {candidate.globalScore}/10. 
+            L'analyse révèle {candidate.globalScore >= 7 ? 'un programme globalement solide et bien structuré' : 
+            candidate.globalScore >= 5.5 ? 'un programme présentant des aspects positifs mais également des lacunes importantes' :
+            'un programme nécessitant des améliorations significatives sur plusieurs critères fondamentaux'}.
           </p>
-          <p className="text-gray-700">
-            Les "mesures irréalistes" sont celles qui présentent des contradictions internes, 
-            des impossibilités juridiques, ou des hypothèses budgétaires très optimistes. 
-            Cela ne signifie pas qu'elles sont mauvaises en soi, mais qu'elles nécessiteraient 
-            des conditions exceptionnelles pour être réalisées.
-          </p>
-          <div className="mt-6">
-            <Link
-              href="/methodologie"
-              className="text-primary hover:underline font-medium"
-            >
-              En savoir plus sur la méthodologie →
-            </Link>
-          </div>
-        </section>
+        </div>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm">
-            © 2026 - Analyse réalisée par une IA non-partisane
-          </p>
-          <p className="text-xs text-gray-400 mt-2">
-            Les données proviennent des programmes officiels des candidats
-          </p>
-        </div>
-      </footer>
     </div>
-  );
+  )
 }

@@ -1,201 +1,134 @@
-import Header from '@/components/Header';
+import Link from 'next/link'
 
 export default function MethodologiePage() {
   return (
-    <div>
-      <Header />
-      
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">
-          Méthodologie de l'Analyse
-        </h1>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Pourquoi une analyse par IA ?
-          </h2>
-          <div className="prose prose-lg text-gray-700">
-            <p className="mb-4">
-              Dans un contexte politique polarisé, l'intelligence artificielle offre une perspective 
-              unique : celle d'une analyse <strong>objective et non-partisane</strong>. L'IA n'a pas 
-              d'opinions politiques, pas de préférences idéologiques, pas d'intérêts électoraux.
-            </p>
-            <p className="mb-4">
-              Elle évalue uniquement la <strong>qualité technique</strong> des propositions selon 
-              des critères mesurables et appliqués de manière identique à tous les candidats.
-            </p>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
-            Les 5 Critères d'Évaluation
-          </h2>
-          
-          <div className="space-y-6">
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                1. Cohérence Interne (20%)
-              </h3>
-              <p className="text-gray-700 mb-3">
-                Les différentes propositions du programme sont-elles compatibles entre elles ? 
-                Y a-t-il des contradictions flagrantes ?
-              </p>
-              <div className="bg-gray-50 rounded p-4">
-                <p className="text-sm text-gray-600">
-                  <strong>Exemple :</strong> Promettre à la fois de réduire massivement les impôts 
-                  ET d'augmenter fortement les dépenses publiques serait incohérent.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                2. Solidité Technique (20%)
-              </h3>
-              <p className="text-gray-700 mb-3">
-                Les propositions sont-elles techniquement réalisables ? S'appuient-elles sur 
-                des données factuelles et des expertises reconnues ?
-              </p>
-              <div className="bg-gray-50 rounded p-4">
-                <p className="text-sm text-gray-600">
-                  <strong>Exemple :</strong> Une proposition avec des chiffrages précis, des exemples 
-                  de villes où cela fonctionne, et un calendrier réaliste obtient une bonne note.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                3. Robustesse Budgétaire (20%)
-              </h3>
-              <p className="text-gray-700 mb-3">
-                Les propositions sont-elles financièrement viables ? Le candidat identifie-t-il 
-                clairement comment financer ses mesures ?
-              </p>
-              <div className="bg-gray-50 rounded p-4">
-                <p className="text-sm text-gray-600">
-                  <strong>Exemple :</strong> Un programme qui détaille les sources de financement 
-                  (économies, nouvelles recettes, réallocations) est mieux noté qu'un programme 
-                  sans chiffrage.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                4. Pragmatisme (20%)
-              </h3>
-              <p className="text-gray-700 mb-3">
-                Les propositions tiennent-elles compte des contraintes réelles (juridiques, 
-                institutionnelles, sociales) ? Le candidat anticipe-t-il les obstacles ?
-              </p>
-              <div className="bg-gray-50 rounded p-4">
-                <p className="text-sm text-gray-600">
-                  <strong>Exemple :</strong> Reconnaître qu'une mesure nécessite l'accord de l'État 
-                  ou de la Région montre du pragmatisme. Ignorer ces contraintes est pénalisé.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-semibold text-primary mb-3">
-                5. Détail & Précision (20%)
-              </h3>
-              <p className="text-gray-700 mb-3">
-                Le programme est-il suffisamment détaillé ? Les propositions sont-elles précises 
-                ou restent-elles vagues et générales ?
-              </p>
-              <div className="bg-gray-50 rounded p-4">
-                <p className="text-sm text-gray-600">
-                  <strong>Exemple :</strong> "Créer 6 500 places en crèche d'ici 2032" est plus 
-                  précis que "Améliorer l'accueil des jeunes enfants".
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Comment sont calculées les notes ?
-          </h2>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <ol className="list-decimal list-inside space-y-3 text-gray-700">
-              <li>
-                <strong>Analyse systématique :</strong> L'IA parcourt l'intégralité du programme 
-                et identifie toutes les propositions.
-              </li>
-              <li>
-                <strong>Évaluation par critère :</strong> Chaque proposition est évaluée selon 
-                les 5 critères, générant des sous-notes.
-              </li>
-              <li>
-                <strong>Agrégation :</strong> Les sous-notes sont moyennées pour obtenir une 
-                note par critère (sur 10).
-              </li>
-              <li>
-                <strong>Note finale :</strong> La moyenne pondérée des 5 critères donne la 
-                note globale du programme.
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Limites de l'analyse
-          </h2>
-          <div className="bg-amber-50 rounded-lg p-6">
-            <h3 className="font-semibold text-amber-900 mb-2">
-              ⚠️ Ce que l'IA ne peut pas évaluer
-            </h3>
-            <ul className="list-disc list-inside space-y-2 text-amber-800">
-              <li>La <strong>désirabilité politique</strong> des propositions (l'IA ne juge pas si une mesure est souhaitable)</li>
-              <li>La <strong>personnalité</strong> ou le <strong>charisme</strong> des candidats</li>
-              <li>L'<strong>historique</strong> et le <strong>bilan</strong> passé des candidats</li>
-              <li>Les <strong>valeurs</strong> et <strong>idéologies</strong> sous-jacentes</li>
-              <li>La <strong>capacité de leadership</strong> et de négociation</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Transparence totale
-          </h2>
-          <div className="prose prose-lg text-gray-700">
-            <p className="mb-4">
-              Cette analyse se veut <strong>100% transparente</strong>. Les critères sont publics, 
-              la méthodologie est explicite, et les résultats sont présentés sans filtre.
-            </p>
-            <p className="mb-4">
-              L'objectif n'est pas de dire aux électeurs pour qui voter, mais de leur fournir 
-              une <strong>grille de lecture objective</strong> pour évaluer la qualité technique 
-              des programmes proposés.
-            </p>
-            <div className="bg-blue-50 rounded-lg p-6 mt-6">
-              <p className="text-blue-900 font-semibold">
-                🗳️ Le vote reste un choix personnel qui dépend de vos valeurs, priorités et 
-                vision pour Paris. Cette analyse n'est qu'un outil parmi d'autres pour éclairer 
-                votre décision.
-              </p>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8 mt-16">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm">
-            © 2026 - Analyse réalisée par une IA non-partisane
-          </p>
-          <p className="text-xs text-gray-400 mt-2">
-            Les données proviennent des programmes officiels des candidats
-          </p>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-4xl mx-auto px-4 py-6">
+          <Link href="/" className="text-blue-600 hover:text-blue-800 text-sm mb-2 inline-block">
+            ← Retour au classement
+          </Link>
+          <h1 className="text-3xl font-bold text-gray-900">Méthodologie</h1>
         </div>
-      </footer>
+      </header>
+
+      {/* Main Content */}
+      <main className="max-w-4xl mx-auto px-4 py-12">
+        <div className="prose prose-lg max-w-none">
+          {/* Introduction */}
+          <div className="bg-blue-50 rounded-lg p-6 mb-8">
+            <h2 className="text-xl font-semibold text-blue-900 mb-3">
+              Une approche scientifique et transparente
+            </h2>
+            <p className="text-blue-800 leading-relaxed">
+              Cette analyse utilise l'intelligence artificielle pour évaluer objectivement les programmes 
+              des candidats à la mairie de Paris 2026. L'IA garantit une neutralité totale et une rigueur 
+              méthodologique constante dans l'évaluation.
+            </p>
+          </div>
+
+          {/* Why AI */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Pourquoi l'Intelligence Artificielle ?</h2>
+            <div className="space-y-4 text-gray-700">
+              <p>
+                L'utilisation de l'IA présente plusieurs avantages majeurs pour cette analyse :
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Neutralité absolue</strong> : L'IA n'a aucune affiliation politique et évalue tous les programmes selon les mêmes critères</li>
+                <li><strong>Cohérence méthodologique</strong> : Chaque programme est analysé avec la même grille de lecture</li>
+                <li><strong>Capacité d'analyse</strong> : L'IA peut traiter des volumes importants de données et identifier des patterns complexes</li>
+                <li><strong>Transparence</strong> : Les critères sont explicites et l'analyse est reproductible</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Criteria */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Les 5 critères d'évaluation</h2>
+            
+            <div className="space-y-6">
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">1. Cohérence</h3>
+                <p className="text-gray-700">
+                  Évalue si les différentes propositions du programme s'articulent logiquement entre elles, 
+                  sans contradictions internes. Un programme cohérent présente une vision unifiée où chaque 
+                  mesure renforce les autres.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">2. Solidité</h3>
+                <p className="text-gray-700">
+                  Mesure la robustesse des propositions face aux contraintes réelles : budget municipal, 
+                  compétences légales de la mairie, faisabilité technique. Les mesures solides sont 
+                  réalistes et bien fondées.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">3. Robustesse</h3>
+                <p className="text-gray-700">
+                  Analyse la capacité du programme à résister aux aléas et aux changements de contexte. 
+                  Un programme robuste anticipe les difficultés et propose des solutions adaptables.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">4. Pragmatisme</h3>
+                <p className="text-gray-700">
+                  Évalue le caractère concret et applicable des mesures proposées. Les propositions 
+                  pragmatiques sont précises, chiffrées et accompagnées de plans de mise en œuvre.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">5. Niveau de détail</h3>
+                <p className="text-gray-700">
+                  Mesure la précision et l'exhaustivité du programme. Un niveau de détail élevé 
+                  témoigne d'un travail approfondi et d'une vraie compréhension des enjeux.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Calculation */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Calcul des notes</h2>
+            <div className="bg-gray-100 rounded-lg p-6">
+              <p className="text-gray-700 mb-4">
+                Chaque critère est noté sur 10 points. La note globale est la moyenne pondérée des 5 critères :
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                <li>Cohérence : 20%</li>
+                <li>Solidité : 20%</li>
+                <li>Robustesse : 20%</li>
+                <li>Pragmatisme : 20%</li>
+                <li>Niveau de détail : 20%</li>
+              </ul>
+              <p className="text-gray-700 mt-4">
+                Cette pondération équilibrée garantit qu'aucun aspect n'est survalorisé par rapport aux autres.
+              </p>
+            </div>
+          </section>
+
+          {/* Transparency */}
+          <section>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Transparence totale</h2>
+            <div className="bg-green-50 rounded-lg p-6">
+              <p className="text-green-800">
+                Cette analyse se veut totalement transparente. Les critères d'évaluation sont publics, 
+                la méthodologie est documentée, et les résultats sont présentés sans filtre. 
+                L'objectif est d'éclairer le débat démocratique avec des données objectives et vérifiables.
+              </p>
+              <p className="text-green-800 mt-4">
+                Aucune affiliation politique, aucun financement partisan. Juste des faits et une analyse rigoureuse.
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
-  );
+  )
 }
