@@ -20,11 +20,11 @@ function getScoreBg(value: number): string {
 
 export default function ScoreRadar({ scores }: ScoreRadarProps) {
   const criteria = [
-    { key: 'coherence', label: 'Coherence', value: scores.coherence },
-    { key: 'solidite', label: 'Solidite', value: scores.solidite },
+    { key: 'coherence', label: 'Cohérence', value: scores.coherence },
+    { key: 'solidite', label: 'Solidité', value: scores.solidite },
     { key: 'robustesse', label: 'Robustesse', value: scores.robustesse },
     { key: 'pragmatisme', label: 'Pragmatisme', value: scores.pragmatisme },
-    { key: 'detail', label: 'Detail', value: scores.detail }
+    { key: 'detail', label: 'Détail', value: scores.detail }
   ]
 
   return (

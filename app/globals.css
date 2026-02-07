@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'Berkeley Mono';
   src: url('/fonts/BerkeleyMono-Regular.otf') format('opentype');
@@ -12,13 +16,4 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Force Berkeley Mono everywhere */
-* {
-  font-family: 'Berkeley Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
 }

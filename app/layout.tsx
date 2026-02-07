@@ -5,13 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Programmes Paris 2026 jugés par l'IA",
-  description: "Analyse non-partisane et objective des programmes des candidats à la mairie de Paris 2026 par une intelligence artificielle",
-  keywords: ["Paris 2026", "élections municipales", "programmes", "analyse IA", "candidats"],
+  title: "Paris 2026 - Les programmes jugés par l'IA",
+  description: "Analyse non-partisane et objective des programmes des candidats à la mairie de Paris 2026 par intelligence artificielle",
+  keywords: ["Paris 2026", "élections municipales", "programmes", "analyse IA", "candidats", "mairie de Paris"],
   authors: [{ name: "Analyse IA" }],
   openGraph: {
-    title: "Programmes Paris 2026 jugés par l'IA",
-    description: "Analyse objective des candidats par intelligence artificielle",
+    title: "Paris 2026 - Les programmes jugés par l'IA",
+    description: "Qui a le meilleur programme pour Paris ? L'IA analyse les 6 candidats.",
     type: "website",
   },
 };
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${inter.className} bg-gray-50 text-gray-dark min-h-screen`}>
+      <body className={`${inter.className} bg-white text-gray-900 min-h-screen antialiased`}>
         {children}
       </body>
     </html>

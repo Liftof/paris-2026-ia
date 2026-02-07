@@ -21,6 +21,10 @@ export interface Candidate {
   slug: string
   name: string
   party: string
+  photo: string
+  politicalColor: string
+  campaignUrl: string
+  politicalLine: string
   globalScore: number
   scores: CandidateScores
   strengths: string[]
