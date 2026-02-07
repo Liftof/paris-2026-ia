@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import SiteNav from '@/components/SiteNav'
+import SiteFooter from '@/components/SiteFooter'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -182,6 +183,8 @@ export default function AProposPage() {
             Merci &agrave; Tom Godignon pour son aide dans la conception de la m&eacute;thode d&apos;analyse.
           </p>
         </section>
+
+        <SiteFooter />
       </main>
     </div>
   )

@@ -6,6 +6,7 @@ import type { Candidate } from '@/types/candidate'
 import Image from 'next/image'
 import Link from 'next/link'
 import SiteNav from '@/components/SiteNav'
+import SiteFooter from '@/components/SiteFooter'
 
 const criteriaLabels: { key: keyof Candidate['scores']; label: string }[] = [
   { key: 'coherence', label: 'Cohérence' },
@@ -306,6 +307,8 @@ export default function ComparateurPage() {
             </section>
           </>
         )}
+
+        <SiteFooter />
       </main>
     </div>
   )

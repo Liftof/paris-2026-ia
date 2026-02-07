@@ -1,6 +1,7 @@
 import { getCandidateBySlug, candidatesData } from '@/lib/data'
 import ScoreRadar from '@/components/ScoreRadar'
 import SiteNav from '@/components/SiteNav'
+import SiteFooter from '@/components/SiteFooter'
 import ShareButtons from '@/components/ShareButtons'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -287,6 +288,8 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <div />
           )}
         </section>
+
+        <SiteFooter />
       </main>
     </div>
   )

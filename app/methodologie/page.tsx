@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { candidatesData } from '@/lib/data'
 import SiteNav from '@/components/SiteNav'
+import SiteFooter from '@/components/SiteFooter'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -405,6 +406,8 @@ export default function MethodologiePage() {
             les rapports complets et &agrave; se forger sa propre opinion.
           </p>
         </section>
+
+        <SiteFooter />
       </main>
     </div>
   )
