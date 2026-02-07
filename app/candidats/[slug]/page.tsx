@@ -30,9 +30,10 @@ function getGlobalScoreBg(score: number): string {
   return 'bg-red-50 border-palette-red/20'
 }
 
-export default function CandidatePage({ params }: { params: { slug: string } }) {
-  const candidate = getCandidateBySlug(params.slug)
-  const analyseContent = getAnalyseBySlug(params.slug)
+export default async function CandidatePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const candidate = getCandidateBySlug(slug)
+  const analyseContent = getAnalyseBySlug(slug)
 
   if (!candidate) {
     notFound()
