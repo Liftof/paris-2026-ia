@@ -5,10 +5,9 @@ interface ScoreBadgeProps {
 
 export default function ScoreBadge({ score, size = 'md' }: ScoreBadgeProps) {
   const getColorClass = (score: number) => {
-    if (score >= 7) return 'bg-accent-green text-white';
-    if (score >= 6) return 'bg-blue-500 text-white';
-    if (score >= 5) return 'bg-accent-orange text-white';
-    return 'bg-red-500 text-white';
+    if (score >= 7) return 'bg-palette-blue text-white';
+    if (score >= 5) return 'bg-palette-yellow text-gray-900';
+    return 'bg-palette-red text-white';
   };
 
   const sizeClasses = {
@@ -19,7 +18,7 @@ export default function ScoreBadge({ score, size = 'md' }: ScoreBadgeProps) {
 
   return (
     <span
-      className={`badge font-semibold ${getColorClass(score)} ${sizeClasses[size]}`}
+      className={`inline-block font-semibold rounded-sm ${getColorClass(score)} ${sizeClasses[size]}`}
     >
       {score.toFixed(1)}/10
     </span>

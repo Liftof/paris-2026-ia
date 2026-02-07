@@ -2,163 +2,497 @@
   {
     "slug": "bournazel",
     "name": "Pierre-Yves Bournazel",
+    "party": "Horizons + Renaissance",
     "globalScore": 7.8,
     "scores": {
-      "coherence": 8.0,
-      "solidite": 7.8,
-      "robustesse": 7.5,
-      "pragmatisme": 7.7,
-      "detail": 8.0
+      "coherence": 7.5,
+      "solidite": 8.0,
+      "robustesse": 7.0,
+      "pragmatisme": 7.5,
+      "detail": 8.5
     },
     "strengths": [
-      "Programme structuré et détaillé avec des mesures précises",
-      "Vision équilibrée entre développement économique et inclusion sociale", 
-      "Propositions réalistes et chiffrées pour la transition écologique"
+      "Programme tres structure avec chiffrages, calendriers et exemples concrets pour chaque mesure",
+      "Vision coherente d'une ville mieux geree, avec un fil conducteur fort autour de la rationalisation",
+      "Approche pragmatique s'inspirant de ce qui fonctionne dans d'autres metropoles europeennes (Londres, Stockholm)"
     ],
     "weaknesses": [
-      "Manque de clarté sur le financement de certains grands projets",
-      "Propositions parfois trop technocratiques et peu accessibles",
-      "Sous-estimation des défis liés à la gouvernance métropolitaine"
+      "Risques d'execution : certaines mesures phares font face a des defis operationnels majeurs",
+      "Dependances legislatives : nombreuses propositions necessitent des evolutions legislatives nationales",
+      "Optimisme budgetaire : certaines hypotheses financieres paraissent ambitieuses"
     ],
     "problematicMeasures": [
-      "Création de 100 000 emplois en 3 ans sans détailler les mécanismes précis",
-      "Gratuité partielle des transports sans impact budgétaire clair",
-      "Plan logement ambitieux sans adresser la pénurie foncière"
+      "6000 policiers municipaux en 6 ans : rythme de recrutement de 800-1000/an irrealiste",
+      "Vente de 20 000 logements sociaux : valorisation tres optimiste (150k EUR/unite = 3 Mds)",
+      "Division de la dette par deux necessite une discipline budgetaire exceptionnelle"
+    ],
+    "verdict": "Un programme gestionnaire coherent et applicable, mais dont la reussite dependra fortement de la capacite d'execution et de negociation politique.",
+    "bestMeasures": [
+      {
+        "title": "Pack 100% garanties logement",
+        "detail": "Remettre 20 000 logements vides sur le marche avec un pack garanties a 200 EUR/an en moyenne",
+        "type": "best"
+      },
+      {
+        "title": "300 capteurs acoustiques Meduses",
+        "detail": "Lutte contre le bruit avec 300 capteurs + 50 radars anti-nuisances sonores dans tout Paris",
+        "type": "best"
+      },
+      {
+        "title": "Metro de nuit",
+        "detail": "Comme a Londres et New York, ouverture nocturne du metro parisien",
+        "type": "best"
+      },
+      {
+        "title": "Renovation massive du parc immobilier",
+        "detail": "900M EUR pour la renovation des logements sociaux + plan pour 90 000 passoires thermiques",
+        "type": "best"
+      }
+    ],
+    "worstMeasures": [
+      {
+        "title": "6000 policiers en 6 ans",
+        "detail": "Defi RH considerable : 800-1000 recrutements/an alors que les capacites actuelles sont insuffisantes",
+        "type": "unrealistic"
+      },
+      {
+        "title": "Vente de 20 000 logements sociaux",
+        "detail": "Valorisation optimiste de 150k EUR/unite. Risque politique et impact sur la mixite sociale",
+        "type": "worst"
+      },
+      {
+        "title": "Privatisation totale de la proprete",
+        "detail": "Resistances syndicales previsibles et complexite de la reprise du personnel",
+        "type": "worst"
+      }
+    ],
+    "thematicScores": [
+      { "theme": "Logement", "score": 7.5 },
+      { "theme": "Transport", "score": 7.0 },
+      { "theme": "Securite", "score": 8.0 },
+      { "theme": "Ecologie", "score": 6.5 },
+      { "theme": "Budget", "score": 7.0 }
+    ],
+    "contradictions": [
+      "Privatisation massive (proprete) vs creation de milliers de fonctionnaires (police)",
+      "Promesse de desendettement massif (-50%) tout en maintenant les investissements",
+      "Centralisation (police municipale unique) vs critique de l'hyper-centralisation actuelle"
+    ],
+    "blindSpots": [
+      "Culture : quasi-absence du sujet",
+      "Education : seulement la securite aux abords des ecoles",
+      "Sante : aucune mention significative",
+      "Innovation/Numerique : approche limitee"
     ]
   },
   {
-    "slug": "chikirou", 
+    "slug": "chikirou",
     "name": "Sophia Chikirou",
+    "party": "La France Insoumise",
     "globalScore": 7.2,
     "scores": {
-      "coherence": 7.5,
-      "solidite": 7.0,
-      "robustesse": 7.0,
-      "pragmatisme": 7.2,
-      "detail": 7.3
+      "coherence": 8.5,
+      "solidite": 6.5,
+      "robustesse": 5.5,
+      "pragmatisme": 6.0,
+      "detail": 7.5
     },
     "strengths": [
-      "Vision sociale forte avec des mesures concrètes pour les plus démunis",
-      "Programme écologique ambitieux et cohérent",
-      "Propositions innovantes en matière de démocratie participative"
+      "Vision systemique et coherente articulant enjeux sociaux, ecologiques et democratiques",
+      "Ambition sociale remarquable : 80 000 logements, gel des loyers sociaux, zero sans-abri",
+      "Democratie participative approfondie : Maisons de quartier, RIC, budget participatif a 15%"
     ],
     "weaknesses": [
-      "Financement reposant trop sur l'hypothèse d'augmentation des recettes",
-      "Certaines mesures pourraient créer des effets pervers économiques",
-      "Manque de détails sur l'implementation opérationnelle"
+      "Financement insuffisamment detaille malgre des propositions de recettes nouvelles",
+      "Faisabilite juridique incertaine : mesures dependant de competences non municipales",
+      "Calendrier de mise en oeuvre irrealiste pour l'accumulation de reformes structurelles"
     ],
     "problematicMeasures": [
-      "Encadrement des loyers à 10€/m² sans étude d'impact sur l'offre",
-      "Municipalisation de services sans plan de transition détaillé",
-      "Augmentation massive des effectifs municipaux sans cadrage budgétaire"
+      "100 000 logements sociaux en 10 ans : doubler le rythme actuel de construction",
+      "Remunicipalisation complete de la proprete d'ici 2030 : contentieux juridiques probables",
+      "Zero sans-abri avant fin du mandat : necessite cooperation de l'Etat"
+    ],
+    "verdict": "Un programme de rupture ambitieux et coherent qui propose une transformation radicale de Paris en faveur des classes populaires, mais dont la faisabilite operationnelle et financiere reste a demontrer.",
+    "bestMeasures": [
+      {
+        "title": "Maisons de quartier cogerees",
+        "detail": "80 lieux polyvalents combinant services publics, activites sociales et gouvernance participative. Une par quartier.",
+        "type": "best"
+      },
+      {
+        "title": "Brigade du droit au logement",
+        "detail": "150 agents (juristes, mediateurs, inspecteurs) : 10 000 controles/an, 5000 logements remis aux normes. Rentable : 15M de cout pour 30-50M de recettes.",
+        "type": "best"
+      },
+      {
+        "title": "Budget participatif a 15%",
+        "detail": "Porter a 15% la part du budget d'investissement consacree au budget participatif, contre environ 5% actuellement.",
+        "type": "best"
+      }
+    ],
+    "worstMeasures": [
+      {
+        "title": "100 000 logements sociaux en 10 ans",
+        "detail": "Necessite plusieurs milliards d'euros non sources. Doubler le rythme actuel de construction est irrealiste.",
+        "type": "unrealistic"
+      },
+      {
+        "title": "Zero sans-abri avant fin de mandat",
+        "detail": "Necessite la cooperation de l'Etat (hebergement d'urgence). Flux migratoires non maitrisables par la Ville.",
+        "type": "unrealistic"
+      },
+      {
+        "title": "Remunicipalisation totale de la proprete",
+        "detail": "Contentieux juridiques probables, couts de transition tres eleves, objectif 2030 sans plan de transition detaille.",
+        "type": "worst"
+      }
+    ],
+    "thematicScores": [
+      { "theme": "Logement", "score": 8.0 },
+      { "theme": "Transport", "score": 6.5 },
+      { "theme": "Securite", "score": 6.0 },
+      { "theme": "Ecologie", "score": 7.5 },
+      { "theme": "Budget", "score": 5.5 }
+    ],
+    "contradictions": [
+      "Densification (100 000 logements) vs creation de 300 hectares d'espaces verts",
+      "Ameliorer la ville risque d'accelerer la gentrification combattue",
+      "Multiplication des instances participatives peut ralentir les decisions et paralyser des projets"
+    ],
+    "blindSpots": [
+      "Developpement economique : peu de mesures pour attirer/maintenir les entreprises",
+      "Classe moyenne : focus sur les plus modestes, peu pour les classes moyennes",
+      "Innovation/Numerique : secteur peu developpe malgre son importance"
     ]
   },
   {
     "slug": "gregoire",
-    "name": "Laurent Saint-Martin", 
+    "name": "Emmanuel Gregoire",
+    "party": "Parti Socialiste",
     "globalScore": 6.8,
     "scores": {
-      "coherence": 6.9,
-      "solidite": 6.7,
-      "robustesse": 6.8,
-      "pragmatisme": 6.9,
-      "detail": 6.7
+      "coherence": 8.0,
+      "solidite": 6.0,
+      "robustesse": 4.0,
+      "pragmatisme": 5.0,
+      "detail": 7.0
     },
     "strengths": [
-      "Approche pragmatique et réaliste des enjeux parisiens",
-      "Bon équilibre entre attractivité économique et qualité de vie",
-      "Mesures concrètes pour améliorer la sécurité et la propreté"
+      "Programme ambitieux et detaille sur le logement social avec objectifs chiffres (60 000 logements)",
+      "Vision ecologique coherente integrant transformation urbaine et justice sociale",
+      "Propositions concretes pour les services publics et la vie quotidienne (234 mesures au total)"
     ],
     "weaknesses": [
-      "Programme parfois trop conservateur et manquant d'ambition",
-      "Peu d'innovation sur les questions écologiques urgentes",
-      "Vision limitée sur les enjeux métropolitains"
+      "Financement insuffisamment detaille pour des projets tres couteux (peripherique, 300 ha de jardins)",
+      "Calendriers peu precis sur les grandes transformations urbaines",
+      "Faible prise en compte des contraintes juridiques et administratives"
     ],
     "problematicMeasures": [
-      "Réduction de 10% des effectifs administratifs sans plan d'accompagnement",
-      "Privatisation partielle de services publics sans garanties sociales",
-      "Plan propreté basé sur la répression sans volet préventif"
+      "Transformation du peripherique en boulevard urbain : cout estime 5-8 Mds EUR, 10-15 ans minimum",
+      "300 hectares de nouveaux jardins : physiquement impossible (equivaut a 3 Bois de Boulogne)",
+      "Metros 24h/24 : competence exclusive IDFM/Region, cout d'exploitation enorme"
+    ],
+    "verdict": "Un programme progressiste et ambitieux, bien structure sur le plan social, mais manquant de robustesse budgetaire et de pragmatisme sur les grandes transformations urbaines.",
+    "bestMeasures": [
+      {
+        "title": "60 000 logements sociaux",
+        "detail": "Arsenal complet anti-speculation : taxation vacance, requisition, interdiction Airbnb. Brigade de protection du logement.",
+        "type": "best"
+      },
+      {
+        "title": "15 lignes de bus express",
+        "detail": "Super-priorite aux carrefours, videoverbalisation des voies bus, bus toutes les 5 minutes en heure de pointe.",
+        "type": "best"
+      },
+      {
+        "title": "Garantie Municipale des Loyers",
+        "detail": "Extension du dispositif Visale avec une assurance habitation municipale innovante.",
+        "type": "best"
+      }
+    ],
+    "worstMeasures": [
+      {
+        "title": "Transformation du peripherique",
+        "detail": "Cout : 5-8 milliards EUR. 35 km a transformer. Comparaison : Seoul (6 km) a mis 10 ans. Impossible en un mandat.",
+        "type": "unrealistic"
+      },
+      {
+        "title": "300 hectares de jardins",
+        "detail": "Paris compte 500 ha d'espaces verts. En creer 300 de plus (+60%) est physiquement impossible : foncier quasi-inexistant.",
+        "type": "unrealistic"
+      },
+      {
+        "title": "Cout total estime : 25-35 milliards EUR",
+        "detail": "Budget annuel de Paris : 10 Mds EUR dont 1,5 Md d'investissement. Aucun plan de financement presente.",
+        "type": "worst"
+      }
+    ],
+    "thematicScores": [
+      { "theme": "Logement", "score": 8.0 },
+      { "theme": "Transport", "score": 6.5 },
+      { "theme": "Securite", "score": 7.0 },
+      { "theme": "Ecologie", "score": 7.5 },
+      { "theme": "Budget", "score": 3.0 }
+    ],
+    "contradictions": [
+      "60 000 logements (densification) vs 300 ha de jardins (espace necessaire)",
+      "1000 rues pietonnes vs maintien de l'accessibilite pour professionnels",
+      "Nombreuses gratuites proposees sans aucune mention de hausse d'impots"
+    ],
+    "blindSpots": [
+      "Financement global : pas de budget previsionnel ni impact dette",
+      "Gouvernance intercommunale : projets necessitant accord Metropole/Region",
+      "Impact economique : effet sur l'attractivite non traite"
     ]
   },
   {
     "slug": "dati",
     "name": "Rachida Dati",
+    "party": "Les Republicains",
     "globalScore": 5.5,
     "scores": {
-      "coherence": 5.4,
-      "solidite": 5.3,
-      "robustesse": 5.5,
-      "pragmatisme": 5.8,
-      "detail": 5.5
+      "coherence": 4.0,
+      "solidite": 4.0,
+      "robustesse": 2.0,
+      "pragmatisme": 5.0,
+      "detail": 3.0
     },
     "strengths": [
-      "Focus marqué sur la sécurité avec des propositions concrètes",
-      "Volonté de moderniser l'administration parisienne",
-      "Attention portée aux familles et à l'éducation"
+      "Securite : propositions concretes avec chiffrage (5000 policiers municipaux, 8000 cameras)",
+      "Famille : volet le plus detaille avec 9 mesures concretes (creches, ecoles, handicap)",
+      "Experience : connaissance du terrain (maire du 7e depuis 2008) et des rouages administratifs"
     ],
     "weaknesses": [
-      "Programme peu détaillé sur de nombreux aspects cruciaux",
-      "Contradictions entre objectifs écologiques et économiques",
-      "Approche parfois simpliste des problèmes complexes"
+      "Absence quasi-totale de chiffrage budgetaire : aucune estimation du cout global",
+      "Angles morts majeurs : silence sur culture, economie, environnement, social, sante",
+      "Contradictions entre promesses de depenses massives et volonte de redresser les finances"
     ],
     "problematicMeasures": [
-      "Suppression de pistes cyclables sans alternative de mobilité",
-      "Police municipale armée sans formation ni cadre juridique clair",
-      "Baisse des impôts locaux tout en augmentant les investissements"
+      "5000 policiers municipaux : multiplication par 10, cout estime 250-300M EUR/an non budgete",
+      "Paris propre 24h/24, 7j/7 : slogan sans plan operationnel ni moyens identifies",
+      "Redresser les finances tout en investissant massivement : equation budgetaire impossible"
+    ],
+    "verdict": "Un programme centre sur la securite et les familles qui peine a proposer une vision globale et coherente pour une metropole de 2,2 millions d'habitants.",
+    "bestMeasures": [
+      {
+        "title": "9 mesures concretes pour les familles",
+        "detail": "100% places en creche pourvues, pret a taux zero pour les familles, semaine de 4 jours, etudes dirigees, formation AESH.",
+        "type": "best"
+      },
+      {
+        "title": "100M EUR/an logement social",
+        "detail": "Engagement chiffre de 100 millions d'euros par an pour la renovation du logement social.",
+        "type": "best"
+      },
+      {
+        "title": "Securite detaillee",
+        "detail": "Proposition la plus detaillee du programme : 5000 policiers, 8000 cameras, approche globale ecoles/parcs/quartiers.",
+        "type": "best"
+      }
+    ],
+    "worstMeasures": [
+      {
+        "title": "5000 policiers municipaux",
+        "detail": "Multiplication par 10 des effectifs actuels. Cout estime : 250-300M EUR/an non budgete. Recrutement et formation irrealistes en 6 ans.",
+        "type": "unrealistic"
+      },
+      {
+        "title": "Silence sur la culture",
+        "detail": "Absence totale de propositions culturelles malgre son poste de ministre de la Culture. Credibilite entamee.",
+        "type": "worst"
+      },
+      {
+        "title": "2,7% de logements sociaux dans le 7e",
+        "detail": "Contradiction flagrante : le 7e sous sa gestion a le taux le plus faible de Paris. Opposition active aux nouveaux programmes.",
+        "type": "worst"
+      }
+    ],
+    "thematicScores": [
+      { "theme": "Logement", "score": 4.0 },
+      { "theme": "Transport", "score": 4.0 },
+      { "theme": "Securite", "score": 7.0 },
+      { "theme": "Ecologie", "score": 3.0 },
+      { "theme": "Budget", "score": 2.0 }
+    ],
+    "contradictions": [
+      "Ville apaisee vs approche ultra-securitaire (5000 policiers armes)",
+      "Ville respirable vs retour des voitures sur les quais",
+      "Bien gerer vs absence totale de chiffrage budgetaire",
+      "Enfant du logement social vs 2,7% de logement social dans son arrondissement"
+    ],
+    "blindSpots": [
+      "Culture : silence total malgre son ministere",
+      "Sante : pas de plan (sauf PMI)",
+      "Innovation/Economie : rien sur l'attractivite economique",
+      "Social : pas de propositions sur la pauvrete, les SDF",
+      "Environnement : aucun plan climat",
+      "Sport : rien sur les equipements post-JO"
     ]
   },
   {
     "slug": "knafo",
     "name": "Sarah Knafo",
+    "party": "Reconquete !",
     "globalScore": 5.4,
     "scores": {
-      "coherence": 5.2,
-      "solidite": 5.3,
-      "robustesse": 5.4,
-      "pragmatisme": 5.6,
-      "detail": 5.5
+      "coherence": 4.0,
+      "solidite": 6.0,
+      "robustesse": 6.0,
+      "pragmatisme": 5.0,
+      "detail": 7.0
     },
     "strengths": [
-      "Vision libérale cohérente avec des mesures pro-business",
-      "Propositions innovantes sur la digitalisation des services",
-      "Approche entrepreneuriale de la gestion municipale"
+      "Chiffrages detailles : plan d'economies de 9,4 milliards d'euros, 87 propositions concretes",
+      "Solutions technologiques concretes : IA pour la gestion des feux, maquette numerique de Paris",
+      "Mesures operationnelles precises : nombre d'agents, places de creche, processus detailles"
     ],
     "weaknesses": [
-      "Manque de considération pour les enjeux sociaux",
-      "Vision trop idéologique et déconnectée des réalités parisiennes",
-      "Peu de mesures concrètes sur l'environnement"
+      "Propositions hors competences municipales : immigration, expulsions, politique du logement social",
+      "Contradictions budgetaires : baisse massive d'impots tout en augmentant les depenses securitaires",
+      "Faisabilite juridique douteuse : suppression encadrement des loyers, discrimination attribution logements"
     ],
     "problematicMeasures": [
-      "Privatisation massive sans garde-fous sociaux",
-      "Suppression de 30% des règlementations sans étude d'impact",
-      "Flat tax locale incompatible avec le droit fiscal français"
+      "Division par 2 des effectifs municipaux : statut fonction publique, resistances syndicales",
+      "Couverture des voies sur berge : 10+ ans de travaux, milliards d'euros",
+      "8000 policiers municipaux : cout prohibitif (150M EUR/an minimum)"
+    ],
+    "verdict": "Programme ambitieux avec des propositions concretes mais fragilise par des promesses irrealistes et des mesures juridiquement contestables.",
+    "bestMeasures": [
+      {
+        "title": "Plan d'economies de 9,4 Mds EUR",
+        "detail": "Effort de chiffrage global inegalise avec un plan detaille poste par poste des economies annoncees.",
+        "type": "best"
+      },
+      {
+        "title": "IA pour les feux tricolores",
+        "detail": "Utilisation de l'intelligence artificielle pour optimiser la gestion des feux et fluidifier le trafic.",
+        "type": "best"
+      },
+      {
+        "title": "87 propositions chiffrees",
+        "detail": "Programme tres detaille avec pourcentages, processus et chiffrages precis. Point fort du programme.",
+        "type": "best"
+      }
+    ],
+    "worstMeasures": [
+      {
+        "title": "Division par 2 des effectifs",
+        "detail": "Statut de la fonction publique, resistances syndicales massives. Irrealisable en 10 ans, encore moins en 6.",
+        "type": "unrealistic"
+      },
+      {
+        "title": "Couverture des voies sur berge",
+        "detail": "Travaux pharaoniques : 10+ ans de travaux, cout en milliards d'euros. Totalement irrealiste.",
+        "type": "unrealistic"
+      },
+      {
+        "title": "Equation budgetaire impossible",
+        "detail": "Economies 1,88 Md/an - Baisses impots 1,5 Md/an - Nouvelles depenses 300M/an = deficit 300-500M EUR/an.",
+        "type": "worst"
+      }
+    ],
+    "thematicScores": [
+      { "theme": "Logement", "score": 5.0 },
+      { "theme": "Transport", "score": 6.0 },
+      { "theme": "Securite", "score": 6.5 },
+      { "theme": "Ecologie", "score": 3.0 },
+      { "theme": "Budget", "score": 6.0 }
+    ],
+    "contradictions": [
+      "Diviser les impots par 2 tout en augmentant massivement les depenses (8000 policiers)",
+      "Supprimer l'encadrement des loyers pour permettre de se loger (risque hausse des prix)",
+      "Reduire les fonctionnaires de moitie + creer 3000 postes police",
+      "Paris high-tech + retour mobilier urbain historique"
+    ],
+    "blindSpots": [
+      "Transition ecologique quasi-absente du programme",
+      "Vieillissement de la population : peu de mesures seniors",
+      "Culture : tres peu developpe malgre la richesse parisienne"
     ]
   },
   {
     "slug": "mariani",
     "name": "Thierry Mariani",
+    "party": "Rassemblement National",
     "globalScore": 4.2,
     "scores": {
       "coherence": 4.0,
-      "solidite": 4.1,
-      "robustesse": 4.2,
-      "pragmatisme": 4.3,
-      "detail": 4.4
+      "solidite": 3.5,
+      "robustesse": 2.5,
+      "pragmatisme": 3.0,
+      "detail": 5.5
     },
     "strengths": [
-      "Positionnement clair sur les questions de sécurité",
-      "Quelques propositions pertinentes sur le stationnement",
-      "Volonté de réduire les dépenses publiques"
+      "Propositions concretes et detaillees sur la securite : 8 350 agents, 15 000 cameras, 7 brigades",
+      "Quelques mesures precisement chiffrees : 310M EUR taxe fonciere, 50M EUR fonds commerces",
+      "Programme intergenerationnel logement bien structure en deux formules"
     ],
     "weaknesses": [
-      "Programme très lacunaire et peu développé",
-      "Méconnaissance évidente des compétences municipales",
-      "Propositions souvent hors du cadre légal"
+      "Absence quasi-totale de plan de financement : aucun budget global presente",
+      "35% des propositions relevent de l'Etat, non de la Ville : confusion des competences",
+      "30% des mesures illegales ou anticonstitutionnelles (priorite nationale, discriminations)"
     ],
     "problematicMeasures": [
-      "Interdiction de manifestations sans base juridique",
-      "Expulsion immédiate de populations sans procédure légale",
-      "Remise en cause d'acquis sociaux hors compétence municipale"
+      "Priorite nationale : 7 censures du Conseil constitutionnel, anticonstitutionnel",
+      "Deficit cree estime a 960M EUR/an, soit 5,76 milliards sur 6 ans",
+      "Recrutement de 5000 policiers : vivier de 500 candidats/an, delai realiste 15-20 ans"
+    ],
+    "verdict": "Un programme qui traduit des convictions politiques fortes mais qui, faute de rigueur budgetaire et juridique, s'apparente a une declaration d'intentions nationales plutot qu'a un projet municipal operationnel.",
+    "bestMeasures": [
+      {
+        "title": "7 brigades specialisees",
+        "detail": "Organisation structuree : brigades anti-squat, transports, anti-campements, anti-drogue, circulation, BAR municipales, proximite.",
+        "type": "best"
+      },
+      {
+        "title": "Programme intergenerationnel logement",
+        "detail": "Structure claire en deux formules Loyer et Solidarite, avec suivi et mediation par des associations agreees.",
+        "type": "best"
+      },
+      {
+        "title": "RIP a 5% du corps electoral",
+        "detail": "Referendum d'initiative populaire a 75 000 signatures sur les competences municipales.",
+        "type": "best"
+      }
+    ],
+    "worstMeasures": [
+      {
+        "title": "30% de mesures illegales",
+        "detail": "Sur 150 mesures, 45 posent des problemes juridiques majeurs : anticonstitutionnelles, contraires aux lois, hors competences.",
+        "type": "worst"
+      },
+      {
+        "title": "Deficit de 5,76 milliards sur 6 ans",
+        "detail": "Equation impossible : -360M recettes/an + 600M depenses/an. Dette finale estimee a 15 Mds (contre 9 actuellement).",
+        "type": "worst"
+      },
+      {
+        "title": "35% hors competences municipales",
+        "detail": "Immigration, Code de la route, Education nationale, justice : un tiers du programme ne releve pas de la Ville de Paris.",
+        "type": "unrealistic"
+      }
+    ],
+    "thematicScores": [
+      { "theme": "Securite", "score": 6.0 },
+      { "theme": "Proprete", "score": 6.0 },
+      { "theme": "Transport", "score": 5.0 },
+      { "theme": "Logement", "score": 4.0 },
+      { "theme": "Economie", "score": 2.0 },
+      { "theme": "Education", "score": 4.5 },
+      { "theme": "Sante", "score": 3.0 },
+      { "theme": "Immigration", "score": 2.0 }
+    ],
+    "contradictions": [
+      "Baisser les impots (-310M/an) + augmenter les depenses (+600M/an) + desendetter : mathematiquement impossible",
+      "Autonomie par arrondissement vs mesures ultra-centralisees (uniforme obligatoire, interdictions)",
+      "Moratoire logement social + vente 40 000 HLM + priorite nationale sur un parc qui se reduit",
+      "Planter 50 000 arbres mais retour de la voiture partout (90km/h, 20 000 parkings)"
+    ],
+    "blindSpots": [
+      "Qualite de l'air et enjeux climatiques : zero mention",
+      "Sante publique globale : focus unique sur la lutte anti-drogue",
+      "Impact sur le tourisme (12% du PIB parisien) et les entreprises",
+      "Fuite des populations discriminees et tensions avec l'Etat"
     ]
   }
 ]

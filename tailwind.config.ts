@@ -10,6 +10,11 @@ export default {
     extend: {
       colors: {
         primary: '#1E40AF',
+        palette: {
+          red: '#EF4444',
+          blue: '#3B82F6',
+          yellow: '#EAB308',
+        },
         accent: {
           green: '#10B981',
           orange: '#F59E0B',
