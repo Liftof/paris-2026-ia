@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Programmes Paris 2026 jugés par l'IA
 
-## Getting Started
+Une analyse objective et transparente des programmes des candidats à la mairie de Paris 2026, réalisée par intelligence artificielle.
 
-First, run the development server:
+## 🎯 Objectif
+
+Ce site présente une évaluation neutre et rigoureuse des programmes politiques des 6 principaux candidats à la mairie de Paris en 2026. L'utilisation de l'IA garantit une analyse sans biais partisan.
+
+## 📊 Méthodologie
+
+L'analyse se base sur 5 critères objectifs, chacun noté sur 10 :
+
+- **Cohérence** : Les propositions s'articulent-elles logiquement entre elles ?
+- **Solidité** : Les mesures sont-elles réalisables et bien fondées ?
+- **Robustesse** : Le programme peut-il résister aux aléas et changements ?
+- **Pragmatisme** : Les propositions sont-elles concrètes et applicables ?
+- **Niveau de détail** : Le programme est-il précis et exhaustif ?
+
+## 🏗️ Stack technique
+
+- **Next.js 16** - Framework React avec App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Vercel** - Déploiement
+
+## 🚀 Installation
 
 ```bash
+# Cloner le repo
+git clone https://github.com/[USERNAME]/paris-2026-ia.git
+cd paris-2026-ia
+
+# Installer les dépendances
+npm install
+
+# Lancer en dev
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+paris-2026-ia/
+├── app/
+│   ├── page.tsx              # Page d'accueil
+│   ├── candidats/[slug]/     # Pages détaillées par candidat
+│   └── methodologie/         # Page méthodologie
+├── components/
+│   ├── CandidateCard.tsx     # Card candidat
+│   └── ScoreRadar.tsx        # Graphique des scores
+├── lib/
+│   └── candidatesData.json   # Données extraites
+└── types/
+    └── candidate.ts          # Types TypeScript
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Design
 
-## Learn More
+- Palette scientifique et trans-partisane
+- Interface claire et accessible
+- Visualisations des données intuitives
+- Mobile-first responsive
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 Licence
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ce projet est open source. L'objectif est la transparence totale dans l'analyse politique.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contribution
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Les contributions sont bienvenues pour améliorer l'analyse ou corriger des erreurs factuelles. Merci de maintenir la neutralité politique du projet.
