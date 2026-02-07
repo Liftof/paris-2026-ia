@@ -178,6 +178,9 @@ export default function AProposPage() {
             Merci &agrave; tous ceux qui prennent le temps de lire, comparer et s&apos;informer avant de voter.
             La d&eacute;mocratie fonctionne mieux quand les citoyens ont les outils pour comprendre ce qu&apos;on leur propose.
           </p>
+          <p className="text-xs text-ink-4 mt-4">
+            Merci &agrave; Tom Godignon pour son aide dans la conception de la m&eacute;thode d&apos;analyse.
+          </p>
         </section>
       </main>
     </div>
