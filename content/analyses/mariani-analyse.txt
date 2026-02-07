@@ -1,0 +1,581 @@
+Analyse du Programme de Thierry Mariani - Paris 2026
+
+Table des matières
+Analyse du Programme de Thierry Mariani (RN) - Paris 2026
+Évaluation non-partisane et technique . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Table des matières . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Résumé Exécutif . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Note Globale : 4.2/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Méthodologie d’Analyse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Contexte du Candidat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Analyse par Critère . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1. Cohérence Interne : 4/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2. Solidité Technique : 3.5/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3. Robustesse Budgétaire : 2.5/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4. Pragmatisme : 3/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5. Détail & Précision : 5.5/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Analyse Thématique Approfondie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Sécurité & Tranquillité : 6/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Immigration : 2/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Propreté : 6/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Transport & Mobilités : 5/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Logement : 4/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Économie & Finances : 2/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Éducation : 4.5/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Démocratie locale : 5/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Santé : 3/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Points d’Attention Critiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1. Inventaire des mesures illégales ou anticonstitutionnelles . . . . . . . . . . . . . .
+2. Analyse des impossibilités techniques . . . . . . . . . . . . . . . . . . . . . . . . .
+3. Risques majeurs pour la Ville . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Comparaison au Contexte Municipal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Mesures en continuité avec l’existant (20%) . . . . . . . . . . . . . . . . . . . . . . .
+Mesures en rupture totale (50%) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Mesures nécessitant accord État/Région (30%) . . . . . . . . . . . . . . . . . . . . .
+Innovation réelle vs recyclage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Conclusion Générale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Note finale : 4.2/10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Analyse synthétique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Verdict final . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1
+
+2
+2
+2
+2
+2
+3
+3
+4
+4
+5
+6
+7
+8
+8
+8
+9
+9
+10
+10
+11
+11
+11
+11
+12
+12
+12
+12
+13
+13
+13
+13
+13
+13
+13
+14
+14
+
+Analyse du Programme de Thierry
+Mariani (RN) - Paris 2026
+Évaluation non-partisane et technique
+
+Table des matières
+1. Résumé Exécutif
+2. Méthodologie d’Analyse
+3. Contexte du Candidat
+4. Analyse par Critère
+• Cohérence Interne
+• Solidité Technique
+• Robustesse Budgétaire
+• Pragmatisme
+• Détail & Précision
+5. Analyse Thématique Approfondie
+6. Points d’Attention Critiques
+7. Comparaison au Contexte Municipal
+8. Conclusion Générale
+
+Résumé Exécutif
+Note Globale : 4.2/10
+Le programme de Thierry Mariani pour Paris 2026 présente une vision claire sur certains sujets,
+notamment la sécurité, mais souffre de défauts structurels majeurs qui compromettent sa crédibilité
+et son applicabilité.
+Trois forces principales identifiées :
+1. Propositions concrètes et détaillées sur la sécurité
+• Objectif précis : 8 350 agents de police municipale (ratio de 4 pour 1 000 habitants)
+• Plan détaillé : 15 000 caméras de vidéoprotection (144 caméras/km2)
+• Organisation structurée : 7 brigades spécialisées avec missions définies
+2
+
+2. Vision politique assumée et cohérente avec la ligne RN
+• Positions claires sur l’immigration et la sécurité
+• Priorité affichée aux Parisiens dans l’accès aux services
+• Approche “ordre et autorité” maintenue dans tous les chapitres
+3. Quelques mesures précisément chiffrées
+• Baisse de la taxe foncière : 310 millions d’euros de restitution aux Parisiens
+• Fonds de soutien aux commerces : 50 millions sur 5 ans
+• Objectifs quantifiés sur le logement : conversion de 500 000 m2 de bureaux
+Trois faiblesses principales identifiées :
+1. Absence quasi-totale de plan de financement
+• Aucun budget global présenté
+• Contradiction entre baisse des recettes et explosion des dépenses
+• Méconnaissance apparente du budget municipal (10 milliards €/an)
+2. Confusion majeure sur les compétences municipales
+• ~35% des propositions relèvent de l’État, non de la Ville
+• Mesures sur l’immigration, la justice, l’éducation nationale hors champ
+• Risque juridique élevé d’annulation des mesures phares
+3. Contradictions économiques insurmontables
+• Promesse simultanée de : baisser les impôts + augmenter massivement les dépenses +
+désendetter
+• Équation mathématiquement impossible
+• Aucune source alternative de financement identifiée
+Verdict synthétique : Un programme qui traduit des convictions politiques fortes mais qui, faute
+de rigueur budgétaire et juridique, s’apparente davantage à une déclaration d’intentions nationales
+qu’à un projet municipal opérationnel et réalisable pour Paris.
+
+Méthodologie d’Analyse
+Cette analyse suit une grille d’évaluation strictement technique et non-partisane, fondée sur cinq
+critères objectifs :
+1. Cohérence interne : Les propositions forment-elles un ensemble logique sans contradictions ?
+2. Solidité technique : Les mesures sont-elles précises, chiffrées et juridiquement fondées ?
+3. Robustesse budgétaire : Le financement est-il assuré et réaliste ?
+4. Pragmatisme : Les propositions sont-elles réalisables dans le cadre d’un mandat municipal ?
+5. Détail & précision : Le niveau de détail permet-il une mise en œuvre opérationnelle ?
+Chaque critère est noté sur 10. L’analyse se base exclusivement sur le contenu du programme officiel,
+sans jugement sur les orientations politiques ou idéologiques.
+
+Contexte du Candidat
+Thierry Mariani, 67 ans, représente le Rassemblement National aux élections municipales de Paris
+2026. Son profil se caractérise par :
+3
+
+• Parcours politique long et varié : RPR (1976), UMP, puis RN (2022)
+• Expérience ministérielle : Secrétaire d’État puis ministre des Transports (2010-2012)
+• Ancrage territorial hors Paris : Maire de Valréas (Vaucluse) de 1989 à 2005
+• Mandat actuel : Député européen depuis 2019
+Objectif affiché : “Entrer au Conseil de Paris” - objectif modeste qui contraste avec l’ampleur du
+programme présenté
+Contexte électoral : Le RN a obtenu 1,47% aux municipales de 2020 à Paris. La réforme du mode
+de scrutin de 2025 pourrait faciliter l’obtention de sièges.
+Principal défi : L’absence totale d’implantation locale du parti et la sociologie parisienne
+traditionnellement hostile aux idées d’extrême droite.
+
+Analyse par Critère
+1. Cohérence Interne : 4/10
+Le programme maintient une ligne directrice claire autour des thèmes de l’ordre, de la sécurité et
+de la priorité aux Parisiens. Cependant, des contradictions majeures compromettent la cohérence
+d’ensemble.
+Points de cohérence identifiés :
+La sécurité comme fil rouge - Présente dans 11 chapitres sur 12 - Approche “tolérance zéro”
+systématique - Vision cohérente : plus de moyens, plus de répression, plus de contrôle
+L’identité et la priorité aux Parisiens - “Priorité nationale” déclinée dans tous les services Lutte contre l’immigration comme axe transversal - Défense des “valeurs françaises et parisiennes”
+La critique systématique du bilan Hidalgo - Remise en cause de toutes les politiques actuelles
+- Volonté de “retrouver Paris” (utilisé 5 fois dans le programme)
+Contradictions majeures identifiées :
+1. Contradiction budgétaire fondamentale
+Le programme promet simultanément : - Baisse massive des recettes : -310 M€/an de taxe foncière
+- Explosion des dépenses : - Police municipale : +5 000 agents (~250 M€/an) - Vidéoprotection :
+12 000 caméras supplémentaires (~150 M€) - 3 nouvelles piscines (~150 M€) - 50 000 arbres (~50
+M€) - 20 000 places de parking (~400 M€) - Désendettement accéléré : ramener la dette de 9 à 7
+milliards
+Analyse : Cette équation est mathématiquement impossible. On ne peut pas simultanément réduire
+les recettes de 1,86 milliard sur 6 ans, augmenter les dépenses d’au moins 3 milliards, et réduire la
+dette de 2 milliards.
+2. Contradiction sur l’autonomie locale
+• D’un côté : “Donner une autonomie à chaque arrondissement”
+• De l’autre : Mesures ultra-centralisées (uniforme obligatoire, interdictions générales)
+
+4
+
+Exemple concret : Le programme propose de déléguer la gestion de la propreté aux arrondissements
+tout en imposant un uniforme scolaire unique pour tout Paris.
+3. Contradiction sur le logement social
+Le programme affirme vouloir : - Un “moratoire sur le sur-logement social” - Mais aussi “40 000
+familles propriétaires de leur logement social” - Et l’application de la “priorité nationale dans le
+logement social”
+Analyse : On ne peut pas simultanément stopper la construction de HLM, en vendre 40 000, et y
+appliquer une priorité nationale sur un parc qui se réduit.
+4. Contradiction mobilité/environnement
+• Promesse de planter 50 000 arbres et végétaliser
+• Mais retour de la voiture partout (90km/h, 20 000 parkings, fin ZTL)
+• Aucune mention de la qualité de l’air ou du climat
+
+2. Solidité Technique : 3.5/10
+Le programme présente un mélange de propositions précises et de mesures juridiquement fragiles ou
+techniquement floues.
+Éléments techniquement solides :
+Sécurité - Le point fort technique du programme - Ratio policiers : 4/1000 habitants est
+un objectif clair (New York : 4,2/1000) - Caméras : 144/km2 aligné sur la moyenne européenne Organisation : 7 brigades spécialisées avec missions définies : 1. Brigade anti-squat (délai 24-48h)
+2. Brigade des transports 3. Brigade anti-campements 4. Brigade anti-drogue 5. Brigade circulation
+6. BAR municipales 7. Police de proximité
+Logement - Quelques éléments chiffrés - Conversion bureaux : 500 000 m2 = ~6 000 logements Programme intergénérationnel structuré en deux formules - Objectif de réduction du taux de vacance
+commerciale : 10,5% → 8%
+Faiblesses techniques majeures :
+1. Confusion des compétences (35% du programme hors champ municipal)
+Exemples de mesures relevant de l’État, non de la Ville : - “Priorité nationale” dans les services
+publics → Anticonstitutionnel - Contrôle de l’immigration → Compétence exclusive de l’État
+- Modification du Code de la route → Compétence du gouvernement - Uniforme dans les écoles
+publiques → Compétence Éducation nationale - Expulsion pour délinquance → Compétence judiciaire
+- Interdiction du burkini → Déjà jugée illégale par le Conseil d’État
+2. Mesures juridiquement fragiles ou illégales
+• “Convention locataires HLM” permettant expulsion rapide → Violation du droit au
+logement
+• Suppression allocations pour familles de délinquants → Discrimination illégale
+• “Priorité nationale” → Contraire à la Constitution et aux traités européens
+• Interdiction voile agents municipaux → Déjà encadré par la loi, pas d’interdiction générale
+possible
+5
+
+3. Propositions techniquement vagues
+• “Lutter fermement contre l’idéologie islamiste” → Aucune mesure concrète
+• “Théorie de la vitre brisée” → Slogan sans traduction opérationnelle
+• “Moderniser les moyens de nettoyer la ville” → Aucune précision technique
+
+3. Robustesse Budgétaire : 2.5/10
+L’analyse budgétaire révèle une méconnaissance profonde des équilibres financiers municipaux et
+une impossibilité mathématique de réaliser le programme.
+Éléments chiffrés présents :
+Baisse des recettes : - Taxe foncière : -310 M€/an (1,86 Md€ sur 6 ans) - Gel TEOM et autres
+taxes : ~-50 M€/an
+Quelques dépenses chiffrées : - Fonds commerce : 50 M€ sur 5 ans (10 M€/an) - Garantie
+accession propriété : 50 000€ x 500 = 25 M€/an - Allocation crèche : 300€/mois x ~2000 familles =
+7,2 M€/an
+Absence totale de chiffrage pour les mesures majeures :
+Évaluation des coûts non mentionnés :
+1. Sécurité (coût estimé : 450 M€/an minimum)
+• 5 000 policiers supplémentaires : ~250 M€/an (50 000€/agent)
+• 12 000 caméras : 150 M€ d’investissement + 30 M€/an exploitation
+• 7 brigades spécialisées : ~20 M€/an
+• Formation, équipement, véhicules : ~30 M€/an
+2. Équipements (investissement : ~800 M€)
+• 3 piscines : 150 M€ (50 M€/piscine)
+• 20 000 parkings : 400 M€ (20 000€/place)
+• Végétalisation écoles : 100 M€
+• 50 000 arbres : 50 M€
+• Crématorium : 30 M€
+• Rénovations diverses : 70 M€
+3. Fonctionnement nouveaux services (~150 M€/an)
+• Gratuité crèche 3e enfant : 30 M€/an
+• 100 centres soutien scolaire : 40 M€/an
+• Navettes inter-arrondissements : 20 M€/an
+• Extension horaires services : 30 M€/an
+• Programme seniors/étudiants : 10 M€/an
+• Parcours civique rémunéré : 20 M€/an
+Bilan financier global estimé : - Pertes de recettes : -360 M€/an (-2,16 Md€/6 ans) - Dépenses
+nouvelles : +600 M€/an minimum - Investissements : 800 M€ sur 6 ans - Déficit créé : ~960
+M€/an - Impact sur 6 ans : -5,76 milliards d’euros
+Contradiction avec l’objectif de désendettement : - Dette actuelle : 9 milliards € - Objectif
+affiché : 7 milliards € en 2032 - Réalité avec ce programme : ~15 milliards € minimum
+
+6
+
+4. Pragmatisme : 3/10
+L’analyse du pragmatisme révèle un décalage important entre les ambitions affichées et les réalités
+administratives, juridiques et politiques.
+Mesures potentiellement réalisables (20% du programme) :
+Court terme (1-2 ans) : - Augmentation progressive de la vidéosurveillance - Création d’espaces
+canins dans les parcs - Simplification de la grille tarifaire des cantines - Développement du dispositif
+“Voisins vigilants” - Audit des comptes municipaux
+Moyen terme (3-4 ans) : - Recrutement progressif de policiers municipaux (mais pas 5000) Amélioration de l’éclairage public - Programme de soutien scolaire (version réduite) - Quelques
+navettes inter-arrondissements
+Obstacles majeurs non pris en compte :
+1. Obstacles juridiques insurmontables
+Mesures qui seraient censurées : - Priorité nationale : Le Conseil constitutionnel a systématiquement
+censuré ce principe - Discriminations religieuses : Contraires à la Constitution et à la CEDH Expulsions arbitraires : Violation du droit au logement opposable - Modifications unilatérales
+des baux HLM : Illégal sans accord des locataires
+Exemple concret : La “priorité nationale” a été censurée 7 fois par le Conseil constitutionnel depuis
+1990. Son application entraînerait l’annulation immédiate des délibérations.
+2. Obstacles administratifs sous-estimés
+• Police municipale armée :
+– Autorisation préfectorale nécessaire
+– Formation de 6 mois minimum par agent
+– Délai réaliste : 2 ans pour 500 agents, 10 ans pour 5000
+• Modification du PLU :
+– Procédure : 24-36 mois minimum
+– Enquête publique obligatoire
+– Risque élevé de recours
+• Fusion des bailleurs sociaux :
+– Résistance syndicale garantie
+– Procédure : 3-5 ans minimum
+– Coût social et financier élevé
+3. Obstacles politiques ignorés
+• Absence de majorité : Le RN n’a aucune chance d’obtenir la majorité au Conseil de Paris
+• Opposition de l’État : Sur toutes les mesures régaliennes
+• Blocages préfectoraux : Le préfet de police s’opposerait aux mesures sécuritaires extrêmes
+• Mobilisation associative : Recours systématiques contre les mesures discriminatoires
+4. Obstacles techniques et humains
+• Recrutement impossible :
+– Paris peine déjà à recruter 500 policiers municipaux/an
+
+7
+
+– 5000 en 6 ans = irréaliste (manque de candidats qualifiés)
+• Saturation du marché :
+– 15 000 caméras = 5 fois le parc actuel
+– Capacité d’installation : 500-1000/an maximum
+
+5. Détail & Précision : 5.5/10
+Le programme présente un niveau de détail variable selon les thématiques, avec des points forts sur
+la sécurité mais de nombreuses zones floues.
+Éléments bien détaillés :
+Sécurité - Description précise des dispositifs - 7 brigades spécialisées avec missions définies
+- Ratios cibles : 4 policiers/1000 habitants, 144 caméras/km2 - Délais d’intervention : 24-48h
+pour les squats - Organisation territoriale : antennes dans les ZSP
+Mobilité - Mesures concrètes - Vitesses : 90 km/h périphérique, 50 km/h grands axes Stationnement : 20 000 places, gratuité 2 roues - Tarifs : suppression zonage Parisiens, réduction
+forfait post-stationnement
+Programme seniors-étudiants - Structure claire - Deux formules : “Loyer” et “Solidarité” Cadre : associations agréées, suivi, médiation - Public cible bien identifié
+Manques de précision critiques :
+1. Généralités et slogans (30% du texte) - “Retrouvons Paris” → Slogan sans contenu - “Lutter
+fermement” → Utilisé 8 fois sans précision - “Tolérance zéro” → Concept flou juridiquement “Reprendre le contrôle” → Aucune modalité
+2. Absence de calendrier - Aucun phasage des 150+ mesures - Pas de distinction court/moyen/long
+terme - “Dès que la loi le permet” → Horizon indéfini - Aucune priorisation
+3. Modalités de mise en œuvre absentes
+Exemples de questions sans réponse : - Comment recruter 5000 policiers ? Où les former ? - Où
+implanter 20 000 parkings dans Paris ? - Comment “fermer les structures migrants” légalement ? Qui réalise l’“audit indépendant” ? Coût ? Durée ? - Comment identifier les “familles de délinquants”
+?
+4. Absence d’indicateurs de suivi - Pas de KPI définis - Aucun objectif intermédiaire - Pas de
+tableau de bord proposé
+
+Analyse Thématique Approfondie
+Sécurité & Tranquillité : 6/10
+Volume : 25% du programme (4 pages sur 16)
+Points forts : - Vision structurée avec 7 brigades spécialisées - Objectifs quantifiés clairs - Cohérence
+de l’approche répressive
+Propositions phares analysées :
+8
+
+1. “8 350 agents de police municipale”
+• Situation actuelle : 3 400 agents
+• Objectif : +4 950 agents (+145%)
+• Faisabilité : Très faible (Paris recrute péniblement 200-300/an)
+• Coût estimé : 250 M€/an en fonctionnement
+• Délai réaliste : 15-20 ans, pas 6
+2. “15 000 caméras”
+• Situation actuelle : ~3 000
+• Objectif : x5
+• Faisabilité : Possible techniquement mais coûteux
+• Coût : 150 M€ + 30 M€/an
+• Enjeu : Capacité de traitement des images
+3. “Brigade anti-squat 24-48h”
+• Problème juridique : La police municipale n’a pas compétence
+• Réalité : Procédures judiciaires = plusieurs mois
+• Alternative légale : Aucune sans changer la loi nationale
+Analyse critique : - Confusion permanente avec les compétences de la police nationale - Vision
+uniquement répressive, zéro prévention - Coûts astronomiques non financés - Certaines mesures
+illégales (expulsions express)
+
+Immigration : 2/10
+Points d’attention : - 90% des mesures sont hors compétences municipales - Confusion totale
+entre ville, État et préfecture - Mesures largement illégales ou anticonstitutionnelles
+Analyse des propositions principales :
+1. “Fermer toutes les structures municipales d’accueil”
+• Réalité juridique : Obligation d’accueil inconditionnel (jurisprudence constante)
+• Risque : Condamnation de la Ville + astreintes
+• Impact : Report sur l’État du problème, pas de solution
+2. “Priorité nationale”
+• Statut juridique : Anticonstitutionnel (égalité devant la loi)
+• Précédents : 7 censures du Conseil constitutionnel
+• Application : Impossible légalement
+3. “Brigade anti-campements”
+• Compétence réelle : Préfecture de police exclusivement
+• Rôle ville : Uniquement nettoiement après évacuation
+• Efficacité : Déplacement du problème, pas résolution
+
+Propreté : 6/10
+Points positifs : - Objectif clair : niveau des capitales européennes - Externalisation envisagée
+(solution pragmatique) - Plan dératisation mentionné
+Analyse détaillée :
+1. “Propreté 24/24h”
+• Coût additionnel : +40 M€/an (équipes nuit)
+• Faisabilité : Oui si financement
+9
+
+• Efficacité : Prouvée dans d’autres villes
+2. “Autonomie par arrondissement”
+• Avantage : Responsabilisation locale
+• Risque : Inégalités entre arrondissements
+• Complexité : Coordination nécessaire
+3. “Fin détournement TEOM”
+• Montant : 60 M€/an actuellement
+• Impact : Amélioration possible du service
+• Légalité : Mesure applicable
+Point faible : Aucun chiffrage du coût global
+
+Transport & Mobilités : 5/10
+Philosophie : Retour complet à la voiture individuelle
+Mesures phares analysées :
+1. “90 km/h sur le périphérique”
+• Impact pollution : +15% d’émissions
+• Impact sécurité : +30% d’accidents graves (études)
+• Compétence : Préfet de police (pas la Ville)
+• Acceptabilité : Forte opposition prévisible
+2. “20 000 places de parking”
+• Coût : 400 M€ minimum (20 000€/place)
+• Espace nécessaire : 300 000 m2
+• Localisation : Non précisée (où ?)
+• Contradiction : Avec objectifs végétalisation
+3. “Suppression ZTL”
+• Impact : +50 000 véhicules/jour dans le centre
+• Conséquence : Dégradation qualité air
+• Tourisme : Impact négatif (études)
+• Compétence : Partagée avec préfet
+Absence totale : Enjeux climatiques, qualité de l’air, mobilités douces
+
+Logement : 4/10
+Points d’intérêt : - Programme intergénérationnel structuré - Objectif conversion bureaux chiffré Volonté d’accession à la propriété
+Contradictions majeures :
+1. Sur le logement social
+• “Moratoire” mais vente de 40 000 HLM
+• “Priorité nationale” inapplicable
+• Fusion bailleurs = 3-5 ans minimum
+2. Sur l’encadrement des loyers
+• Suppression = explosion des prix
+• Impact : +20-30% en 2 ans (cf. autres villes)
+• Contradiction avec aide aux familles
+10
+
+Analyse “40 000 ventes HLM” - Parc actuel : 230 000 logements sociaux - Impact : -17% du
+parc social - Prix moyen estimé : 200 000€/logement - Recette totale : 8 milliards € (sur 6 ans) Problème : Où reloger les non-acheteurs ?
+
+Économie & Finances : 2/10
+Faiblesse majeure du programme : Aucune vision économique cohérente
+Équation impossible démontrée :
+Recettes perdues : - Taxe foncière : -1,86 Md€/6 ans - Autres taxes : -300 M€/6 ans - Total : -2,16
+Mds €
+Dépenses nouvelles : - Sécurité : +1,5 Md€ - Équipements : +800 M€ - Fonctionnement : +900 M€
+- Total : +3,2 Mds € minimum
+Promesse désendettement : - Réduction dette : -2 Mds € - Besoin total : 7,36 Mds €
+Sources de financement : AUCUNE identifiée
+
+Éducation : 4.5/10
+Points positifs : - Soutien scolaire détaillé - Parcours patrimoine concret - Attention sécurité
+enfants
+Problèmes de compétence :
+1. “Uniforme obligatoire”
+• Compétence : Éducation nationale exclusivement
+• Précédent : Aucune ville n’a pu l’imposer
+• Coût si possible : 20 M€ (200€ x 100 000 élèves)
+2. “Semaine 4 jours”
+• Compétence : Recteur d’académie
+• Rôle ville : Uniquement périscolaire
+• Impact : Désorganisation familles
+Mesure intéressante : 100 centres soutien avec 800 tuteurs - Coût estimé : 40 M€/an - Faisabilité
+: Oui si financement - Impact : Positif sur réussite scolaire
+
+Démocratie locale : 5/10
+Innovation : RIP à 5% du corps électoral - Seuil : ~75 000 signatures - Champ : Compétences
+municipales seulement - Risque : Blocage institutionnel
+Contradictions : Centralisation vs autonomie arrondissements
+
+Santé : 3/10
+Focus unique : Lutte anti-drogue
+“Supprimer salles de shoot” - Impact santé publique : Négatif (consensus médical) - Alternative
+proposée : 1 centre unique (insuffisant) - Économie : 3 M€/an - Coût social : Augmentation mortalité
+Absence : Aucune vision santé publique globale
+
+11
+
+Points d’Attention Critiques
+1. Inventaire des mesures illégales ou anticonstitutionnelles
+Sur les ~150 mesures du programme, environ 45 (30%) posent des problèmes juridiques majeurs :
+Anticonstitutionnelles (censure certaine) : 1. “Priorité nationale” dans l’attribution des
+logements sociaux 2. “Priorité nationale” dans l’accès aux crèches 3. Discrimination religieuse
+(interdiction voile agents) 4. Suppression allocations pour familles de délinquants 5. Expulsion du
+logement social sans décision justice
+Contraires aux lois existantes : 6. Convention d’expulsion rapide locataires HLM 7. Fermeture
+structures accueil migrants (obligation légale) 8. Modification unilatérale encadrement loyers 9.
+Sanctions collectives familles 10. Fichage religieux indirect
+Hors compétences municipales : 11-25. Toutes mesures immigration (15 mesures) 26-30.
+Modifications Code route (5 mesures) 31-35. Mesures Éducation nationale (5 mesures) 36-40.
+Mesures justice/police (5 mesures) 41-45. Autres compétences État (5 mesures)
+
+2. Analyse des impossibilités techniques
+Recrutement 5 000 policiers municipaux - Vivier actuel : 500 candidats qualifiés/an maximum
+en Île-de-France - Formation : 6 mois minimum + 6 mois tutorat - Capacité écoles : 300 places/an Délai réaliste : 15-20 ans, pas 6
+Installation 15 000 caméras - Capacité installation : 1 000/an maximum (marchés publics,
+travaux) - Traitement images : Besoin 500 agents supplémentaires - Stockage : Infrastructure data
+center à créer
+Création 20 000 parkings - Espace nécessaire : 30 hectares - Localisation : Aucune disponible
+identifiée - Alternative souterraine : 40 000€/place = 800 M€
+
+3. Risques majeurs pour la Ville
+Risque financier - Déficit créé : ~1 milliard €/an - Dette finale : 15 milliards € (contre 9 actuellement)
+- Mise sous tutelle possible
+Risque juridique - Annulation massive de délibérations - Condamnations et astreintes - Paralysie
+institutionnelle
+Risque social - Divisions communautaires exacerbées - Fuite des populations discriminées - Tensions
+avec l’État
+Risque réputationnel - Image internationale dégradée - Impact sur le tourisme (12% PIB) - Fuite
+des entreprises
+
+12
+
+Comparaison au Contexte Municipal
+Mesures en continuité avec l’existant (20%)
+1. Vidéoprotection : Paris a déjà triplé son parc sous Hidalgo
+2. Police municipale : Création récente, montée en puissance prévue
+3. Végétalisation : Plan climat déjà voté
+4. Rénovation écoles : Programme en cours
+5. Lutte anti-tags : Brigades existantes
+
+Mesures en rupture totale (50%)
+1. Mobilité : Retour complet à la voiture vs politique actuelle
+2. Immigration : Fermeture vs accueil inconditionnel actuel
+3. Logement social : Vente massive vs construction
+4. Fiscalité : Baisse vs hausses Hidalgo
+5. Gouvernance : Centralisation vs participatif
+
+Mesures nécessitant accord État/Région (30%)
+Accord préfet police nécessaire : - Modification vitesses - Police municipale armée - Certaines
+mesures circulation - Évacuation campements
+Accord État nécessaire : - Toutes mesures immigration - Modifications éducation - Certains
+financements - Modifications légales
+Accord Région nécessaire : - Transports (compétence IDFM) - Certains financements Aménagements régionaux
+
+Innovation réelle vs recyclage
+Vraies innovations (10%) : - Programme intergénérationnel logement - RIP à 5% - Brigades
+spécialisées police municipale - Autonomie propreté arrondissements
+Recyclage propositions RN nationales (60%) : - Priorité nationale - Uniforme scolaire Immigration - Sécurité répressive
+Propositions classiques droite municipale (30%) : - Baisse impôts - Retour voiture Vidéosurveillance - Critique gestion sortante
+
+Conclusion Générale
+Note finale : 4.2/10
+Cette note reflète un programme qui présente certaines propositions concrètes et détaillées, notamment
+sur la sécurité, mais qui souffre de défauts structurels majeurs rendant impossible sa mise en œuvre.
+
+13
+
+Analyse synthétique
+Ce programme est-il cohérent ? Partiellement. La ligne sécuritaire et identitaire est maintenue,
+mais les contradictions budgétaires et juridiques sont insurmontables.
+Ce programme est-il techniquement solide ? Non. 35% des mesures sont hors compétences
+municipales et 30% sont illégales ou anticonstitutionnelles.
+Ce programme est-il finançable ? Non. L’équation proposée (baisser les impôts + augmenter
+massivement les dépenses + désendetter) est mathématiquement impossible. Déficit créé : 5-6
+milliards d’euros.
+Ce programme est-il réalisable ? Non. Les obstacles juridiques (censures), administratifs
+(compétences), politiques (pas de majorité) et techniques (recrutements impossibles) rendent la
+majorité des mesures inapplicables.
+Ce programme est-il suffisamment détaillé ? Partiellement. Certains points (sécurité) sont
+détaillés, mais l’absence de calendrier, de financement et de modalités pour 60% des mesures est
+problématique.
+
+Verdict final
+Le programme de Thierry Mariani pour Paris 2026 apparaît comme une transposition inadaptée
+du programme national du RN au niveau municipal.
+Il témoigne d’une méconnaissance des compétences municipales (confusion permanente avec
+l’État), d’une ignorance des contraintes budgétaires (promesses intenables de 7-8 milliards €),
+et d’une sous-estimation des obstacles juridiques (30% de mesures illégales).
+Si certaines propositions sur la sécurité ou la propreté pourraient être débattues, l’ensemble forme
+un programme inapplicable en l’état, qui conduirait rapidement à une paralysie institutionnelle
+et une crise financière majeure pour Paris.
+Ce n’est pas tant un programme municipal opérationnel qu’une déclaration d’intentions
+politiques nationales, utilisant Paris comme tribune plus que comme objet d’une véritable
+réflexion sur la gestion urbaine.
+
+Analyse réalisée selon une méthodologie strictement technique et non-partisane, fondée uniquement
+sur les critères de cohérence, solidité, financement, faisabilité et précision.
+
+14
+
+

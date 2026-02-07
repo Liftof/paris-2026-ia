@@ -1,5 +1,7 @@
 import { getCandidateBySlug, candidatesData } from '@/lib/data'
+import { getAnalyseBySlug } from '@/lib/analyses'
 import ScoreRadar from '@/components/ScoreRadar'
+import AnalyseComplete from '@/components/AnalyseComplete'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
@@ -11,6 +13,7 @@ export function generateStaticParams() {
 
 export default function CandidatePage({ params }: { params: { slug: string } }) {
   const candidate = getCandidateBySlug(params.slug)
+  const analyseContent = getAnalyseBySlug(params.slug)
 
   if (!candidate) {
     notFound()
@@ -81,7 +84,7 @@ export default function CandidatePage({ params }: { params: { slug: string } }) 
         </div>
 
         {/* Analysis Summary */}
-        <div className="bg-gray-50 border border-gray-200 p-8">
+        <div className="bg-gray-50 border border-gray-200 p-8 mb-16">
           <h2 className="text-xl font-normal text-gray-900 mb-4">Synthèse</h2>
           <p className="text-gray-700 leading-relaxed">
             Le programme de {candidate.name} obtient une note globale de {candidate.globalScore}/10. 
@@ -90,6 +93,9 @@ export default function CandidatePage({ params }: { params: { slug: string } }) 
             'un programme nécessitant des améliorations significatives sur plusieurs critères fondamentaux pour être pleinement réalisable.'}.
           </p>
         </div>
+
+        {/* Full Analysis */}
+        {analyseContent && <AnalyseComplete content={analyseContent} />}
       </main>
     </div>
   )
