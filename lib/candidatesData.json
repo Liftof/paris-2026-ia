@@ -5,7 +5,7 @@
     "party": "Horizons / Renaissance",
     "politicalColor": "#FF6F00",
     "campaignUrl": "https://bournazel.paris/",
-    "politicalLine": "Candidat centriste-libéral soutenu par Édouard Philippe et Gabriel Attal, axé sur la sécurité, la qualité de vie et le renouveau urbain.",
+    "politicalLine": "Député de Paris, soutenu par Horizons et Renaissance. Programme axé sur la sécurité, la gestion urbaine et la rénovation du parc immobilier.",
     "globalScore": 7.8,
     "photo": "/candidates/bournazel.jpg",
     "scores": {
@@ -95,7 +95,7 @@
     "party": "La France Insoumise",
     "politicalColor": "#CC2443",
     "campaignUrl": "https://sophiapourparis.fr/",
-    "politicalLine": "Candidate de la gauche populaire, axée sur l'urgence du logement, l'éducation, la protection de l'enfance et la transition écologique.",
+    "politicalLine": "Ancienne directrice de campagne LFI, députée de Paris. Programme axé sur le logement social, la démocratie participative et la transition écologique.",
     "globalScore": 7.2,
     "photo": "/candidates/chikirou.jpg",
     "scores": {
@@ -179,7 +179,7 @@
     "party": "PS / EELV / PCF",
     "politicalColor": "#FF8080",
     "campaignUrl": "https://emmanuel-gregoire-2026.fr/",
-    "politicalLine": "Social-démocrate et ancien Premier adjoint d'Anne Hidalgo, il porte une union de la gauche axée sur le logement, les services publics et la continuité municipale.",
+    "politicalLine": "Premier adjoint d'Anne Hidalgo, tête de liste PS/EELV/PCF. Programme axé sur le logement, les services publics et la transformation écologique de Paris.",
     "globalScore": 6.8,
     "photo": "/candidates/gregoire.jpg",
     "scores": {
@@ -263,7 +263,7 @@
     "party": "LR / MoDem / UDI",
     "politicalColor": "#0066CC",
     "campaignUrl": "https://rachidadati2026.com/",
-    "politicalLine": "Droite conservatrice, maire du 7e arrondissement, axée sur la propreté, la sécurité, la rigueur budgétaire et le changement après 25 ans de gestion de gauche.",
+    "politicalLine": "Maire du 7e arrondissement, investie par LR/MoDem/UDI. Programme axé sur la sécurité, les familles et la rupture avec la gestion municipale actuelle.",
     "globalScore": 5.5,
     "photo": "/candidates/dati.jpg",
     "scores": {
@@ -351,7 +351,7 @@
     "party": "Reconquête !",
     "politicalColor": "#1A1A2E",
     "campaignUrl": "https://sarahpourparis.fr/",
-    "politicalLine": "Droite souverainiste, eurodéputée du parti d'Éric Zemmour, positionnée sur la sécurité, l'immigration et la propreté urbaine.",
+    "politicalLine": "Eurodéputée Reconquête, conseillère d'Éric Zemmour. Programme axé sur la sécurité, la baisse des impôts locaux et la réduction des effectifs municipaux.",
     "globalScore": 5.4,
     "photo": "/candidates/knafo.jpg",
     "scores": {
@@ -436,7 +436,7 @@
     "party": "Rassemblement National",
     "politicalColor": "#0D2B55",
     "campaignUrl": "https://www.mariani-2026.fr/",
-    "politicalLine": "National-populiste et eurodéputé RN, il vise à obtenir des élus au Conseil de Paris avec un programme axé sur la sécurité et la priorité nationale pour le logement social.",
+    "politicalLine": "Eurodéputé Rassemblement National, ancien ministre. Programme axé sur la sécurité, la propreté urbaine et la réforme de l'attribution des logements sociaux.",
     "globalScore": 4.2,
     "photo": "/candidates/mariani.jpg",
     "scores": {
