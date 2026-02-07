@@ -42,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.4,
     },
+    {
+      url: `${baseUrl}/a-propos`,
+      lastModified: new Date('2026-02-07'),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
     ...candidatePages,
   ]
 }

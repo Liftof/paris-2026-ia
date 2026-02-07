@@ -437,10 +437,20 @@ export default function HomePage() {
             <Link href="/comparateur" className="text-xs text-slate-500 hover:text-slate-900">Comparateur</Link>
             <Link href="/quiz" className="text-xs text-slate-500 hover:text-slate-900">Quiz citoyen</Link>
             <Link href="/faq" className="text-xs text-slate-500 hover:text-slate-900">FAQ</Link>
+            <Link href="/a-propos" className="text-xs text-slate-500 hover:text-slate-900">A propos</Link>
           </div>
           <p className="text-xs text-slate-500 text-center leading-relaxed">
+            Un projet de{' '}
+            <a href="https://x.com/pierbapt" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-700 hover:text-palette-blue">
+              Pierre-Baptiste Borges
+            </a>
+            {' '}&middot;{' '}
+            <a href="https://x.com/pierbapt" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-palette-blue">
+              @pierbapt
+            </a>
+          </p>
+          <p className="text-[11px] text-slate-400 text-center mt-2 leading-relaxed">
             Labo ind&eacute;pendant sans affiliation politique. Analyse IA appliqu&eacute;e &agrave; des sources publiques.
-            <br />Objectif: rendre la comparaison des programmes plus transparente et v&eacute;rifiable.
           </p>
         </footer>
       </main>
