@@ -47,6 +47,24 @@ function getBarColor(score: number): string {
   return '#dc2626'
 }
 
+const measureTags: Record<string, { label: string; bg: string; text: string }> = {
+  costed: { label: 'chiffré', bg: 'bg-blue-500/10', text: 'text-blue-600' },
+  realistic: { label: 'réaliste', bg: 'bg-score-solid/10', text: 'text-score-solid' },
+  unlikely: { label: 'peu probable', bg: 'bg-score-mixed/10', text: 'text-score-mixed' },
+  unrealistic: { label: 'irréaliste', bg: 'bg-score-fragile/10', text: 'text-score-fragile' },
+  out_of_scope: { label: 'hors compétence', bg: 'bg-purple-500/10', text: 'text-purple-600' },
+}
+
+function MeasureTag({ type }: { type: string }) {
+  const tag = measureTags[type]
+  if (!tag) return null
+  return (
+    <span className={`text-[9px] uppercase tracking-[0.12em] px-1.5 py-0.5 rounded font-bold ${tag.bg} ${tag.text}`}>
+      {tag.label}
+    </span>
+  )
+}
+
 function getGlobalScoreBg(score: number): string {
   if (score >= 7) return 'bg-surface-alt border-score-solid/20'
   if (score >= 5) return 'bg-surface-alt border-score-mixed/20'
@@ -158,7 +176,10 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <div className="space-y-3">
               {candidate.bestMeasures.map((measure, index) => (
                 <div key={index} className="playful-dash bg-white p-3.5">
-                  <div className="text-sm font-semibold text-ink">{measure.title}</div>
+                  <div className="flex items-center flex-wrap gap-2">
+                    <span className="text-sm font-semibold text-ink">{measure.title}</span>
+                    <MeasureTag type={measure.type} />
+                  </div>
                   <p className="text-xs text-ink-3 mt-1 leading-relaxed">{measure.detail}</p>
                 </div>
               ))}
@@ -173,11 +194,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
                 <div key={index} className="playful-dash bg-white p-3.5">
                   <div className="flex items-center flex-wrap gap-2">
                     <span className="text-sm font-semibold text-ink">{measure.title}</span>
-                    {measure.type === 'unrealistic' && (
-                      <span className="text-[9px] uppercase tracking-[0.12em] px-1.5 py-0.5 bg-score-fragile/10 text-score-fragile rounded font-bold">
-                        irréaliste
-                      </span>
-                    )}
+                    <MeasureTag type={measure.type} />
                   </div>
                   <p className="text-xs text-ink-3 mt-1 leading-relaxed">{measure.detail}</p>
                 </div>

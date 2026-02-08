@@ -25,6 +25,24 @@ function getScoreLabel(score: number): string {
   return 'Fragile'
 }
 
+const measureTags: Record<string, { label: string; bg: string; text: string }> = {
+  costed: { label: 'chiffré', bg: 'bg-blue-500/10', text: 'text-blue-600' },
+  realistic: { label: 'réaliste', bg: 'bg-score-solid/10', text: 'text-score-solid' },
+  unlikely: { label: 'peu probable', bg: 'bg-score-mixed/10', text: 'text-score-mixed' },
+  unrealistic: { label: 'irréaliste', bg: 'bg-score-fragile/10', text: 'text-score-fragile' },
+  out_of_scope: { label: 'hors compétence', bg: 'bg-purple-500/10', text: 'text-purple-600' },
+}
+
+function MeasureTag({ type }: { type: string }) {
+  const tag = measureTags[type]
+  if (!tag) return null
+  return (
+    <span className={`text-[9px] uppercase tracking-[0.1em] px-1.5 py-0.5 rounded font-bold ${tag.bg} ${tag.text}`}>
+      {tag.label}
+    </span>
+  )
+}
+
 const criteria = [
   { key: 'coherence', label: 'Cohérence' },
   { key: 'solidite', label: 'Solidité' },
@@ -237,7 +255,10 @@ export default function HomePage() {
                         <Image src={measure.photo} alt={measure.candidate} fill className="object-cover" sizes="28px" />
                       </div>
                       <div>
-                        <div className="text-sm font-semibold text-ink group-hover:text-accent transition-colors">{measure.title}</div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-sm font-semibold text-ink group-hover:text-accent transition-colors">{measure.title}</span>
+                          <MeasureTag type={measure.type} />
+                        </div>
                         <div className="text-xs text-ink-3 mt-1 line-clamp-2">{measure.detail}</div>
                       </div>
                     </div>
@@ -265,11 +286,7 @@ export default function HomePage() {
                       <div>
                         <div className="flex flex-wrap items-center gap-2">
                           <span className="text-sm font-semibold text-ink group-hover:text-accent transition-colors">{measure.title}</span>
-                          {measure.type === 'unrealistic' && (
-                            <span className="text-[9px] uppercase tracking-[0.1em] px-1.5 py-0.5 rounded bg-score-fragile/10 text-score-fragile font-bold">
-                              irréaliste
-                            </span>
-                          )}
+                          <MeasureTag type={measure.type} />
                         </div>
                         <div className="text-xs text-ink-3 mt-1 line-clamp-2">{measure.detail}</div>
                       </div>

@@ -14,7 +14,7 @@ export interface ThematicScore {
 export interface KeyMeasure {
   title: string
   detail: string
-  type: 'best' | 'worst' | 'unrealistic'
+  type: 'best' | 'worst' | 'unrealistic' | 'costed' | 'realistic' | 'unlikely' | 'out_of_scope'
 }
 
 export interface Candidate {

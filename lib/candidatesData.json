@@ -35,22 +35,22 @@
       {
         "title": "Pack 100% garanties logement",
         "detail": "Remettre 20 000 logements vides sur le marché avec un pack garanties à 200 €/an en moyenne",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "300 capteurs acoustiques Méduses",
         "detail": "Lutte contre le bruit avec 300 capteurs + 50 radars anti-nuisances sonores dans tout Paris",
-        "type": "best"
+        "type": "costed"
       },
       {
         "title": "Métro de nuit",
         "detail": "Comme à Londres et New York, ouverture nocturne du métro parisien",
-        "type": "best"
+        "type": "out_of_scope"
       },
       {
         "title": "Rénovation massive du parc immobilier",
         "detail": "900 M€ pour la rénovation des logements sociaux + plan pour 90 000 passoires thermiques",
-        "type": "best"
+        "type": "costed"
       }
     ],
     "worstMeasures": [
@@ -62,12 +62,12 @@
       {
         "title": "Vente de 20 000 logements sociaux",
         "detail": "Valorisation optimiste de 150k €/unité. Risque politique et impact sur la mixité sociale",
-        "type": "worst"
+        "type": "unlikely"
       },
       {
         "title": "Privatisation totale de la propreté",
         "detail": "Résistances syndicales prévisibles et complexité de la reprise du personnel",
-        "type": "worst"
+        "type": "unlikely"
       }
     ],
     "thematicScores": [
@@ -125,17 +125,17 @@
       {
         "title": "Maisons de quartier cogérées",
         "detail": "80 lieux polyvalents combinant services publics, activités sociales et gouvernance participative. Une par quartier.",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "Brigade du droit au logement",
         "detail": "150 agents (juristes, médiateurs, inspecteurs) : 10 000 contrôles/an, 5 000 logements remis aux normes. Rentable : 15 M€ de coût pour 30-50 M€ de recettes.",
-        "type": "best"
+        "type": "costed"
       },
       {
         "title": "Budget participatif à 15%",
         "detail": "Porter à 15% la part du budget d'investissement consacrée au budget participatif, contre environ 5% actuellement.",
-        "type": "best"
+        "type": "realistic"
       }
     ],
     "worstMeasures": [
@@ -147,12 +147,12 @@
       {
         "title": "Zéro sans-abri avant fin de mandat",
         "detail": "Nécessite la coopération de l'État (hébergement d'urgence). Flux migratoires non maîtrisables par la Ville.",
-        "type": "unrealistic"
+        "type": "out_of_scope"
       },
       {
         "title": "Remunicipalisation totale de la propreté",
         "detail": "Contentieux juridiques probables, coûts de transition très élevés, objectif 2030 sans plan de transition détaillé.",
-        "type": "worst"
+        "type": "unlikely"
       }
     ],
     "thematicScores": [
@@ -209,12 +209,12 @@
       {
         "title": "60 000 logements sociaux",
         "detail": "Arsenal complet anti-spéculation : taxation vacance, réquisition, interdiction Airbnb. Brigade de protection du logement.",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "15 lignes de bus express",
         "detail": "Super-priorité aux carrefours, vidéoverbalisation des voies bus, bus toutes les 5 minutes en heure de pointe.",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "Garantie Municipale des Loyers",
@@ -293,12 +293,12 @@
       {
         "title": "9 mesures concrètes pour les familles",
         "detail": "100% places en crèche pourvues, prêt à taux zéro pour les familles, semaine de 4 jours, études dirigées, formation AESH.",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "100 M€/an logement social",
         "detail": "Engagement chiffré de 100 millions d'euros par an pour la rénovation du logement social.",
-        "type": "best"
+        "type": "costed"
       },
       {
         "title": "Sécurité détaillée",
@@ -381,17 +381,17 @@
       {
         "title": "Plan d'économies de 9,4 Mds €",
         "detail": "Effort de chiffrage global inégalé avec un plan détaillé poste par poste des économies annoncées.",
-        "type": "best"
+        "type": "costed"
       },
       {
         "title": "IA pour les feux tricolores",
         "detail": "Utilisation de l'intelligence artificielle pour optimiser la gestion des feux et fluidifier le trafic.",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "87 propositions chiffrées",
         "detail": "Programme très détaillé avec pourcentages, processus et chiffrages précis. Point fort du programme.",
-        "type": "best"
+        "type": "costed"
       }
     ],
     "worstMeasures": [
@@ -466,12 +466,12 @@
       {
         "title": "7 brigades spécialisées",
         "detail": "Organisation structurée : brigades anti-squat, transports, anti-campements, anti-drogue, circulation, BAR municipales, proximité.",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "Programme intergénérationnel logement",
         "detail": "Structure claire en deux formules Loyer et Solidarité, avec suivi et médiation par des associations agréées.",
-        "type": "best"
+        "type": "realistic"
       },
       {
         "title": "RIP à 5% du corps électoral",
@@ -493,7 +493,7 @@
       {
         "title": "35% hors compétences municipales",
         "detail": "Immigration, Code de la route, Éducation nationale, justice : un tiers du programme ne relève pas de la Ville de Paris.",
-        "type": "unrealistic"
+        "type": "out_of_scope"
       }
     ],
     "thematicScores": [
