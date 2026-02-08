@@ -8,8 +8,8 @@ const themeFilters = [
   { key: 'global', label: 'Global' },
   { key: 'logement', label: 'Logement' },
   { key: 'transport', label: 'Transport' },
-  { key: 'securite', label: 'Securite' },
-  { key: 'ecologie', label: 'Ecologie' },
+  { key: 'securite', label: 'Sécurité' },
+  { key: 'ecologie', label: 'Écologie' },
   { key: 'budget', label: 'Budget' },
 ]
 
@@ -35,7 +35,7 @@ export default function ThemeFilter() {
           <button
             key={filter.key}
             onClick={() => setActiveFilter(filter.key)}
-            className={`px-4 py-2 text-xs font-semibold transition-all rounded-lg ${
+            className={`px-3 py-1.5 sm:px-4 sm:py-2 text-[11px] sm:text-xs font-semibold transition-all rounded-lg ${
               activeFilter === filter.key
                 ? 'bg-ink text-white'
                 : 'bg-white text-ink-3 border border-[var(--border)] hover:border-ink-4 hover:text-ink'

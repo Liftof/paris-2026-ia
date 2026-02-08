@@ -42,7 +42,7 @@ function ComparisonBar({ scoreA, scoreB, label }: { scoreA: number; scoreB: numb
             >
               {scoreA.toFixed(1)}
             </span>
-            <div className="score-bar w-24 sm:w-32">
+            <div className="score-bar w-16 sm:w-32">
               <div
                 className="score-bar-fill float-right"
                 style={{ width: `${(scoreA / 10) * 100}%`, backgroundColor: getScoreHex(scoreA) }}
@@ -57,7 +57,7 @@ function ComparisonBar({ scoreA, scoreB, label }: { scoreA: number; scoreB: numb
         </div>
         <div className="flex-1">
           <div className="flex items-center gap-2">
-            <div className="score-bar w-24 sm:w-32">
+            <div className="score-bar w-16 sm:w-32">
               <div
                 className="score-bar-fill"
                 style={{ width: `${(scoreB / 10) * 100}%`, backgroundColor: getScoreHex(scoreB) }}
@@ -98,7 +98,7 @@ export default function ComparateurPage() {
       <header className="border-b border-[var(--border)]">
         <div className="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
           <span className="kicker mb-3">Comparateur</span>
-          <h1 className="text-2xl sm:text-4xl font-bold text-ink mt-1">Face-à-face</h1>
+          <h1 className="text-xl sm:text-4xl font-bold text-ink mt-1">Face-à-face</h1>
           <p className="text-sm sm:text-base text-ink-3 mt-2">
             Comparez deux candidats critère par critère, thème par thème.
           </p>
@@ -213,7 +213,7 @@ export default function ComparateurPage() {
             {candidateA.thematicScores.length > 0 && candidateB.thematicScores.length > 0 && (
               <section className="panel-card p-5 sm:p-7 mb-8">
                 <h2 className="text-lg sm:text-xl font-bold text-ink mb-4">Scores thématiques</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3">
                   {candidateA.thematicScores.map((themeA, i) => {
                     const themeB = candidateB.thematicScores[i]
                     if (!themeB) return null

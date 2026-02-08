@@ -21,7 +21,7 @@ function getScoreHex(score: number): string {
 
 function getScoreLabel(score: number): string {
   if (score >= 7) return 'Solide'
-  if (score >= 5) return 'Mitigue'
+  if (score >= 5) return 'Mitigé'
   return 'Fragile'
 }
 
@@ -33,7 +33,7 @@ export default function CandidateCard({ candidate, rank }: CandidateCardProps) {
         <div className="p-4 md:p-5">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="flex items-center gap-4 md:gap-5 flex-1 w-full md:w-auto">
-              <div className="score-display text-xl w-8 text-center shrink-0 text-ink-4">
+              <div className="score-display text-lg sm:text-xl w-7 sm:w-8 text-center shrink-0 text-ink-4">
                 {rank}
               </div>
 
@@ -80,7 +80,7 @@ export default function CandidateCard({ candidate, rank }: CandidateCardProps) {
                           style={{ width: `${(score.value / 10) * 100}%`, backgroundColor: getScoreHex(score.value) }}
                         />
                       </div>
-                      <span className={`score-display text-[10px] w-7 text-right ${getScoreColor(score.value)}`}>
+                      <span className={`score-display text-[11px] w-8 text-right ${getScoreColor(score.value)}`}>
                         {score.value.toFixed(1)}
                       </span>
                     </div>

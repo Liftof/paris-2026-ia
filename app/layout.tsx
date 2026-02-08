@@ -14,7 +14,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://paris2026.fr"),
+  metadataBase: new URL("https://labo-paris.com"),
   title: {
     default: "Paris 2026 — Les programmes passés au crible de l'IA",
     template: "%s | Paris 2026 IA",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Paris 2026 — Les programmes passés au crible de l'IA",
     description:
       "6 candidats. 5 critères. Une grille identique. Analyse non-partisane des programmes pour les municipales de Paris 2026.",
-    url: "https://paris2026.fr",
+    url: "https://labo-paris.com",
     siteName: "Paris 2026 — Labo IA",
     locale: "fr_FR",
     type: "website",
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://paris2026.fr",
+    canonical: "https://labo-paris.com",
   },
 };
 
@@ -89,7 +89,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Paris 2026 — Labo IA",
-    url: "https://paris2026.fr",
+    url: "https://labo-paris.com",
     description:
       "Analyse non-partisane des programmes des candidats à la mairie de Paris 2026. 6 candidats, 5 critères, une grille identique.",
     author: {
@@ -100,7 +100,7 @@ export default function RootLayout({
     publisher: {
       "@type": "Organization",
       name: "Paris 2026 — Labo IA",
-      url: "https://paris2026.fr",
+      url: "https://labo-paris.com",
     },
   };
 

@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://paris2026.fr/sitemap.xml',
+    sitemap: 'https://labo-paris.com/sitemap.xml',
   }
 }

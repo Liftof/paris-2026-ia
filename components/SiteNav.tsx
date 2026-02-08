@@ -22,16 +22,16 @@ export default function SiteNav() {
   return (
     <nav className="site-nav">
       <div className="site-nav-pill">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="text-sm font-bold text-ink">Paris 2026</span>
-          <span className="kicker">Labo IA</span>
+        <Link href="/" className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          <span className="text-xs sm:text-sm font-bold text-ink">Paris 2026</span>
+          <span className="kicker !text-[9px] sm:!text-[11px]">Labo IA</span>
         </Link>
-        <div className="flex items-center gap-4 sm:gap-5">
+        <div className="flex items-center gap-3 sm:gap-5">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`text-xs font-medium transition-colors ${
+              className={`text-[11px] sm:text-xs font-medium transition-colors ${
                 isActive(link.href) ? 'text-accent' : 'text-ink-3 hover:text-ink'
               } ${link.hideOnMobile ? 'hidden sm:block' : ''}`}
             >

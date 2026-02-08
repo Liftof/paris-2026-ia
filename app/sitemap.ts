@@ -2,7 +2,7 @@ import { candidatesData } from '@/lib/data'
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://paris2026.fr'
+  const baseUrl = 'https://labo-paris.com'
 
   const candidatePages = candidatesData.map((candidate) => ({
     url: `${baseUrl}/candidats/${candidate.slug}`,

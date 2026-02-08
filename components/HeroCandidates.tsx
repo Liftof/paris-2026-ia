@@ -18,7 +18,7 @@ export default function HeroCandidates({ candidates }: { candidates: CandidateIn
   const [hoveredSlug, setHoveredSlug] = useState<string | null>(null)
 
   return (
-    <div className="flex items-center -space-x-3">
+    <div className="flex items-center -space-x-2 sm:-space-x-3">
       {candidates.map((c, i) => (
         <Link
           key={c.slug}
@@ -37,7 +37,7 @@ export default function HeroCandidates({ candidates }: { candidates: CandidateIn
             }}
           >
             <div
-              className="w-14 h-14 sm:w-[68px] sm:h-[68px] rounded-full p-[3px] shadow-md transition-shadow duration-300"
+              className="w-11 h-11 sm:w-14 sm:h-14 md:w-[68px] md:h-[68px] rounded-full p-[2px] sm:p-[3px] shadow-md transition-shadow duration-300"
               style={{
                 background: c.politicalColor,
                 boxShadow: hoveredSlug === c.slug

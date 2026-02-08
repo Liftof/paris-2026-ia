@@ -77,10 +77,10 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
             <ShareButtons candidateName={candidate.name} score={candidate.globalScore} slug={candidate.slug} />
           </div>
 
-          <div className="hero-panel p-6 sm:p-8">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div className="hero-panel p-4 sm:p-8">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
               <div
-                className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-xl p-[2px] shrink-0"
+                className="relative w-20 h-20 sm:w-28 sm:h-28 rounded-xl p-[2px] shrink-0"
                 style={{ background: `linear-gradient(140deg, ${candidate.politicalColor}, ${candidate.politicalColor}77)` }}
               >
                 <div className="relative w-full h-full rounded-lg overflow-hidden">
@@ -93,13 +93,13 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
                   <span className="kicker">#{rank}</span>
                   <span className="text-xs text-ink-3 font-semibold uppercase tracking-[0.12em]">{candidate.party}</span>
                 </div>
-                <h1 className="text-3xl sm:text-4xl font-bold text-ink tracking-tight">{candidate.name}</h1>
+                <h1 className="text-2xl sm:text-4xl font-bold text-ink tracking-tight">{candidate.name}</h1>
                 <p className="text-sm sm:text-base text-ink-3 mt-2 max-w-2xl">{candidate.politicalLine}</p>
               </div>
 
-              <div className="flex flex-col items-center gap-3 self-start sm:self-center">
-                <div className={`border rounded-xl px-5 py-4 ${getGlobalScoreBg(candidate.globalScore)}`}>
-                  <div className={`text-4xl sm:text-5xl font-bold text-center ${getScoreColor(candidate.globalScore)}`}>
+              <div className="flex flex-col items-center gap-2 sm:gap-3 self-start sm:self-center">
+                <div className={`border rounded-xl px-4 py-3 sm:px-5 sm:py-4 ${getGlobalScoreBg(candidate.globalScore)}`}>
+                  <div className={`text-3xl sm:text-5xl font-bold text-center ${getScoreColor(candidate.globalScore)}`}>
                     {candidate.globalScore}
                   </div>
                   <div className="text-xs text-ink-3 mt-0.5 text-center">/10 global</div>
@@ -134,9 +134,9 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
         {candidate.thematicScores.length > 0 && (
           <section className="panel-card p-6 sm:p-8 mb-8 sm:mb-10">
             <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Scores thématiques</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 sm:gap-3">
               {candidate.thematicScores.map((themeScore) => (
-                <div key={themeScore.theme} className="playful-dash bg-white p-3 sm:p-4 text-center">
+                <div key={themeScore.theme} className="playful-dash bg-white p-2.5 sm:p-4 text-center">
                   <div className="text-xs text-ink-3 mb-2 font-medium">{themeScore.theme}</div>
                   <div className={`text-2xl font-bold ${getScoreColor(themeScore.score)}`}>{themeScore.score.toFixed(1)}</div>
                   <div className="mt-2 score-bar-fill bg-surface-alt">
@@ -257,7 +257,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
           </p>
         </section>
 
-        <section className="mt-10 sm:mt-14 pt-8 border-t border-[var(--border)] flex flex-col sm:flex-row justify-between gap-4">
+        <section className="mt-8 sm:mt-14 pt-6 sm:pt-8 border-t border-[var(--border)] flex flex-col sm:flex-row justify-between gap-4">
           {prevCandidate ? (
             <Link
               href={`/candidats/${prevCandidate.slug}`}

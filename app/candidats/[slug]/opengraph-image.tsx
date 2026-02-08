@@ -85,7 +85,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
               Labo IA
             </span>
           </div>
-          <span style={{ fontSize: 14, color: '#737373' }}>paris2026.fr</span>
+          <span style={{ fontSize: 14, color: '#737373' }}>labo-paris.com</span>
         </div>
 
         {/* Main content */}

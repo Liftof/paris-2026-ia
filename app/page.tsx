@@ -65,7 +65,7 @@ export default function HomePage() {
 
       <header className="border-b border-[var(--border)] relative overflow-hidden">
         <HeroFaces />
-        <div className="max-w-5xl mx-auto px-5 sm:px-8 py-16 sm:py-24 relative z-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 py-12 sm:py-24 relative z-10">
           <div className="floating-in max-w-3xl">
             <span className="kicker mb-5">Municipales Paris 2026</span>
             <h1 className="headline-xl mt-3">
@@ -194,7 +194,7 @@ export default function HomePage() {
                   <div className="relative w-8 h-8 rounded-lg overflow-hidden shrink-0">
                     <Image src={candidate.photo} alt={candidate.name} fill className="object-cover" sizes="32px" />
                   </div>
-                  <span className="text-sm font-semibold text-ink w-28 sm:w-36 truncate group-hover:text-accent transition-colors">
+                  <span className="text-xs sm:text-sm font-semibold text-ink w-20 sm:w-36 truncate group-hover:text-accent transition-colors">
                     {candidate.name.split(' ').pop()}
                   </span>
 
@@ -207,7 +207,7 @@ export default function HomePage() {
                           backgroundColor: getScoreHex(candidate.globalScore),
                         }}
                       >
-                        <span className="text-[10px] font-semibold text-white ml-2.5 score-display">{candidate.globalScore}/10</span>
+                        <span className="text-[9px] sm:text-[10px] font-semibold text-white ml-1.5 sm:ml-2.5 score-display whitespace-nowrap">{candidate.globalScore}/10</span>
                       </div>
                     </div>
                     <span className={`label-mono !text-[9px] hidden sm:inline ${getScoreColor(candidate.globalScore)}`}>

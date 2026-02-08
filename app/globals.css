@@ -55,7 +55,13 @@ h1, h2, h3, h4 {
 
 .site-shell {
   position: relative;
-  padding-top: 76px;
+  padding-top: 64px;
+}
+
+@media (min-width: 640px) {
+  .site-shell {
+    padding-top: 76px;
+  }
 }
 
 /* ---- NAV ---- */
@@ -68,26 +74,40 @@ h1, h2, h3, h4 {
   z-index: 50;
   display: flex;
   justify-content: center;
-  padding: 14px 20px 0;
+  padding: 10px 12px 0;
   pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .site-nav {
+    padding: 14px 20px 0;
+  }
 }
 
 .site-nav-pill {
   pointer-events: auto;
   max-width: 720px;
   width: 100%;
-  height: 48px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 0 20px;
+  gap: 0.5rem;
+  padding: 0 14px;
   background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 100px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06), 0 0 0 0.5px rgba(0, 0, 0, 0.03);
+}
+
+@media (min-width: 640px) {
+  .site-nav-pill {
+    height: 48px;
+    gap: 1rem;
+    padding: 0 20px;
+  }
 }
 
 /* ---- HERO ---- */
@@ -162,7 +182,13 @@ h1, h2, h3, h4 {
 .note-grid {
   display: grid;
   gap: 0.75rem;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+@media (min-width: 640px) {
+  .note-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
 }
 
 /* ---- RULE DIVIDER ---- */
@@ -273,20 +299,31 @@ main a:hover {
 
 .data-table th {
   font-family: 'Berkeley Mono', ui-monospace, monospace;
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-3);
-  padding: 0.75rem 0.5rem;
+  padding: 0.5rem 0.25rem;
   text-align: left;
   border-bottom: 2px solid var(--ink);
 }
 
 .data-table td {
-  padding: 0.75rem 0.5rem;
+  padding: 0.5rem 0.25rem;
   border-bottom: 1px solid var(--border);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 640px) {
+  .data-table th {
+    font-size: 0.65rem;
+    padding: 0.75rem 0.5rem;
+  }
+  .data-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.875rem;
+  }
 }
 
 /* ---- SELECTION ---- */
@@ -294,4 +331,19 @@ main a:hover {
 ::selection {
   background: var(--accent);
   color: white;
+}
+
+/* ---- REDUCED MOTION ---- */
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-in,
+  .animate-fade-in,
+  .stagger-in > * {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
 }

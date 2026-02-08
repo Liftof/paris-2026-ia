@@ -36,15 +36,24 @@ export default function HeroFaces() {
     const container = containerRef.current
     if (!container) return
 
+    // Skip animation if user prefers reduced motion
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReduced) return
+
     const rect = container.getBoundingClientRect()
     const w = rect.width
     const h = rect.height
 
-    // Create initial bubbles - 2 per candidate = 12 total
+    // Fewer and smaller bubbles on mobile
+    const isMobile = w < 640
+    const bubblesPerCandidate = isMobile ? 1 : 2
+    const minSize = isMobile ? 36 : 48
+    const maxSize = isMobile ? 56 : 72
+
     const bubbles: Bubble[] = []
     for (let i = 0; i < candidates.length; i++) {
-      for (let j = 0; j < 2; j++) {
-        const size = randomBetween(48, 72)
+      for (let j = 0; j < bubblesPerCandidate; j++) {
+        const size = randomBetween(minSize, maxSize)
         bubbles.push({
           x: randomBetween(size, w - size),
           y: randomBetween(size, h - size),
