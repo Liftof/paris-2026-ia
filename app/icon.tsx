@@ -13,21 +13,12 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: '#e63946',
-          borderRadius: 6,
+          background: '#d97706',
+          borderRadius: '50%',
         }}
       >
-        <span
-          style={{
-            fontSize: 17,
-            fontWeight: 900,
-            color: '#ffffff',
-            letterSpacing: '-0.04em',
-            lineHeight: 1,
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-          }}
-        >
-          P26
+        <span style={{ fontSize: 20, lineHeight: 1 }}>
+          🗼
         </span>
       </div>
     ),
