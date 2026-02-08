@@ -139,7 +139,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
                 <div key={themeScore.theme} className="playful-dash bg-white p-2.5 sm:p-4 text-center">
                   <div className="text-xs text-ink-3 mb-2 font-medium">{themeScore.theme}</div>
                   <div className={`text-2xl font-bold ${getScoreColor(themeScore.score)}`}>{themeScore.score.toFixed(1)}</div>
-                  <div className="mt-2 score-bar-fill bg-surface-alt">
+                  <div className="mt-2 score-bar">
                     <div
                       className="score-bar-fill"
                       style={{ width: `${(themeScore.score / 10) * 100}%`, backgroundColor: getBarColor(themeScore.score) }}
