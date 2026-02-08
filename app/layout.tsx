@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Manrope, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
@@ -112,6 +113,12 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Script
+          src="https://datafa.st/js/script.js"
+          data-website-id="dfid_5L7pIGBZzS06HYavi6H1m"
+          data-domain="labo-paris.com"
+          strategy="afterInteractive"
         />
         {children}
       </body>
