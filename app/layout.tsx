@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Manrope, Instrument_Serif } from "next/font/google";
+import FeedbackWidget from "@/components/FeedbackWidget";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -121,6 +122,7 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         {children}
+        <FeedbackWidget />
       </body>
     </html>
   );
