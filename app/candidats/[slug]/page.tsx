@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const candidate = getCandidateBySlug(slug)
   if (!candidate) return {}
   return {
-    title: `${candidate.name} - ${candidate.globalScore}/10 | Paris 2026 IA`,
+    title: `${candidate.name} - ${candidate.globalScore}/10`,
     description: candidate.verdict.slice(0, 160),
     openGraph: {
       title: `${candidate.name} : ${candidate.globalScore}/10 - Analyse IA Paris 2026`,
