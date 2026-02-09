@@ -5,6 +5,8 @@ export const alt = 'Paris 2026 — Analyse IA des programmes municipaux'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
+// Cache bust: 2026-02-09
+
 function getScoreHex(score: number): string {
   if (score >= 7) return '#16a34a'
   if (score >= 5) return '#d97706'
