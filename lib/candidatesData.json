@@ -6,7 +6,7 @@
     "politicalColor": "#FF6F00",
     "campaignUrl": "https://bournazel.paris/",
     "politicalLine": "Député de Paris, soutenu par Horizons et Renaissance. Programme axé sur la sécurité, la gestion urbaine et la rénovation du parc immobilier.",
-    "globalScore": 7.8,
+    "globalScore": 7.7,
     "photo": "/candidates/bournazel.jpg",
     "scores": {
       "coherence": 7.5,
@@ -96,7 +96,7 @@
     "politicalColor": "#CC2443",
     "campaignUrl": "https://sophiapourparis.fr/",
     "politicalLine": "Ancienne directrice de campagne LFI, députée de Paris. Programme axé sur le logement social, la démocratie participative et la transition écologique.",
-    "globalScore": 7.2,
+    "globalScore": 6.8,
     "photo": "/candidates/chikirou.jpg",
     "scores": {
       "coherence": 8.5,
@@ -180,7 +180,7 @@
     "politicalColor": "#FF8080",
     "campaignUrl": "https://emmanuel-gregoire-2026.fr/",
     "politicalLine": "Premier adjoint d'Anne Hidalgo, tête de liste PS/EELV/PCF. Programme axé sur le logement, les services publics et la transformation écologique de Paris.",
-    "globalScore": 6.8,
+    "globalScore": 6.0,
     "photo": "/candidates/gregoire.jpg",
     "scores": {
       "coherence": 8.0,
@@ -264,7 +264,7 @@
     "politicalColor": "#0066CC",
     "campaignUrl": "https://rachidadati2026.com/",
     "politicalLine": "Maire du 7e arrondissement, investie par LR/MoDem/UDI. Programme axé sur la sécurité, les familles et la rupture avec la gestion municipale actuelle.",
-    "globalScore": 5.5,
+    "globalScore": 3.6,
     "photo": "/candidates/dati.jpg",
     "scores": {
       "coherence": 4.0,
@@ -352,7 +352,7 @@
     "politicalColor": "#1A1A2E",
     "campaignUrl": "https://sarahpourparis.fr/",
     "politicalLine": "Eurodéputée Reconquête, conseillère d'Éric Zemmour. Programme axé sur la sécurité, la baisse des impôts locaux et la réduction des effectifs municipaux.",
-    "globalScore": 5.4,
+    "globalScore": 5.6,
     "photo": "/candidates/knafo.jpg",
     "scores": {
       "coherence": 4.0,
@@ -437,7 +437,7 @@
     "politicalColor": "#0D2B55",
     "campaignUrl": "https://www.mariani-2026.fr/",
     "politicalLine": "Eurodéputé Rassemblement National, ancien ministre. Programme axé sur la sécurité, la propreté urbaine et la réforme de l'attribution des logements sociaux.",
-    "globalScore": 4.2,
+    "globalScore": 3.7,
     "photo": "/candidates/mariani.jpg",
     "scores": {
       "coherence": 4.0,
@@ -497,13 +497,11 @@
       }
     ],
     "thematicScores": [
-      { "theme": "Sécurité", "score": 6.0 },
-      { "theme": "Propreté", "score": 6.0 },
-      { "theme": "Transport", "score": 5.0 },
       { "theme": "Logement", "score": 4.0 },
-      { "theme": "Économie", "score": 2.0 },
-      { "theme": "Éducation", "score": 4.5 },
-      { "theme": "Santé", "score": 3.0 }
+      { "theme": "Transport", "score": 5.0 },
+      { "theme": "Sécurité", "score": 6.0 },
+      { "theme": "Écologie", "score": 1.5 },
+      { "theme": "Budget", "score": 2.0 }
     ],
     "contradictions": [
       "Baisser les impôts (-310 M/an) + augmenter les dépenses (+600 M/an) + désendetter : mathématiquement impossible",

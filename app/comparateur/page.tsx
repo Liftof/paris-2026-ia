@@ -214,8 +214,8 @@ export default function ComparateurPage() {
               <section className="panel-card p-5 sm:p-7 mb-8">
                 <h2 className="text-lg sm:text-xl font-bold text-ink mb-4">Scores thématiques</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3">
-                  {candidateA.thematicScores.map((themeA, i) => {
-                    const themeB = candidateB.thematicScores[i]
+                  {candidateA.thematicScores.map((themeA) => {
+                    const themeB = candidateB.thematicScores.find((t) => t.theme === themeA.theme)
                     if (!themeB) return null
                     const winner = themeA.score > themeB.score ? 'A' : themeB.score > themeA.score ? 'B' : 'tie'
                     return (
