@@ -98,7 +98,7 @@ export default function HomePage() {
               <span className="soft-chip">Programmes officiels</span>
               <span className="soft-chip">Traitement identique</span>
               <span className="soft-chip">Méthodologie publique</span>
-              <span className="soft-chip">Février 2026</span>
+              <span className="soft-chip">Dernière MAJ : 10 février</span>
             </div>
           </div>
 

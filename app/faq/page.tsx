@@ -147,7 +147,7 @@ export default function FAQPage() {
             </summary>
             <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
               <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Le site est mis à jour quand un candidat publie un programme significativement nouveau ou modifié. La dernière mise à jour date de février 2026.
+                Le site est mis à jour quand un candidat publie un programme significativement nouveau ou modifié. La dernière mise à jour date du 10 février 2026 (mise à jour de l&apos;analyse de Rachida Dati suite à la publication de son programme officiel).
               </p>
             </div>
           </details>
