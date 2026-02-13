@@ -121,20 +121,18 @@ Cohérence avec le profil du candidat . . . . . . . . . . . . . . . . . . . . . 
 
 Analyse du Programme d’Emmanuel Grégoire - Paris 2026
 Résumé Exécutif
-Note Globale : 6.8/10
+Note Globale : 6.6/10
 3 Forces Principales
 1. Programme ambitieux et détaillé sur le logement social avec des objectifs chiffrés (60 000
-logements)
+logements publics, pas uniquement des constructions neuves)
 2. Vision écologique cohérente intégrant transformation urbaine et justice sociale
-3. Propositions concrètes pour les services publics et la vie quotidienne
+3. Propositions concrètes pour les services publics et la vie quotidienne (234 mesures)
 3 Faiblesses Principales
-1. Financement insuffisamment détaillé pour des projets très coûteux (transformation du
-périphérique, 300 hectares de jardins)
-2. Calendriers peu précis sur les grandes transformations urbaines
-3. Faible prise en compte des contraintes juridiques et administratives
+1. Financement global insuffisamment consolidé, malgré des éléments disponibles sur le site de campagne
+2. Plusieurs grandes transformations nécessitent une coordination multi-mandature et multi-institutionnelle
+3. Nombreuses mesures dépendant d'accords avec l'État, la Région ou IDFM, bien que la Ville ait démontré sa capacité d'influence par le passé
 Verdict en 1 phrase
-Un programme progressiste et ambitieux, bien structuré sur le plan social, mais manquant de
-robustesse budgétaire et de pragmatisme sur les grandes transformations urbaines.
+Un programme progressiste et ambitieux, bien structuré sur le plan social, avec une approche pluri-mandatures sur les grandes transformations. Le financement mériterait plus de visibilité malgré des éléments disponibles sur le site de campagne.
 
 2
 
@@ -163,21 +161,17 @@ de précision sur les “300 hectares de jardins” (où ? comment ?) - Flou sur
 nombreuses propositions relèvent de l’État ou de la Région - Pas de plan de financement global
 Exemples concrets : - Précis : “Rénovation et isolation complètes de 35 000 logements sociaux” Flou : “Transformation du périphérique en boulevard urbain” sans étapes ni budget - Hors compétence
 : “Métros 24h/24” (compétence Région/IDFM)
-3. Robustesse Budgétaire : 4/10
-Manques critiques : - Aucun chiffrage global du programme - Pas d’estimation des coûts majeurs
-(périphérique, 300 ha de jardins) - Sources de financement non identifiées - Impact sur le budget
-municipal non évalué
-Estimations approximatives (non fournies dans le programme) : - Transformation
-périphérique : plusieurs milliards € - 60 000 logements sociaux : 12-15 milliards € - 1000 policiers
-municipaux : 50M€/an - 300 ha de jardins : 1-2 milliards €
-Risques budgétaires : - Endettement massif de la ville probable - Augmentation des impôts locaux
-non mentionnée - Dépendance forte aux subventions État/Région non garanties
-4. Pragmatisme : 5/10
+3. Robustesse Budgétaire : 5/10
+Points positifs : - Des évaluations et engagements budgétaires sont présentés sur le site du programme (emmanuel-gregoire-2026.fr/programme) - Certaines mesures présentées comme coûteuses sont en réalité existantes (gratuité transports pour certains publics) ou cofinancées (rénovation privée : propriétaires + aides État)
+Manques : - Pas de consolidation budgétaire globale publique dans le programme principal - Impact sur le budget municipal insuffisamment détaillé
+Estimations révisées : - Transformation périphérique : projet pluri-mandatures, premier tronçon Porte de Gentilly dans la mandature - 60 000 logements publics : en majorité pas des constructions nouvelles (reconversions, préemptions, etc.), coût bien inférieur aux 12-15 Mds € initialement estimés - 1000 policiers municipaux : ~50M€/an - 300 ha de jardins ouverts : inclut l'ouverture de jardins existants fermés au public (documenté PLUb), coût réduit
+Risques budgétaires : - Dépendance aux cofinancements État/Région - Endettement à surveiller sur les projets d'investissement lourds
+4. Pragmatisme : 6.5/10
 Réalisable en 6 ans : - Extension horaires équipements : OUI - Brigade logement : OUI - 100%
-bio cantines : OUI (déjà en cours) - Revenu Solidarité Jeunesse : OUI
-Irréaliste ou très difficile : - Transformation complète du périphérique : NON (10-15 ans minimum)
-- 300 hectares de nouveaux jardins : TRÈS DIFFICILE - Métros 24h/24 : NON (compétence Région
-+ coûts) - Interdiction totale Airbnb : obstacles juridiques majeurs
+bio cantines : OUI (déjà en cours) - Revenu Solidarité Jeunesse : OUI - Maintien gratuité transports publics ciblés : OUI (mesure existante, pas de coût supplémentaire)
+Approche pluri-mandatures assumée : - Transformation du périphérique : premier tronçon Porte de Gentilly dans la mandature, suite sur les mandatures suivantes. Approche réaliste. - 300 hectares de jardins : inclut l'ouverture de jardins existants fermés au public, documenté dans le PLUb. Plus réaliste qu'une création ex nihilo.
+Nécessite négociation institutionnelle : - Métros 24h/24 : compétence IDFM, mais Paris est l'un des principaux financeurs et siège au CA. La Ville a démontré par le passé sa capacité à faire évoluer des sujets hors de sa compétence directe (police municipale, régulation AirBnB). Approche pragmatique : démarrer par les lignes automatisées (1, 4, 14).
+Précision Airbnb : le programme ne propose pas une interdiction totale mais une régulation (limitation aux résidences principales, max 90 jours/an), ce qui est juridiquement faisable et cohérent avec les dispositifs européens existants.
 
 3
 
@@ -187,29 +181,26 @@ Paris 2026
 
 Obstacles non traités : - Opposition des communes limitrophes sur le périphérique - Contentieux
 juridiques sur les réquisitions - Négociations complexes avec l’État et la Région
-5. Détail & Précision : 7/10
-Points forts : - Programme de 31 pages, bien structuré - Nombreux exemples concrets par
-arrondissement - Modalités détaillées pour certains dispositifs - Illustrations et localisations précises
-Faiblesses : - Manque de phasage temporel - Peu d’indicateurs de suivi - Modalités de gouvernance
-floues - Budget et financement très peu détaillés
-Exemples : - Précis : “La plage de la Bastille” avec localisation - Générique : “Un grand plan de
-mise à l’abri” sans modalités - Détaillé : dispositif d’assurance habitation municipale
+5. Détail & Précision : 7.5/10
+Points forts : - Programme de 32 pages, 234 mesures couvrant quasi tous les domaines de politique municipale - Couverture thématique exceptionnelle : logement, transport, sécurité, écologie, éducation, culture, sport, commerce, innovation/IA, tourisme, démocratie, droits des femmes, LGBTQIA+, international - Nombreux exemples concrets par arrondissement - Modalités détaillées pour certains dispositifs - Section "Paris Fière" substantielle avec culture (~16 mesures), anti-discrimination, droits des femmes, LGBTQIA+, innovation (Station F IA, Ville Zéro Formulaire), tourisme régulé, héritage JO
+Faiblesses : - Manque de phasage temporel - Peu d'indicateurs de suivi - Modalités de gouvernance
+floues - Budget et financement insuffisamment détaillés dans le programme principal (disponibles sur le site)
+Exemples : - Précis : "La plage de la Bastille" avec localisation - Générique : "Un grand plan de
+mise à l'abri" sans modalités - Détaillé : dispositif d'assurance habitation municipale - Innovation : "Station F dédiée à l'IA", "Ville Zéro délai, Zéro Formulaire" avec IA municipale
 
 Analyse Thématique
 Logement
-Forces : - Objectif ambitieux et chiffré : 60 000 logements sociaux - Arsenal complet contre la
-spéculation : taxation vacance, réquisition, interdiction Airbnb - Brigade de protection du logement
-pour faire respecter l’encadrement - Garantie Municipale des Loyers innovante - Attention aux
+Forces : - Objectif ambitieux et chiffré : 60 000 logements publics (30 000 sociaux + 30 000 abordables) - Arsenal complet contre la
+spéculation : taxation vacance, réquisition, régulation Airbnb (90j/an, résidence principale) - Brigade de protection du logement
+pour faire respecter l'encadrement - Garantie Municipale des Loyers innovante - Attention aux
 parcours résidentiels (étudiants, familles, seniors)
-Faiblesses : - Pas de localisation précise des 60 000 logements - Coût total non chiffré (environ
-12-15 milliards €) - Obstacles juridiques minimisés (réquisitions, interdiction Airbnb) - Tension avec
-la création de 300 ha d’espaces verts
+Faiblesses : - Pas de localisation précise des 60 000 logements - Coût total revu à la baisse (pas uniquement
+des constructions neuves) - Réquisitions : obstacles juridiques à anticiper - Tension avec
+la création de 300 ha d'espaces verts (atténuée par l'ouverture de jardins existants)
 Transport
 Forces : - 15 lignes de bus express avec priorité renforcée - Finalisation du réseau cyclable - Maintien
 gratuité Navigo pour publics ciblés - Solutions pour stationnement professionnel
-Faiblesses : - Métros 24h/24 : compétence Région, coût énorme non chiffré - Transformation
-périphérique : projet titanesque sans calendrier - Peu de détails sur intermodalité et connexions
-Grand Paris - Impact budgétaire des gratuités non évalué
+Faiblesses : - Métros 24h/24 : nécessite accord IDFM où Paris siège et cofinance, coût d'exploitation important - Transformation périphérique : projet pluri-mandatures coûteux, premier tronçon Porte de Gentilly - Peu de détails sur intermodalité et connexions Grand Paris - Note : la gratuité transports pour certains publics est une mesure existante (pas de coût supplémentaire)
 Sécurité
 Forces : - +1000 policiers municipaux, présence 24h/24 - Kiosques dans chaque arrondissement Brigades spécialisées (nuit, anti-incivilités) - Plan contre le harcèlement de rue
 Faiblesses : - Coût récurrent important (50M€/an) non détaillé - Articulation avec Police Nationale
@@ -225,44 +216,39 @@ sociaux) - Plan végétalisation ambitieux - 100% bio cantines, sécurité alime
 
 Paris 2026
 
-Faiblesses : - 300 ha de jardins : où ? comment ? à quel coût ? - Transformation périphérique :
-impact chantier sur pollution - Financement rénovation privée (200 000 logements) flou - Délais de
-réalisation irréalistes
+Faiblesses : - 300 ha de jardins ouverts : ambitieux mais documenté dans le PLUb, inclut l'ouverture d'espaces existants - Transformation périphérique : impact chantier sur pollution à anticiper - Rénovation privée (200 000 logements) : cofinancée par propriétaires et aides de l'État, pas entièrement à charge de la Ville
 Budget/Fiscalité
-Faiblesses majeures : - Aucune mention de l’impact fiscal pour les Parisiens - Pas de plan de
-financement global - Coûts des grandes transformations non évalués - Stratégie d’endettement non
-explicitée - Dépendance aux financements externes non sécurisés
+Points positifs : - Des évaluations et engagements budgétaires sont disponibles sur le site du programme - Certaines mesures présentées comme coûteuses sont en réalité existantes ou cofinancées
+Faiblesses : - Pas de consolidation budgétaire globale dans le document programme principal - Impact fiscal pour les Parisiens non détaillé - Stratégie d'endettement non explicitée - Dépendance aux cofinancements externes à sécuriser
 
 Points d’Attention Critiques
-Propositions irréalistes
-1. Transformation complète du périphérique en 6 ans
-• Coût : plusieurs milliards €
-• Durée réelle : 10-15 ans minimum
-• Nécessite accord de toutes les communes limitrophes
-• Impact circulation pendant travaux non traité
-2. 300 hectares de nouveaux jardins
-• Équivaut à 3 fois le Bois de Boulogne
-• Où trouver cet espace dans Paris ?
-• Coût d’acquisition et aménagement : 1-2 milliards €
-• Contradiction avec objectif de densification
+Propositions les plus ambitieuses
+1. Transformation du périphérique en boulevard urbain
+• Projet assumé comme pluri-mandatures, premier tronçon Porte de Gentilly prévu dans la mandature
+• Coût total : 5-8 milliards € sur l'ensemble du projet
+• Nécessite accord des communes limitrophes et coordination multi-institutionnelle
+• Note : le programme ne prétend pas réaliser les 35 km en un seul mandat
+2. 300 hectares de jardins ouverts au public
+• Inclut la création de nouveaux jardins ET l'ouverture de jardins existants fermés au public (ex : jardins de la Mairie du 7ème)
+• Recensement documenté dans le PLUb de la Ville de Paris
+• Reste ambitieux mais plus réaliste que la création de 300 ha ex nihilo
 3. Métros 24h/24
-• Compétence exclusive IDFM/Région
-• Coût d’exploitation énorme
-• Problème maintenance nocturne non traité
-• Nécessite négociation complexe
+• Compétence IDFM, mais Paris est l'un des principaux financeurs et siège au CA
+• Coût d'exploitation important, maintenance nocturne à résoudre
+• Note : la Ville a démontré sa capacité à influencer des sujets hors compétence directe (police municipale, régulation AirBnB)
 Contradictions internes
 1. Densification vs Espaces verts
 • 60 000 logements nécessitent de la densification
-• 300 ha de jardins nécessitent de l’espace
-• Pas de résolution de cette équation
+• 300 ha de jardins incluent l'ouverture d'espaces existants fermés au public
+• La tension est atténuée mais pas totalement résolue
 2. Piétonnisation vs Accessibilité professionnelle
 • 1000 rues piétonnes
 • Mais maintien accès artisans/livraisons
 • Modalités pratiques non détaillées
 3. Gratuités multiples vs Équilibre budgétaire
-• Nombreuses gratuités proposées
-• Aucune mention de hausse d’impôts
-• Équation budgétaire impossible
+• Nombreuses gratuités proposées (certaines déjà existantes)
+• Aucune mention de hausse d'impôts
+• Équation budgétaire à documenter plus précisément (éléments partiels sur le site de campagne)
 Angles morts
 1. Financement global
 5
@@ -271,21 +257,17 @@ Angles morts
 
 Paris 2026
 
-• Pas de budget prévisionnel
-• Impact dette non mentionné
-• Fiscalité locale ignorée
+• Éléments budgétaires disponibles sur le site de campagne mais pas de consolidation dans le programme principal
+• Impact dette non détaillé
+• Fiscalité locale non explicitée
 2. Gouvernance intercommunale
 • Projets nécessitant accord Métropole/Région
-• Pas de stratégie de négociation
+• Pas de stratégie de négociation détaillée (malgré un historique de la Ville sur ces sujets)
 • Risque de blocage institutionnel
 3. Phasage temporel
-• Pas de calendrier détaillé
+• Pas de calendrier détaillé pour les 234 mesures
 • Priorités non hiérarchisées
-• Risque d’embouteillage administratif
-4. Impact économique
-• Effet sur l’attractivité économique non traité
-• Conséquences pour les entreprises minimisées
-• Risque de fuite fiscale non anticipé
+• Risque d'embouteillage administratif
 
 Comparaison Contexte Municipal
 Propositions en continuité avec Hidalgo
@@ -326,51 +308,58 @@ Avec la Métropole : - Plan Climat : coordination métropolitaine - Logement : c
 métropolitain - Zone à Faibles Emissions : harmonisation
 
 Conclusion
-Note globale justifiée : 6.8/10
-Le programme d’Emmanuel Grégoire présente une vision ambitieuse et cohérente pour Paris,
+Note globale justifiée : 6.6/10
+Le programme d'Emmanuel Grégoire présente une vision ambitieuse et cohérente pour Paris,
 articulant avec intelligence justice sociale, transition écologique et transformation urbaine. La
 structuration en trois piliers (Populaire, Vivante, Fière) offre une lecture claire des priorités.
 Les forces du programme résident dans son attention aux questions sociales (logement, école, santé),
 ses propositions concrètes pour améliorer le quotidien et sa volonté de poursuivre la transformation
 écologique de Paris. Le niveau de détail sur certains sujets (logement social, services publics) témoigne
-d’une réelle expertise technique.
-Cependant, le programme souffre de trois faiblesses majeures :
-1. L’absence quasi-totale de chiffrage budgétaire : pour un programme estimé à plusieurs
-dizaines de milliards d’euros, l’absence de plan de financement est rédhibitoire.
-2. Le manque de réalisme sur les grands projets structurants : transformation du périphérique
-en 6 ans, 300 hectares de nouveaux jardins, métros 24h/24 relèvent davantage du rêve que du
-projet réalisable.
-3. La sous-estimation des contraintes juridiques, administratives et politiques : de nombreuses
-propositions nécessitent des accords complexes avec l’État, la Région ou les communes voisines,
-sans stratégie claire pour les obtenir.
+d'une réelle expertise technique. L'approche pluri-mandatures sur les grands projets structurants
+(périphérique, jardins) témoigne d'un certain pragmatisme.
+Cependant, le programme présente des faiblesses :
+1. Le financement global mériterait plus de visibilité : des éléments budgétaires existent sur le
+site de campagne, mais le programme principal manque de consolidation budgétaire. Certaines estimations
+initiales étaient gonflées (les 60 000 logements publics ne sont pas tous des constructions neuves, la
+gratuité des transports pour certains publics est une mesure existante, la rénovation privée est cofinancée
+par les propriétaires et l'État).
+2. Plusieurs grandes transformations nécessitent une coordination multi-institutionnelle :
+la transformation du périphérique (premier tronçon Porte de Gentilly prévu dans la mandature),
+les métros 24h/24 (nécessite accord IDFM). La Ville de Paris a toutefois démontré par le passé
+sa capacité à faire évoluer des sujets hors compétence directe (police municipale, régulation AirBnB).
+3. Le phasage temporel et la priorisation des mesures restent à préciser pour un programme
+de 234 propositions.
 Ce programme est-il crédible ?
-Partiellement. Les propositions de continuité (logement social, mobilités douces, solidarité) sont
-crédibles car s’inscrivant dans une politique déjà engagée. Les ruptures majeures (périphérique, 300
-ha jardins) manquent de crédibilité faute de moyens identifiés.
+En grande partie. Les propositions de continuité (logement social, mobilités douces, solidarité) sont
+crédibles car s'inscrivant dans une politique déjà engagée. Les grands projets structurants (périphérique,
+jardins) sont assumés comme pluri-mandatures, ce qui renforce leur crédibilité. Le périphérique
+commence par la Porte de Gentilly, les 300 hectares de jardins incluent l'ouverture d'espaces existants
+documentés dans le PLUb.
 Ce programme est-il applicable ?
-En partie seulement. Environ 60% du programme pourrait être mis en œuvre (services publics,
-police municipale, rénovation énergétique). Les 40% restants nécessiteraient soit un allongement des
+En majeure partie. Environ 65% du programme pourrait être mis en œuvre dans la mandature (services publics,
+police municipale, rénovation énergétique, ouverture de jardins existants). Les 35% restants nécessiteraient soit un allongement des
 7
 
 Analyse Programme E. Grégoire
 
 Paris 2026
 
-délais (10-15 ans), soit une révision à la baisse des ambitions, soit des financements exceptionnels
-non identifiés.
-Verdict final : Un programme de gauche classique, généreux dans ses intentions, solide sur le volet
-social, mais péchant par excès d’ambition sur les grandes transformations urbaines et par absence de
-rigueur budgétaire. La faisabilité réelle se situe probablement à 60% des promesses affichées.
+délais (projets pluri-mandatures assumés), soit des accords institutionnels avec l'État, la Région ou
+IDFM — domaines dans lesquels la Ville a un historique de négociation réussie.
+Verdict final : Un programme progressiste ambitieux, solide sur le volet social et les services publics,
+avec une approche pluri-mandatures réaliste sur les grandes transformations urbaines. Le financement
+global mériterait une consolidation plus visible, malgré des éléments disponibles sur le site de campagne.
+La faisabilité réelle se situe probablement autour de 65% des promesses dans la mandature.
 
 Annexe 1 : Inventaire Détaillé des Propositions
 Logement et Habitat (23 propositions)
-1. Construction de 60 000 nouveaux logements sociaux
+1. Construction de 60 000 nouveaux logements publics (30 000 sociaux + 30 000 abordables)
 2. Rééquilibrage entre arrondissements
 3. Reconversion massive de bureaux inoccupés
 4. Taxation des logements vacants depuis plus de 5 ans
 5. Réquisition des logements vacants
 6. Interdiction nouvelles résidences secondaires
-7. Interdiction meublés touristiques permanents type Airbnb
+7. Régulation des meublés touristiques (résidences principales uniquement, max 90 jours/an)
 8. Brigade de protection du logement
 9. Assurance habitation municipale
 10. Protection contre les punaises de lit
@@ -639,17 +628,20 @@ Espace Public et Urbanisme (25 propositions)
 25. 100% bâtiments municipaux accessibles 2030
 
 Annexe 2 : Analyse Approfondie des Propositions Phares
-La transformation du périphérique : ambition démesurée ?
-La proposition de transformer le périphérique parisien en “boulevard urbain” constitue sans doute la
-mesure la plus spectaculaire et controversée du programme. Cette infrastructure, qui voit passer 1,1
-million de véhicules par jour, représente un enjeu majeur pour l’avenir de la métropole.
-Analyse technique : - Longueur : 35 km - Coût estimé (non fourni) : 5 à 8 milliards € - Durée
-réaliste des travaux : 10-15 ans minimum - Impact circulation : report sur voiries locales - Nécessite
-accord de toutes les communes limitrophes
+La transformation du périphérique : un projet pluri-mandatures
+La proposition de transformer le périphérique parisien en "boulevard urbain" constitue sans doute la
+mesure la plus ambitieuse du programme. Cette infrastructure, qui voit passer 1,1
+million de véhicules par jour, représente un enjeu majeur pour l'avenir de la métropole.
+Important : le programme précise que cette transformation s'étalera sur plusieurs mandatures. Le
+premier tronçon prévu dans la mandature est celui situé au niveau de la Porte de Gentilly.
+Analyse technique : - Longueur totale : 35 km - Coût estimé total : 5 à 8 milliards € - Durée
+réaliste des travaux complets : 10-15 ans minimum - Impact circulation : report sur voiries locales - Nécessite
+accord des communes limitrophes et coordination institutionnelle
 Comparaisons internationales : - Séoul (Cheonggyecheon) : 6 km, 10 ans, 280M€ - Madrid
 (M-30) : enfouissement partiel, 15 ans, 4 milliards € - Boston (Big Dig) : 2,5 km, 16 ans, 15 milliards
 $
-La proposition apparaît irréaliste dans le délai d’un mandat.
+L'approche par tronçons sur plusieurs mandatures rend le projet plus crédible que s'il devait être
+réalisé en un seul mandat. Le premier tronçon Porte de Gentilly est un objectif atteignable.
 
 13
 
@@ -657,24 +649,37 @@ La proposition apparaît irréaliste dans le délai d’un mandat.
 
 Paris 2026
 
-Les 300 hectares de jardins : où et comment ?
-Cette promesse équivaut à créer l’équivalent de 3 Bois de Boulogne dans Paris intra-muros. Pour
-contexte, Paris compte actuellement 500 hectares d’espaces verts publics.
-Analyse spatiale : - Surface de Paris : 10 540 hectares - Espaces verts actuels : 500 hectares (4,7%)
-- Objectif : +300 hectares (+60% !) - Disponibilité foncière : quasi-nulle
-Hypothèses de localisation (non précisées) : - Toitures végétalisées : max 50 hectares - Cours
-d’immeubles : max 30 hectares - Transformation voiries : max 100 hectares - Déficit : 120 hectares
-introuvables
-Le financement invisible : l’éléphant dans la pièce
-L’absence totale de chiffrage budgétaire constitue la faiblesse majeure du programme. Une estimation
-sommaire des principales mesures donne le vertige :
-Coûts d’investissement (estimations) : - 60 000 logements sociaux : 12-15 milliards € Transformation périphérique : 5-8 milliards € - 300 hectares jardins : 2-3 milliards € - Rénovation
-énergétique : 3-4 milliards € - Équipements publics : 2-3 milliards € Total investissements : 25-35
-milliards € sur 6 ans
-Coûts de fonctionnement annuels supplémentaires : - 1000 policiers municipaux : 50M€/an Gratuités transports : 100M€/an - Personnel petite enfance : 40M€/an - Entretien nouveaux espaces
-: 30M€/an Total fonctionnement : +250M€/an minimum
-Pour comparaison, le budget annuel de Paris est de 10 milliards €, dont seulement 1,5 milliard €
-d’investissement.
+Les 300 hectares de jardins ouverts au public : précisions
+Le programme prévoit 300 nouveaux hectares de jardins ouverts au public. Il peut s'agir de jardins
+nouvellement créés, mais aussi de l'ouverture de jardins déjà existants mais fermés au public
+(exemple : jardins de la Mairie du 7ème arrondissement). Le recensement précis de ces 300 hectares
+est documenté par le PLUb de la Ville de Paris.
+Contexte : - Surface de Paris : 10 540 hectares - Espaces verts publics actuels : 500 hectares (4,7%)
+- Objectif : +300 hectares ouverts au public (+60%)
+Sources potentielles (documentées dans le PLUb) : - Ouverture de jardins existants fermés au public
+- Toitures végétalisées et cours d'immeubles rendues accessibles - Transformation de voiries et espaces
+minéraux - Nouveaux aménagements paysagers
+L'objectif reste ambitieux mais le fait d'inclure l'ouverture d'espaces existants le rend plus atteignable
+qu'une création de 300 hectares ex nihilo.
+Le financement : des éléments disponibles mais une consolidation à améliorer
+Des évaluations et engagements budgétaires sont présentés sur le site du programme
+(emmanuel-gregoire-2026.fr/programme). Cependant, le document programme principal manque d'une
+consolidation budgétaire globale.
+Estimations révisées (corrigeant des erreurs d'évaluation initiales) :
+Corrections importantes : - Les 60 000 logements publics supplémentaires ne sont en majorité PAS des
+constructions nouvelles (reconversions de bureaux, préemptions, etc.). Le coût réel est bien inférieur
+aux 12-15 milliards € initialement estimés. - La gratuité des transports pour certains publics est une
+mesure existante, donc sans coût supplémentaire (initialement estimée à 100M€/an à tort). - La
+rénovation des 200 000 logements privés n'est pas financée entièrement par la Ville mais cofinancée
+par les propriétaires et les aides de l'État.
+Coûts d'investissement révisés : - Périphérique : projet pluri-mandatures, seul le tronçon Porte de
+Gentilly dans la mandature - 300 hectares jardins : inclut ouverture d'espaces existants, coût réduit
+- Rénovation énergétique logements sociaux : charge Ville principalement - Équipements publics : 2-3 milliards €
+Coûts de fonctionnement annuels supplémentaires : - 1000 policiers municipaux : 50M€/an -
+Personnel petite enfance : 40M€/an - Entretien nouveaux espaces : 30M€/an
+Total fonctionnement : ~120M€/an (revu à la baisse après correction de la gratuité transports)
+Pour comparaison, le budget annuel de Paris est de 10 milliards €, dont 1,5 milliard €
+d'investissement.
 
 Annexe 3 : Évaluation de la Faisabilité par Domaine
 Faisabilité Élevée (réalisable en 6 ans)
@@ -689,8 +694,8 @@ express : faisable mais dépend RATP/IDFM [PARTIEL] Extension horaires équipeme
 coûts RH importants [PARTIEL] 1000 rues piétonnes : possible sur 300-400 rues [PARTIEL]
 Encadrement loyers commerciaux : obstacles juridiques
 Faisabilité Faible (irréaliste ou très complexe)
-[NON] Transformation périphérique : impossible en 6 ans [NON] 300 hectares jardins
-: physiquement impossible [NON] Métros 24h/24 : hors compétence et très coûteux [NON]
+[PLURI-MANDATURE] Transformation périphérique : premier tronçon Porte de Gentilly faisable, reste sur mandatures suivantes [AMBITIEUX] 300 hectares jardins ouverts
+: inclut ouverture d'espaces existants (PLUb), faisable partiellement [NÉGOCIATION] Métros 24h/24 : nécessite accord IDFM, Paris est financeur et siège au CA [NON]
 
 14
 
@@ -698,8 +703,8 @@ Faisabilité Faible (irréaliste ou très complexe)
 
 Paris 2026
 
-Réquisitions massives : blocages juridiques certains [NON] Interdiction Airbnb totale :
-contraire au droit européen
+Réquisitions massives : blocages juridiques certains [FAISABLE] Régulation Airbnb (90j/an, résidence principale) :
+juridiquement cohérent avec les dispositifs européens existants
 
 Synthèse Finale : Forces et Faiblesses du Candidat
 Forces d’Emmanuel Grégoire

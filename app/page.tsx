@@ -98,7 +98,7 @@ export default function HomePage() {
               <span className="soft-chip">Programmes officiels</span>
               <span className="soft-chip">Traitement identique</span>
               <span className="soft-chip">Méthodologie publique</span>
-              <span className="soft-chip">Dernière MAJ : 10 février</span>
+              <span className="soft-chip">Dernière MAJ : 13 février</span>
             </div>
           </div>
 
@@ -115,6 +115,50 @@ export default function HomePage() {
       </header>
 
       <main className="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-16">
+        <section className="mb-10 sm:mb-14">
+          <div className="panel-card border-l-4 border-l-accent p-5 sm:p-6">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs font-bold uppercase tracking-widest text-accent">Mise à jour</span>
+                  <span className="text-[10px] text-ink-4">13 février 2026</span>
+                </div>
+                <h3 className="text-base sm:text-lg font-bold text-ink">Droit de réponse &mdash; Emmanuel Grégoire</h3>
+                <p className="text-sm text-ink-3 mt-2 leading-relaxed">
+                  L&apos;équipe d&apos;Emmanuel Grégoire nous a transmis des informations complémentaires et rectificatifs
+                  concernant notre analyse. Après vérification, plusieurs points ont été corrigés&nbsp;:
+                  le périphérique est un projet pluri-mandatures (premier tronçon Porte de Gentilly),
+                  les 300 hectares incluent l&apos;ouverture de jardins existants (PLUb),
+                  certaines estimations de coûts ont été revues à la baisse,
+                  et la section &laquo;&nbsp;Paris Fière&nbsp;&raquo; (culture, innovation, tourisme, droits) a été mieux prise en compte.
+                  Ces corrections impactent son score global (6.0 &rarr; 6.6).
+                </p>
+                <Link href="/candidats/gregoire" className="inline-block mt-3 text-sm font-semibold text-accent hover:underline">
+                  Voir l&apos;analyse mise à jour &rarr;
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4 panel-card p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="flex-1">
+              <h3 className="text-sm font-bold text-ink">Une erreur ? Des précisions à apporter ?</h3>
+              <p className="text-xs text-ink-3 mt-1">
+                Candidats, équipes de campagne, citoyens : signalez toute incohérence ou information manquante.
+              </p>
+            </div>
+            <a
+              href="https://x.com/pierbapt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-ink text-white text-xs font-semibold hover:bg-ink/80 transition-colors"
+            >
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Contacter @pierbapt
+            </a>
+          </div>
+        </section>
+
         <section id="classement" className="mb-14 sm:mb-20 scroll-mt-24">
           <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
             <div>

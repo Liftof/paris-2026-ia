@@ -44,7 +44,7 @@
       },
       {
         "title": "Métro de nuit",
-        "detail": "Comme à Londres et New York, ouverture nocturne du métro parisien",
+        "detail": "Ouverture nocturne du métro comme à Londres et New York. Nécessite accord IDFM où Paris siège et cofinance.",
         "type": "out_of_scope"
       },
       {
@@ -180,35 +180,35 @@
     "politicalColor": "#FF8080",
     "campaignUrl": "https://emmanuel-gregoire-2026.fr/",
     "politicalLine": "Premier adjoint d'Anne Hidalgo, tête de liste PS/EELV/PCF. Programme axé sur le logement, les services publics et la transformation écologique de Paris.",
-    "globalScore": 6.0,
+    "globalScore": 6.6,
     "photo": "/candidates/gregoire.jpg",
     "scores": {
       "coherence": 8.0,
       "solidite": 6.0,
-      "robustesse": 4.0,
-      "pragmatisme": 5.0,
-      "detail": 7.0
+      "robustesse": 5.0,
+      "pragmatisme": 6.5,
+      "detail": 7.5
     },
     "strengths": [
-      "Programme ambitieux et détaillé sur le logement social avec objectifs chiffrés (60 000 logements)",
+      "Programme ambitieux et détaillé sur le logement avec objectifs chiffrés (30 000 sociaux + 30 000 abordables)",
       "Vision écologique cohérente intégrant transformation urbaine et justice sociale",
       "Propositions concrètes pour les services publics et la vie quotidienne (234 mesures au total)"
     ],
     "weaknesses": [
-      "Financement insuffisamment détaillé pour des projets très coûteux (périphérique, 300 ha de jardins)",
-      "Calendriers peu précis sur les grandes transformations urbaines",
-      "Faible prise en compte des contraintes juridiques et administratives"
+      "Financement global du programme insuffisamment détaillé malgré des éléments disponibles sur le site de campagne",
+      "Plusieurs grandes transformations (périphérique, jardins) nécessitent une coordination multi-mandature et multi-institutionnelle",
+      "Nombreuses mesures dépendant d'accords avec l'État, la Région ou IDFM, bien que la Ville ait démontré sa capacité à faire évoluer ces sujets par le passé"
     ],
     "problematicMeasures": [
-      "Transformation du périphérique en boulevard urbain : coût estimé 5-8 Mds €, 10-15 ans minimum",
-      "300 hectares de nouveaux jardins : physiquement impossible (équivaut à 3 Bois de Boulogne)",
-      "Métros 24h/24 : compétence exclusive IDFM/Région, coût d'exploitation énorme"
+      "Transformation du périphérique en boulevard urbain : projet pluri-mandatures coûteux (5-8 Mds €), premier tronçon prévu Porte de Gentilly",
+      "300 hectares de jardins ouverts au public : inclut l'ouverture de jardins existants fermés (documenté dans le PLUb), mais reste très ambitieux",
+      "Métros 24h/24 : nécessite accord IDFM où Paris siège et cofinance, coût d'exploitation important"
     ],
-    "verdict": "Un programme progressiste et ambitieux, bien structuré sur le plan social, mais manquant de robustesse budgétaire et de pragmatisme sur les grandes transformations urbaines.",
+    "verdict": "Un programme progressiste et ambitieux, bien structuré sur le plan social, avec une approche pluri-mandatures sur les grandes transformations. Le financement mériterait plus de visibilité malgré des éléments disponibles sur le site de campagne.",
     "bestMeasures": [
       {
-        "title": "60 000 logements sociaux",
-        "detail": "Arsenal complet anti-spéculation : taxation vacance, réquisition, interdiction Airbnb. Brigade de protection du logement.",
+        "title": "60 000 logements publics (30k sociaux + 30k abordables)",
+        "detail": "Arsenal complet anti-spéculation : taxation vacance, réquisition, régulation Airbnb (90j/an max). Brigade de protection du logement.",
         "type": "realistic"
       },
       {
@@ -225,18 +225,18 @@
     "worstMeasures": [
       {
         "title": "Transformation du périphérique",
-        "detail": "Coût : 5-8 milliards €. 35 km à transformer. Comparaison : Séoul (6 km) a mis 10 ans. Impossible en un mandat.",
-        "type": "unrealistic"
+        "detail": "Projet pluri-mandatures de 5-8 Mds € sur 35 km. Premier tronçon Porte de Gentilly prévu dans la mandature. Reste un chantier colossal nécessitant des accords multi-institutionnels.",
+        "type": "unlikely"
       },
       {
-        "title": "300 hectares de jardins",
-        "detail": "Paris compte 500 ha d'espaces verts. En créer 300 de plus (+60%) est physiquement impossible : foncier quasi-inexistant.",
-        "type": "unrealistic"
+        "title": "300 hectares de jardins ouverts",
+        "detail": "Inclut création et ouverture de jardins existants fermés au public (PLUb). Ambitieux mais pas irréaliste si le recensement du PLUb est fiable.",
+        "type": "unlikely"
       },
       {
-        "title": "Coût total estimé : 25-35 milliards €",
-        "detail": "Budget annuel de Paris : 10 Mds € dont 1,5 Md d'investissement. Aucun plan de financement présenté.",
-        "type": "worst"
+        "title": "Coût total du programme élevé",
+        "detail": "Estimations initiales gonflées (60 000 logements pas tous neufs, gratuité transports déjà existante, rénovation privée cofinancée). Budget détaillé disponible sur le site de campagne.",
+        "type": "unlikely"
       }
     ],
     "thematicScores": [
@@ -244,17 +244,17 @@
       { "theme": "Transport", "score": 6.5 },
       { "theme": "Sécurité", "score": 7.0 },
       { "theme": "Écologie", "score": 7.5 },
-      { "theme": "Budget", "score": 3.0 }
+      { "theme": "Budget", "score": 4.5 }
     ],
     "contradictions": [
-      "60 000 logements (densification) vs 300 ha de jardins (espace nécessaire)",
+      "60 000 logements (densification) vs 300 ha de jardins, bien que le programme inclue l'ouverture de jardins existants",
       "1 000 rues piétonnes vs maintien de l'accessibilité pour professionnels",
-      "Nombreuses gratuités proposées sans aucune mention de hausse d'impôts"
+      "Nombreuses mesures sociales sans plan de financement global détaillé (éléments partiels sur le site)"
     ],
     "blindSpots": [
-      "Financement global : pas de budget prévisionnel ni impact dette",
-      "Gouvernance intercommunale : projets nécessitant accord Métropole/Région",
-      "Impact économique : effet sur l'attractivité non traité"
+      "Financement global : éléments disponibles sur le site mais pas de consolidation budgétaire complète dans le programme principal",
+      "Gouvernance intercommunale : projets nécessitant accord Métropole/Région, bien que Paris ait un historique de négociation réussie",
+      "Phasage temporel : pas de calendrier détaillé ni de priorisation des 234 mesures"
     ]
   },
   {
@@ -355,12 +355,12 @@
     "politicalColor": "#1A1A2E",
     "campaignUrl": "https://sarahpourparis.fr/",
     "politicalLine": "Eurodéputée Reconquête, conseillère d'Éric Zemmour. Programme axé sur la sécurité, la baisse des impôts locaux et la réduction des effectifs municipaux.",
-    "globalScore": 5.6,
+    "globalScore": 5.3,
     "photo": "/candidates/knafo.jpg",
     "scores": {
       "coherence": 4.0,
       "solidite": 6.0,
-      "robustesse": 6.0,
+      "robustesse": 4.5,
       "pragmatisme": 5.0,
       "detail": 7.0
     },
