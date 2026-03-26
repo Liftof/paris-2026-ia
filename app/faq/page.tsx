@@ -54,10 +54,11 @@ export default function FAQPage() {
             </summary>
             <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
               <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                L&apos;analyse est réalisée par un agent d&apos;analyse politique non-partisan basé sur{' '}
-                <span className="font-semibold text-ink">Anthropic Claude Opus 4.6</span>,
-                conçu pour évaluer les programmes selon 5 critères objectifs et identiques pour tous les candidats.
-                Le modèle n&apos;a pas accès aux sondages ni aux préférences politiques.
+                L&apos;analyse ne repose pas sur un seul mod&egrave;le. Le protocole fait tourner pendant la nuit plusieurs mod&egrave;les
+                ({' '}
+                <span className="font-semibold text-ink">Opus, Grok, GPT-5.4 et Mistral</span>
+                {' '}) sur le m&ecirc;me corpus et la m&ecirc;me grille. Leurs sorties sont ensuite compar&eacute;es, challeng&eacute;es puis
+                synth&eacute;tis&eacute;es pour r&eacute;duire l&apos;effet d&apos;un biais propre &agrave; une seule IA.
               </p>
             </div>
           </details>
@@ -81,7 +82,9 @@ export default function FAQPage() {
             </summary>
             <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
               <p className="text-xs sm:text-sm text-ink-3 leading-relaxed mb-4">
-                Chaque programme est évalué sur 5 critères (cohérence, solidité, robustesse, pragmatisme, détail), chacun noté sur 10. La note globale est la moyenne équipondérée de ces 5 notes.
+                Chaque programme est d&apos;abord lu par plusieurs mod&egrave;les sur 5 crit&egrave;res (coh&eacute;rence, solidit&eacute;, robustesse, pragmatisme, d&eacute;tail).
+                Une synth&egrave;se finale retient les convergences, challenge les d&eacute;saccords, puis fixe 5 notes sur 10.
+                La note globale est ensuite la moyenne &eacute;quipond&eacute;r&eacute;e de ces 5 notes finales.
               </p>
               <Link
                 href="/methodologie"
@@ -111,7 +114,8 @@ export default function FAQPage() {
             </summary>
             <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-0 ml-6">
               <p className="text-xs sm:text-sm text-ink-3 leading-relaxed">
-                Oui. L&apos;IA évalue la qualité formelle et la cohérence des programmes, mais ne peut pas juger la sincérité des candidats ni anticiper le contexte politique futur. C&apos;est un outil de lecture, pas un oracle.
+                Oui. M&ecirc;me \u00e0 plusieurs mod&egrave;les, l&apos;analyse peut se tromper. Elle &eacute;value la qualit&eacute; formelle et la coh&eacute;rence des programmes,
+                mais ne peut pas juger la sinc&eacute;rit&eacute; des candidats ni anticiper le contexte politique futur. C&apos;est un outil de lecture, pas un oracle.
               </p>
             </div>
           </details>

@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/og-image.png",
-        width: 1456,
-        height: 816,
+        width: 1376,
+        height: 768,
         alt: "Paris 2026 — Les programmes passés au crible de l'IA. 6 candidats, 5 critères, une grille identique.",
       },
     ],

@@ -6,10 +6,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Méthodologie',
-  description: 'Comment l\'IA analyse les programmes des candidats à la mairie de Paris 2026. 5 critères, protocole identique, rapports PDF téléchargeables.',
+  description: 'Comment plusieurs mod\u00e8les d\'IA analysent les programmes des candidats \u00e0 la mairie de Paris 2026. M\u00eame corpus, m\u00eame grille, synth\u00e8se finale publique.',
   openGraph: {
     title: 'Méthodologie — Paris 2026 Labo IA',
-    description: 'Comment l\'IA analyse les programmes des candidats à la mairie de Paris 2026. 5 critères, protocole identique.',
+    description: 'Comment plusieurs mod\u00e8les d\'IA analysent les programmes des candidats \u00e0 la mairie de Paris 2026. M\u00eame corpus, m\u00eame grille, synth\u00e8se finale.',
   },
 }
 
@@ -24,15 +24,17 @@ export default function MethodologiePage() {
         <div className="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-14">
           <div className="hero-panel p-6 sm:p-10">
             <span className="kicker mb-4">M&eacute;thodologie publique</span>
-            <h1 className="text-3xl sm:text-5xl font-bold text-ink">Comment l&apos;IA juge les programmes</h1>
+            <h1 className="text-3xl sm:text-5xl font-bold text-ink">Comment plusieurs IA analysent les programmes</h1>
             <p className="text-base sm:text-lg text-ink-3 mt-4 max-w-3xl leading-relaxed">
-              Cette d&eacute;marche est celle d&apos;un labo ind&eacute;pendant: m&ecirc;me protocole, m&ecirc;mes crit&egrave;res, m&ecirc;mes exigences pour tous.
-              Chaque rapport suit une structure identique pour garantir l&apos;&eacute;quit&eacute; du traitement.
+              Cette d&eacute;marche ne repose pas sur un seul mod&egrave;le. Pendant toute une nuit, plusieurs IA ont analys&eacute; les m&ecirc;mes
+              programmes avec la m&ecirc;me grille, puis leurs lectures ont &eacute;t&eacute; compar&eacute;es, challeng&eacute;es et synth&eacute;tis&eacute;es
+              pour produire une &eacute;valuation finale coh&eacute;rente pour tous les candidats.
             </p>
             <div className="mt-5 flex flex-wrap gap-2.5">
               <span className="soft-chip">6 candidats analys&eacute;s</span>
+              <span className="soft-chip">4 mod&egrave;les challeng&eacute;s</span>
               <span className="soft-chip">5 crit&egrave;res publics</span>
-              <span className="soft-chip">5 domaines th&eacute;matiques</span>
+              <span className="soft-chip">M&ecirc;me corpus pour tous</span>
               <span className="soft-chip">Rapports PDF t&eacute;l&eacute;chargeables</span>
             </div>
           </div>
@@ -69,24 +71,24 @@ export default function MethodologiePage() {
 
         {/* Pourquoi l'IA */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Pourquoi utiliser l&apos;IA ?</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Pourquoi faire tourner plusieurs mod&egrave;les ?</h2>
           <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
             {[
               {
-                title: 'Neutralit\u00e9 de traitement',
-                description: 'Tous les candidats passent sur la m\u00eame grille de lecture, dans le m\u00eame ordre. L\u2019IA ne conna\u00eet pas les sondages et n\u2019a pas de pr\u00e9f\u00e9rence politique.',
+                title: 'R\u00e9duire l\u2019effet d\u2019un mod\u00e8le unique',
+                description: 'Chaque programme est lu par plusieurs mod\u00e8les. Si l\u2019un sur-r\u00e9agit \u00e0 un angle ou oublie un point, les autres servent de contrepoids.',
               },
               {
-                title: 'R\u00e9gularit\u00e9 d\u2019\u00e9valuation',
-                description: 'La m\u00e9thode \u00e9vite les variations humaines de fatigue, d\u2019attention ou de biais cognitifs. Le 6\u00e8me candidat est \u00e9valu\u00e9 avec la m\u00eame rigueur que le premier.',
+                title: 'Faire ressortir les convergences',
+                description: 'Quand Opus, Grok, GPT-5.4 et Mistral remontent les m\u00eames forces, les m\u00eames faiblesses ou les m\u00eames zones floues, le signal devient plus robuste.',
               },
               {
-                title: 'Capacit\u00e9 de synth\u00e8se',
-                description: 'Le syst\u00e8me consolide rapidement des corpus longs et h\u00e9t\u00e9rog\u00e8nes: programmes de 30+ pages, propositions d\u00e9taill\u00e9es, chiffrages budg\u00e9taires.',
+                title: 'Challenger les divergences',
+                description: 'Quand les lectures s\u2019\u00e9cartent, les justifications sont remises face au texte source pour distinguer une vraie divergence d\u2019une sur-interpr\u00e9tation.',
               },
               {
-                title: 'Tra\u00e7abilit\u00e9',
-                description: 'Chaque score est reli\u00e9 \u00e0 des crit\u00e8res explicites. Le rapport d\u00e9taill\u00e9 (PDF) permet de v\u00e9rifier le raisonnement derri\u00e8re chaque note.',
+                title: 'Produire une synth\u00e8se finale',
+                description: 'La note finale ne reprend pas la sortie brute d\u2019une seule IA. Elle agr\u00e8ge les lectures communes, arbitre les d\u00e9saccords et garde une grille identique pour tous.',
               },
             ].map((item) => (
               <div key={item.title} className="playful-dash bg-white p-4 sm:p-5">
@@ -124,7 +126,8 @@ export default function MethodologiePage() {
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Processus d&apos;analyse</h2>
           <p className="text-sm text-ink-3 mb-5 leading-relaxed">
-            Chaque candidat passe par exactement les m&ecirc;mes &eacute;tapes, dans le m&ecirc;me ordre, avec le m&ecirc;me prompt d&apos;analyse.
+            L&apos;id&eacute;e n&apos;est pas de demander son avis &agrave; une seule IA. Le protocole consiste &agrave; faire travailler plusieurs
+            mod&egrave;les sur le m&ecirc;me mat&eacute;riau, puis &agrave; confronter leurs sorties avant de retenir une synth&egrave;se finale.
           </p>
           <div className="space-y-3">
             {[
@@ -136,32 +139,32 @@ export default function MethodologiePage() {
               },
               {
                 step: '2',
-                title: '\u00c9valuation par crit\u00e8re (5 notes)',
-                detail: 'L\u2019agent IA \u00e9value coh\u00e9rence, solidit\u00e9, robustesse, pragmatisme et d\u00e9tail. Chaque note est justifi\u00e9e par des points forts, points de tension et exemples concrets.',
+                title: 'Passage de nuit sur plusieurs mod\u00e8les',
+                detail: 'Opus, Grok, GPT-5.4 et Mistral re\u00e7oivent le m\u00eame corpus, la m\u00eame consigne et la m\u00eame grille d\u2019\u00e9valuation.',
                 color: '#3B82F6',
               },
               {
                 step: '3',
-                title: 'Analyse th\u00e9matique (5 domaines)',
-                detail: 'Logement, Transport, S\u00e9curit\u00e9, \u00c9cologie, Budget/Fiscalit\u00e9. Pour chaque th\u00e8me: forces et faiblesses identifi\u00e9es.',
+                title: 'Comparaison des lectures',
+                detail: 'Les notes propos\u00e9es, les objections, les points forts, les faiblesses et les angles morts sont mis c\u00f4te \u00e0 c\u00f4te pour voir o\u00f9 les mod\u00e8les convergent.',
                 color: '#D97706',
               },
               {
                 step: '4',
-                title: 'Points d\u2019attention critiques',
-                detail: 'Identification des propositions irr\u00e9alistes, contradictions internes et angles morts du programme.',
+                title: 'Challenge des d\u00e9saccords',
+                detail: 'Les divergences sont re-test\u00e9es sur le texte source pour identifier les surestimations, omissions, contradictions internes ou mesures hors comp\u00e9tence municipale.',
                 color: '#D97706',
               },
               {
                 step: '5',
-                title: 'Synth\u00e8se et verdict',
-                detail: 'Note globale (moyenne \u00e9quipond\u00e9r\u00e9e des 5 crit\u00e8res), verdict en une phrase, 3 forces et 3 faiblesses principales.',
+                title: 'Synth\u00e8se finale et moyenne argument\u00e9e',
+                detail: 'Une synth\u00e8se finale retient les convergences entre mod\u00e8les et arbitre les d\u00e9saccords. Elle produit 5 notes finales, puis une note globale en moyenne \u00e9quipond\u00e9r\u00e9e.',
                 color: '#EA580C',
               },
               {
                 step: '6',
                 title: 'G\u00e9n\u00e9ration du rapport PDF',
-                detail: 'Le rapport complet est format\u00e9 et mis \u00e0 disposition en t\u00e9l\u00e9chargement sur la page du candidat.',
+                detail: 'Le rapport complet documente la synth\u00e8se retenue, les points de consensus, les points de tension et la note finale mise \u00e0 disposition sur la page du candidat.',
                 color: '#EA580C',
               },
             ].map((item) => (
@@ -180,6 +183,12 @@ export default function MethodologiePage() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-5 playful-dash bg-surface-alt p-3.5">
+            <p className="text-xs text-ink-3 leading-relaxed">
+              <span className="font-semibold">Important :</span> la moyenne ne porte pas sur une humeur ou un vote automatique entre IA.
+              Elle porte sur des lectures argument&eacute;es, compar&eacute;es puis challeng&eacute;es sur le texte source.
+            </p>
           </div>
         </section>
 
@@ -313,7 +322,7 @@ export default function MethodologiePage() {
         {/* Pondération */}
         <section className="panel-card p-5 sm:p-7 mb-8 sm:mb-10">
           <h2 className="text-xl sm:text-2xl font-bold text-ink mb-6">Pond&eacute;ration des notes</h2>
-          <p className="text-sm text-ink-3 mb-4">Chaque crit&egrave;re compte pour 20% de la note globale. Pas de surpond&eacute;ration, pas de biais.</p>
+          <p className="text-sm text-ink-3 mb-4">Chaque crit&egrave;re compte pour 20% de la note globale, une fois la synth&egrave;se multi-mod&egrave;les consolid&eacute;e.</p>
           <div className="note-grid">
             {['Coh\u00e9rence', 'Solidit\u00e9', 'Robustesse', 'Pragmatisme', 'D\u00e9tail'].map((criterion) => (
               <div key={criterion} className="playful-dash bg-white p-3 text-center">
@@ -325,7 +334,7 @@ export default function MethodologiePage() {
           <div className="mt-4 playful-dash bg-surface-alt p-3.5">
             <p className="text-xs text-ink-3 leading-relaxed">
               <span className="font-semibold">Note globale</span> = (Coh&eacute;rence + Solidit&eacute; + Robustesse + Pragmatisme + D&eacute;tail) &divide; 5.
-              L&apos;&eacute;quipond&eacute;ration &eacute;vite de privil&eacute;gier un angle (ex: technique vs. politique).
+              L&apos;&eacute;quipond&eacute;ration intervient apr&egrave;s comparaison des lectures pour &eacute;viter qu&apos;un seul mod&egrave;le impose son angle.
             </p>
           </div>
         </section>
@@ -385,9 +394,10 @@ export default function MethodologiePage() {
             {[
               'L\u2019IA \u00e9value les programmes tels que publi\u00e9s, pas les intentions r\u00e9elles ni le bilan pass\u00e9 des candidats.',
               'Les notes refl\u00e8tent la qualit\u00e9 du programme \u00e9crit, pas la capacit\u00e9 personnelle du candidat \u00e0 gouverner.',
+              'Le multi-mod\u00e8les r\u00e9duit le risque d\u2019un biais propre \u00e0 une seule IA, mais ne l\u2019annule pas.',
               'L\u2019analyse ne prend pas en compte les coalitions, alliances ou dynamiques politiques de second tour.',
               'Les scores ne mesurent pas l\u2019adh\u00e9sion populaire ni l\u2019opinion des \u00e9lecteurs.',
-              'Certaines propositions peuvent \u00eatre strat\u00e9giquement floues par choix politique \u2014 cela impacte la note mais ne pr\u00e9juge pas de la sinc\u00e9rit\u00e9.',
+              'Un consensus entre mod\u00e8les peut rester trompeur si le texte source est lui-m\u00eame ambigu, incomplet ou strat\u00e9giquement flou.',
             ].map((limit, index) => (
               <div key={index} className="playful-dash bg-white p-3.5 flex items-start gap-3">
                 <span className="text-score-mixed mt-0.5 font-bold">!</span>
@@ -402,8 +412,9 @@ export default function MethodologiePage() {
           <h2 className="text-lg sm:text-xl font-bold text-ink mb-3">Transparence</h2>
           <p className="text-sm text-ink-2 leading-relaxed">
             Les scores ne remplacent pas le d&eacute;bat d&eacute;mocratique. Ils structurent la lecture et rendent explicites les zones
-            de solidit&eacute;, les contradictions et les points &agrave; clarifier. Chaque citoyen est invit&eacute; &agrave; t&eacute;l&eacute;charger
-            les rapports complets et &agrave; se forger sa propre opinion.
+            de solidit&eacute;, les contradictions et les points &agrave; clarifier. L&apos;objectif n&apos;est pas de d&eacute;l&eacute;guer un jugement &agrave; une IA,
+            mais de confronter plusieurs lectures avant publication. Chaque citoyen est invit&eacute; &agrave; t&eacute;l&eacute;charger les rapports complets
+            et &agrave; se forger sa propre opinion.
           </p>
         </section>
 
@@ -447,7 +458,7 @@ export default function MethodologiePage() {
               <span className="w-2 h-2 rounded-sm bg-score-mixed mt-1.5 shrink-0" />
               <div>
                 <div className="text-sm font-semibold text-ink group-hover:text-accent transition-colors">political-program-scorer</div>
-                <div className="text-xs text-ink-3 mt-0.5">Outil CLI pour analyser un programme politique via l&apos;API Claude. Sortie JSON structur&eacute;e et valid&eacute;e.</div>
+                <div className="text-xs text-ink-3 mt-0.5">Outil CLI pour analyser un programme politique via une API LLM. Sortie JSON structur&eacute;e et valid&eacute;e.</div>
               </div>
             </a>
             <a
