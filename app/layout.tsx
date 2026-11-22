@@ -115,15 +115,17 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Script
-          src="https://datafa.st/js/script.js"
-          data-website-id="dfid_5L7pIGBZzS06HYavi6H1m"
-          data-domain="labo-paris.com"
-          strategy="afterInteractive"
-        />
+        <Script id="pb-audience" strategy="afterInteractive">{"(function(){\n    const key=\"pb-audience-optout\";\n    const urlOff=new URLSearchParams(location.search).get(\"audience\")===\"off\";\n    try {\n      if(urlOff) localStorage.setItem(key,\"1\");\n      if(localStorage.getItem(key)===\"1\") globalThis.pbAudienceDisabled=true;\n    } catch (_) { globalThis.pbAudienceDisabled=true; }\n    if(urlOff) globalThis.pbAudienceDisabled=true;\n    function bind(){\n      const link=document.getElementById(\"audience-opt-out\"), status=document.getElementById(\"audience-status\");\n      if(!link||!status)return;\n      function render(){if(globalThis.pbAudienceDisabled||navigator.globalPrivacyControl||navigator.doNotTrack===\"1\"||window.doNotTrack===\"1\")status.textContent=\"Measurement disabled / Mesure désactivée.\";}\n      render();\n      link.addEventListener(\"click\",event=>{\n        globalThis.pbAudienceDisabled=true;\n        try {\n          localStorage.setItem(key,\"1\");\n          if(localStorage.getItem(key)===\"1\"){event.preventDefault();render();}\n        } catch (_) {\n          // Follow the link to a document that never sends a measurement.\n        }\n      });\n    }\n    if(document.readyState===\"loading\")document.addEventListener(\"DOMContentLoaded\",bind,{once:true});\n    else bind();\n  })();;\n(function(){if(globalThis.pbAudienceDisabled===true||navigator.globalPrivacyControl||navigator.doNotTrack==='1'||window.doNotTrack==='1'||![\"labo-paris.com\"].includes(location.hostname)||location.pathname!==\"/\"||window!==window.top||new URLSearchParams(location.search).has(\"embed\"))return;const s=document.createElement(\"script\");s.defer=true;s.src=\"/audience-v1.js\";Object.assign(s.dataset,{\"site\":\"labo-paris\",\"page\":\"home\",\"path\":\"/\",\"endpoint\":\"https://pb-audience.vercel.app/api/collect\"});document.head.appendChild(s)})();"}</Script>
         {children}
         <FeedbackWidget />
-      </body>
+            <details id="mesure-audience" aria-label="Audience privacy">
+        <summary>Audience privacy / Confidentialité de la mesure</summary>
+        <p lang="en">This site counts views on selected public pages, not individual visitors. The script sends only a site key and a predefined page category to a private counter. The script does not send your submissions, exact URL, cookies or browsing identifiers. Vercel receives the IP address to handle the counter request; the audience counter does not store it in its statistics, which contain only daily totals for this site. If you opt out, only that choice is saved in this browser.</p>
+        <p lang="fr">Ce site compte les vues de certaines pages publiques, pas les visiteurs individuels. Le script transmet seulement le nom du site et une catégorie de page prédéfinie à un compteur privé. Le script ne transmet ni vos saisies, ni l’URL exacte, ni cookie, ni identifiant de navigation. Vercel reçoit l’adresse IP pour traiter la requête du compteur ; celui-ci ne la conserve pas dans ses statistiques, limitées à des totaux quotidiens pour ce site. En cas de refus, seul ce choix est mémorisé dans ce navigateur.</p>
+        <p><a id="audience-opt-out" href="?audience=off#mesure-audience">Opt out / Refuser la mesure</a> <span id="audience-status" role="status" aria-live="polite"></span></p>
+        <p>Contact / Contact : <a href="https://pierrebaptiste.me/about/">Pierre-Baptiste Borges</a>.</p>
+      </details>
+</body>
     </html>
   );
 }
